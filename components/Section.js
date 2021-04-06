@@ -7,6 +7,10 @@ export default function Section({
   horizontalPadding,
   verticalPadding,
   showMediaFirst,
+  hero,
+  backgroundClass,
+  foregroundClass,
+  media,
 }) {
   const OneColumnLayout = () => {
     return (
@@ -19,12 +23,18 @@ export default function Section({
 
         {copy.map((para, index) => {
           return (
-            <p className="text-2xl w-3/5 mx-auto mt-8" key={index}>
+            <p
+              className={`text-2xl w-3/5 mx-auto mt-8 ${
+                callToActions ? "mb-8" : ""
+              }`}
+              key={index}
+            >
               {para}
             </p>
           );
         })}
         {callToActions && callToActions}
+        {media && media}
       </div>
     );
   };
@@ -33,29 +43,46 @@ export default function Section({
     return (
       <div className="w-full grid grid-cols-2 gap-20 items-center">
         <div className={`${showMediaFirst ? "order-2" : "order-1"}`}>
-          <h3 className="text-4xl mb-6 font-black">
-            {headline.map((heading, index) => {
-              return (
-                <span className="block" key={index}>
-                  {heading}
-                </span>
-              );
-            })}
-          </h3>
+          {hero ? (
+            <h1 className="text-4xl mb-6 font-black">
+              {headline.map((heading, index) => {
+                return (
+                  <span className="block" key={index}>
+                    {heading}
+                  </span>
+                );
+              })}
+            </h1>
+          ) : (
+            <h3 className="text-4xl mb-6 font-black">
+              {headline.map((heading, index) => {
+                return (
+                  <span className="block" key={index}>
+                    {heading}
+                  </span>
+                );
+              })}
+            </h3>
+          )}
+
           {copy.map((para, index) => {
             return (
-              <p className="text-2xl" key={index}>
-                {para}
+              <p
+                className={`text-2xl ${callToActions ? "mb-6" : ""}`}
+                key={index}
+              >
+                <span className="block mt-6">{para}</span>
               </p>
             );
           })}
+          {callToActions && callToActions}
         </div>
         <div
           className={`w-full relative pt-[100%] ${
             showMediaFirst ? "order-1" : "order-2"
           }`}
         >
-          <div className="absolute inset-0 bg-gray-50"></div>
+          <div className="absolute inset-0 bg-black bg-opacity-5"></div>
         </div>
       </div>
     );
@@ -65,6 +92,8 @@ export default function Section({
     <section
       className={`${horizontalPadding ? horizontalPadding : "px-12"} ${
         verticalPadding ? verticalPadding : "py-16"
+      } ${backgroundClass ? backgroundClass : "bg-white"} ${
+        foregroundClass ? foregroundClass : "text-black"
       }`}
     >
       <div

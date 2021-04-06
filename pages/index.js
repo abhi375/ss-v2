@@ -1,3 +1,4 @@
+import Banner from "@/components/Banner";
 import Button from "@/components/Button";
 import LogoWall from "@/components/LogoWall";
 import Section from "@/components/Section";
@@ -6,7 +7,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <section className="mt-16">
+    <>
       <Section
         headline={["Cloud Contact Center software—centered on experience."]}
         columns="one"
@@ -84,6 +85,7 @@ export default function Home() {
           />
         }
       />
-    </section>
+      <Banner />
+    </>
   );
 }

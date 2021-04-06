@@ -8,7 +8,9 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Nav />
-      <Component {...pageProps} />
+      <section className="mt-16">
+        <Component {...pageProps} />
+      </section>
       <Footer />
     </>
   );
