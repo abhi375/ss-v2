@@ -16,6 +16,7 @@ export default function ContactCenterPage() {
         ]}
         textAlignment="center"
         columns="one"
+        verticalPadding="py-28"
         callToActions={<Button title="Get a demo" size="large" />}
       />
       <LogoWall />

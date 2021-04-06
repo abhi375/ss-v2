@@ -15,7 +15,7 @@ export default function Section({
   const OneColumnLayout = () => {
     return (
       <div>
-        <h1 className="text-6xl font-black w-4/6 mx-auto">
+        <h1 className="text-6xl font-extrabold w-4/6 mx-auto">
           {headline.map((heading, index) => {
             return <span key={index}>{heading}</span>;
           })}
@@ -44,7 +44,7 @@ export default function Section({
       <div className="w-full grid grid-cols-2 gap-20 items-center">
         <div className={`${showMediaFirst ? "order-2" : "order-1"}`}>
           {hero ? (
-            <h1 className="text-4xl mb-6 font-black">
+            <h1 className="text-4xl mb-6 font-extrabold">
               {headline.map((heading, index) => {
                 return (
                   <span className="block" key={index}>
@@ -54,7 +54,7 @@ export default function Section({
               })}
             </h1>
           ) : (
-            <h3 className="text-4xl mb-6 font-black">
+            <h3 className="text-4xl mb-6 font-extrabold">
               {headline.map((heading, index) => {
                 return (
                   <span className="block" key={index}>

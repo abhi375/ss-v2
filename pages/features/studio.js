@@ -1,6 +1,5 @@
 import Banner from "@/components/Banner";
 import Button from "@/components/Button";
-import LogoWall from "@/components/LogoWall";
 import Section from "@/components/Section";
 import Testimonial from "@/components/Testimonial";
 import Image from "next/image";
