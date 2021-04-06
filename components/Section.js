@@ -68,7 +68,7 @@ export default function Section({
           {copy.map((para, index) => {
             return (
               <p
-                className={`text-2xl ${callToActions ? "mb-6" : ""}`}
+                className={`text-2xl ${callToActions ? "mb-8" : ""}`}
                 key={index}
               >
                 <span className="block mt-6">{para}</span>

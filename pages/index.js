@@ -18,7 +18,7 @@ export default function Home() {
         ]}
         callToActions={
           <div className="mt-8">
-            <Button size="large" title="Talk to an Expert" />
+            <Button size="large" title="Get a demo" />
           </div>
         }
       />

@@ -15,7 +15,7 @@ export default function Footer() {
               <Link href="/solutions/hubspot">
                 <a>Hubspot</a>
               </Link>
-              <Link href="/solutions/crm-integration">
+              <Link href="/solutions/crm-integrations">
                 <a>All other CRMs</a>
               </Link>
               <Link href="/solutions/smb">

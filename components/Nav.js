@@ -32,7 +32,7 @@ export default function Nav() {
             <Link href="/signin">
               <a>Sign In</a>
             </Link>
-            <Button title="Talk to an Expert" />
+            <Button title="Get a demo" />
           </div>
         </div>
       </div>
