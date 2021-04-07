@@ -21,6 +21,10 @@ module.exports = {
         accent: "#4f50ff",
         gray: colors.trueGray,
       },
+      boxShadow: {
+        subtle:
+          "0 4px 8px 0 rgb(0 0 0 / 4%), 0 8px 16px 0 rgb(0 0 0 / 2%), 0 0 0 1px rgb(0 0 0 / 4%)",
+      },
     },
   },
   variants: {

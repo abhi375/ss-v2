@@ -24,8 +24,8 @@ export default function Section({
         {copy.map((para, index) => {
           return (
             <p
-              className={`text-2xl w-3/5 mx-auto mt-8 ${
-                callToActions ? "mb-8" : ""
+              className={`text-2xl w-3/5 mx-auto mt-6 ${
+                callToActions ? "mb-6" : ""
               }`}
               key={index}
             >
