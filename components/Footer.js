@@ -7,68 +7,69 @@ export default function Footer() {
       <div className="max-w-screen-xl mx-auto">
         <div className="w-full grid grid-cols-4 gap-12">
           <div>
-            <p className="mb-2 font-bold">Solutions</p>
-            <div className="grid grid-cols-1 gap-2">
+            <p className="font-bold">Solutions</p>
+            <div className="inline-flex flex-col">
               <Link href="/solutions/salesforce">
-                <a>Salesforce</a>
+                <a className="mt-2">Salesforce</a>
               </Link>
               <Link href="/solutions/hubspot">
-                <a>Hubspot</a>
+                <a className="mt-2">Hubspot</a>
               </Link>
               <Link href="/solutions/crm-integrations">
-                <a>All other CRMs</a>
+                <a className="mt-2">All other CRMs</a>
               </Link>
               <Link href="/solutions/smb">
-                <a>Small & Midsize Business</a>
+                <a className="mt-2">Small & Midsize Business</a>
               </Link>
               <Link href="/solutions/enterprise">
-                <a>Enterprise</a>
+                <a className="mt-2">Enterprise</a>
               </Link>
             </div>
           </div>
 
           <div>
-            <p className="mb-2 font-bold">Platform</p>
-            <div className="grid grid-cols-1 gap-2">
+            <p className=" font-bold">Features</p>
+            <div className="inline-flex flex-col">
               <Link href="/features/contact-center">
-                <a>Contact Center</a>
+                <a className="mt-2">Contact Center</a>
               </Link>
               <Link href="/features/studio">
-                <a>Conversational Studio</a>
+                <a className="mt-2">Conversational Studio</a>
               </Link>
               <Link href="/features/analytics">
-                <a>Analytics</a>
+                <a className="mt-2">Analytics</a>
               </Link>
               <Link href="/features/developers">
-                <a>Developer Tools</a>
+                <a className="mt-2">Developer Tools</a>
               </Link>
               <Link href="/features/voicecloud">
-                <a>Voice Cloud</a>
+                <a className="mt-2">Voice Cloud</a>
               </Link>
               <Link href="/pricing">
-                <a>Pricing</a>
+                <a className="mt-2">Pricing</a>
               </Link>
             </div>
           </div>
 
           <div>
-            <p className="mb-2 font-bold">Company</p>
-            <div className="grid grid-cols-1 gap-2">
-              <Link href="/features/contact-center">
-                <a>About</a>
+            <p className="font-bold">Company</p>
+            <div className="inline-flex flex-col">
+              <Link href="/about">
+                <a className="mt-2">About</a>
               </Link>
-              <Link href="/features/studio">
-                <a>Customers</a>
+              <Link href="/customers">
+                <a className="mt-2">Customers</a>
               </Link>
-              <Link href="/features/analytics">
-                <a>Blog</a>
+              <Link href="/blog">
+                <a className="mt-2">Blog</a>
               </Link>
-              <Link href="/features/developers">
-                <a>Careers</a>
+              <Link href="/careers">
+                <a className="mt-2">Careers</a>
               </Link>
               <a
                 href="https://www.support.samespace.com"
                 target="_blank"
+                className="mt-2"
                 rel="noreferer noopener"
               >
                 Support

@@ -7,7 +7,9 @@ technology: "Guided chatbot"
 activeUsers: "2,000"
 isAnonymous: false
 weight: 5
+id: 5
 coverImage: "/customer-stories/big-four-cover.jpg"
+date: 2021-04-03
 ---
 
 At a Big Four global services company, the business transformation HR team needed a better way to get key messages to all their coworkers. They were communicating via a minimally-interactive intranet microsite, with mixed results. Metrics including employee engagement and awareness were falling short of their targets.

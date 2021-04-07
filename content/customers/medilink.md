@@ -5,10 +5,12 @@ industry: "Healthcare IT platform"
 useCase: "Customer Service"
 isAnonymous: false
 weight: 4
+id: 4
 coverImage: "/customer-stories/medilink-cover.jpg"
 customerLogo: "/logos/medilink.svg"
 authorAvatar: "/people/mukhtadir.jpeg"
 authorName: "Rosemarie Carpio"
+date: 2021-04-04
 ---
 
 Medilink Network Inc. is a leading healthcare IT platform in the Philippines committed to more efficient, accessible, and affordable healthcare. It connects over two million insured members, healthcare providers, and service payors in a single integrated network.
@@ -24,7 +26,7 @@ Powerful real-time monitoring and coaching tools
 
 ### Solution
 
-** Simple cloud-based CTI with robust analytics & coaching **
+**Simple cloud-based CTI with robust analytics & coaching**
 
 MediLink deployed a cloud-based instance of the Samespace Contact Center platform. There were minimal infrastructure needs, and agents simply installed the Samespace Chrome extension that uses open-source WebRTC. The existing MediLink support IVR, a simple routing mechanism, was working well so MediLink easily linked to it from Samespace.
 
@@ -34,7 +36,7 @@ Contact Center leadership can now use live monitoring and coaching to identify w
 
 ### Impact
 
-** An already high QA rate jumps **
+**An already high QA rate jumps**
 
 The metrics headliner of the deployment is the QA rate--the percentage of calls deemed high quality. It was 90.8% - already high - but after the Samespace deployment it’s jumped to an impressive 94%. That’s a clear indication that MediLink’s customers and partners are getting even better phone support. And that MediLink agents are performing better than ever.
 

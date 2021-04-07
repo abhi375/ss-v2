@@ -5,11 +5,13 @@ industry: "Consumer service"
 useCase: "Customer Service"
 isAnonymous: false
 weight: 1
+id: 3
 coverImage: "/customer-stories/urban-cover.jpg"
 customerLogo: "/logos/urban.svg"
 authorAvatar: "/people/mukhtadir.jpeg"
 authorName: "CV Sai"
 authorDesignation: "AVP, Urban Company"
+date: 2021-04-05
 ---
 
 Urban Company, an international home service company with over 5 million customers across 4 countries, needed a cloud contact center solution which can support a distributed international process. They found that in Samespace, and were very impressed with the results.

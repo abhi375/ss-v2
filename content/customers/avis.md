@@ -5,40 +5,40 @@ industry: "Car Rental and Leasing"
 useCase: "Customer Support & Sales with Native CTI"
 isAnonymous: false
 weight: 2
+id: 1
 coverImage: "/customer-stories/avis-cover.jpg"
 customerLogo: "/logos/avis.svg"
 authorAvatar: "/people/mukhtadir.jpeg"
 authorName: "Uruj"
 authorDesignation: "IT Head, Avis"
+date: 2021-04-07
 ---
 
-Endurance International Group (EIG) is a family of global brands that provide industry-leading digital tools to help small businesses grow. From Domain.com to Constant Contact to bluehost, EIG makes it easier to build a Web presence, optimize for searchability, and connect with customers through social, email, and other channels.
-
-EIG decided to roll out Salesforce as its new CRM platform, which prompted a critical question: Which telephony solution would best complement that substantial investment? The challenge was finding contact center software that would:
-
-- Integrate tightly with Salesforce
-- Allow Endurance International Group to self-configure and measure success without an expensive third party
-- Deploy with minimal disruption.
+Avis India, the leading car rental and leasing company in India with a nationwide network of 49 offices in 19 cities, was not happy with their combination CRM/CTI solution and wanted out. They needed a solution that would integrate seamlessly with any CRM, as well as provide much better support than their current software, and that’s exactly what they found in Samespace.
 
 ### Solution
 
-** Drag & drop IVR, with native Salesforce CTI **
+Avis India decided to go with Instaview360 as their CRM and had no trouble integrating Samespace into the new system.
 
-EIG chose Samespace due to powerful native Salesforce CTI, easy configurability, and enhanced analytics.
+“All of the contact center related data points are pushed to the CRM automatically. **The way Samespace marries to CRMs is beautiful.**”
 
-Starting with 50 users across account management, billing, technical support, and new business, EIG has since expanded to 200 users. Agents handle inbound customer support calls from within Salesforce, with Samespace passing essential data seamlessly into the CRM for central reporting.
+They found Samespace to be a powerful tool for both their Sales and Support Teams, using it for both inbound and outbound calls.
 
-Setup was easy, with drag & drop IVR flow creation. Samespace Studio makes creating or changing flows as simple as arranging an intuitively visual flow.
+Most notably, they benefited from Samespace’s ability to gather multiple data points and systems into one place.
+
+"The best part of Samespace is that everything resides within the browser, both the softphone and management interface. There is no need to install software on each computer, which means it is OS independent and there is **virtually no maintenance required.**”
+
+### Studio
+
+Avis India’s teams found Samespace’s Drag and Drop IVR like **“a breeze.”**
+Creating IVR is fun and simple with easy to use drag and drop features, and it hardly takes a couple of minutes to create and make an IVR go live.
 
 ### Impact
 
-** A higher-performing support team **
+Avis India saw their productivity to “certainly” improve with Samespace. And even better, getting the new CTI up and running was quick and easy.
 
-Nimish Prabhu, Senior Manager of Technical Operations at EIG, explains that he’s seen two types of benefits.
+“Onboarding was seamless. Even Integration was hassle free. Every milestone was completed on or before time.”
 
-First, the operations team appreciates the easy configurability, IVR setup & tweaking, and visibility into agent performance. It takes less time to set up and change IVR flows, which means more time spent on the thinking behind the changes.
+And what about the improved support they were seeking?
 
-Second, support agents on the front lines value having a single telephony tool within Salesforce that provides a real-time view into their call stats. The metrics tell a story of more efficient call handling and less frustration for customers after the switch to Samespace:
-
-- ** 35% ** lower abandoned calls (ACR)
-- ** 65% ** faster average speed of answer (ASA)
+“Turn around time is quick. We always get prompt responses to all of the issues or queries we raise. **We are really happy with the way Samespace has been supporting us.**”

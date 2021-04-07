@@ -1,3 +1,5 @@
+import Banner from "@/components/Banner";
+import LogoWall from "@/components/LogoWall";
 import { getAllPosts } from "@/lib/api";
 import Image from "next/image";
 import Link from "next/link";
@@ -47,13 +49,15 @@ export default function CustomersPage({ stories }) {
             })}
         </div>
       </section>
+      <LogoWall />
+      <Banner />
     </>
   );
 }
 
 export async function getStaticProps() {
   const stories = getAllPosts(
-    ["title", "coverImage", "slug"],
+    ["title", "coverImage", "slug", "id"],
     "content/customers"
   );
 

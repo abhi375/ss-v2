@@ -17,6 +17,16 @@ module.exports = {
       base: ["16px", "24px"],
     },
     extend: {
+      typography: {
+        DEFAULT: {
+          css: {
+            color: "#000",
+            p: {
+              color: "#1d1d1f",
+            },
+          },
+        },
+      },
       colors: {
         accent: "#4f50ff",
         gray: colors.trueGray,
@@ -30,5 +40,5 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };
