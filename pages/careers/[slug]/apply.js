@@ -137,8 +137,6 @@ export default function JobApplicationPage() {
   return (
     <>
       <section className="px-12 py-16 bg-white">
-        {console.log(router)}
-
         {!isSuccessful && (
           <div className="max-w-[560px] mx-auto">
             <Link href="/careers">

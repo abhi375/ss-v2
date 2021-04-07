@@ -42,7 +42,7 @@ export default function CareersPage({ jobs }) {
               ahead of the curve on the latest advances and trends in
               technology. Join us to stay ten steps ahead of the competition.
             </p>
-            {console.log("jobs ", jobs)}
+
             <div className="grid grid-cols-1 gap-6">
               {jobs
                 .filter((job) => job.draft === "no")
