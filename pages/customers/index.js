@@ -14,7 +14,6 @@ export default function CustomersPage({ stories }) {
           </p>
         </div>
       </section>
-      {console.log("stories", stories)}
       <section className="px-12 py-16">
         <div className="max-w-screen-lg mx-auto grid grid-cols-2 gap-12">
           {stories &&
