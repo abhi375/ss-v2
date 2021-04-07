@@ -30,7 +30,9 @@ export default function JobDetailPage({ post }) {
                 query: { jobPost: post.title },
               }}
             >
-              <a>Apply for this job</a>
+              <a className="text-lg px-9 py-3 bg-accent text-white rounded-full">
+                Apply for this job
+              </a>
             </Link>
           </div>
         </div>

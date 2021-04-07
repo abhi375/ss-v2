@@ -4,13 +4,13 @@ location: "Mumbai"
 draft: "no"
 ---
 
-##### Summary
+### Summary
 
 We’re dreamers. Inventors. Pioneers. Constantly challenging the status quo, always on the lookout for the next breakthrough. We’re building technological marvels and creating experiences that humanize technology. From real time communication to AI, speech technologies to data science, we’re reinventing how businesses and customers communicate. Proudly cash-flow positive, we are funded by our customers, not VCs.
 
 Samespace product engineering team is looking to hire an innovative and highly motivated individual with strong interest in creating scalable, efficient and cutting edge software. You will work with our product team to bring new ideas to life and help deliver industry leading experience. You will develop highly efficient and sleek applications that will exceed user expectations. You can expect to participate in all aspects of the product life-cycle accelerating learning and personal growth.
 
-##### You Will
+### You Will
 
 - Build large scale, distributed and highly and efficient software applications.
 - Work independently as well as in small teams.
@@ -18,7 +18,7 @@ Samespace product engineering team is looking to hire an innovative and highly m
 - Work with QAs to identify and fix issues.
 - Discover new tools and frameworks for an early adoption.
 
-##### Essentials
+### Essentials
 
 - 2-4 years of experience in building, maintaining and enhancing RESTful APIs in Node.js.
 - Proven skills in designing scalable, highly available distributed systems which can handle high data volumes.
@@ -27,17 +27,17 @@ Samespace product engineering team is looking to hire an innovative and highly m
 - Hands-on experience with NoSql databases like MongoDB.
 - Excellent written and oral communication skills.
 
-##### Nice to have
+### Nice to have
 
 - Experience in writing Golang and Python code.
 - Exposure to AI & Machine learning.
 - Experience in GraphQL.
 - Experience with cloud computing platforms like AWS or GCP as well as using Docker and Kubernetes.
 
-##### Education
+### Education
 
 Degrees don’t matter here, but it’s cool if you have one.
 
-##### Location
+### Location
 
 Mumbai
