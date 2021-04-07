@@ -60,7 +60,7 @@ export default function Footer() {
               <Link href="/customers">
                 <a className="mt-2">Customers</a>
               </Link>
-              <Link href="/blog">
+              <Link href="/blogs">
                 <a className="mt-2">Blog</a>
               </Link>
               <Link href="/careers">

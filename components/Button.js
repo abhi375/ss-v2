@@ -3,6 +3,9 @@ export default function Button({
   size,
   backgroundClass,
   foregroundClass,
+  onClick,
+  disabled,
+  fullWidth,
 }) {
   return (
     <button
@@ -10,7 +13,10 @@ export default function Button({
       ${size === "large" && "text-lg px-9 py-3"}
       ${backgroundClass ? backgroundClass : "bg-accent"}
       ${foregroundClass ? foregroundClass : "text-white"}
+      ${fullWidth && "w-full"}
     `}
+      onClick={onClick && onClick}
+      disabled={disabled && disabled}
     >
       {title}
     </button>

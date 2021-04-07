@@ -30,6 +30,8 @@ module.exports = {
       colors: {
         accent: "#4f50ff",
         gray: colors.trueGray,
+        amber: colors.amber,
+        rose: colors.rose,
       },
       boxShadow: {
         subtle:

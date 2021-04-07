@@ -1,43 +1,38 @@
+import Button from "@/components/Button";
 import { getAllPosts, getPostBySlug } from "@/lib/api";
 import markdownToHtml from "@/lib/markdownToHtml";
-import Image from "next/image";
 import Link from "next/link";
 import ReactMarkdown from "react-markdown/with-html";
+import { useRouter } from "next/router";
 
-export default function CustomerStory({ post }) {
+export default function JobDetailPage({ post }) {
+  const router = useRouter();
+
   return (
     <>
       <section className="px-12 py-20">
         <div className="max-w-screen-lg mx-auto">
           <div className="max-w-[640px] mx-auto">
-            <Link href="/blogs">
+            <Link href="/careers">
               <a className="text-accent text-lg">Back</a>
             </Link>
-            <h1 className="text-3xl font-bold my-4">{post.title}</h1>
-            {post.authorAvatar && (
-              <div className=" flex items-center mb-8">
-                <Image
-                  src={post.authorAvatar}
-                  width="40px"
-                  height="40px"
-                  className="rounded-full"
-                />
-                <p className="ml-2 text-lg">{post.author}</p>
-              </div>
-            )}
-            <Image
-              src={post.cover}
-              width="640px"
-              height="320px"
-              priority
-              className="border border-solid border-black border-opacity-10 rounded-md overflow-hidden"
-            />
+            <h1 className="text-4xl font-extrabold mt-4">{post.title}</h1>
           </div>
           <ReactMarkdown
-            className="prose max-w-[640px] prose-lg my-8 mx-auto"
+            className="prose max-w-[640px] prose-lg mt-12 mb-8 mx-auto"
             escapeHtml={false}
             source={post.content}
           />
+          <div className="prose max-w-[640px] mx-auto text-center pt-8 border-t border-solid border-black border-opacity-10">
+            <Link
+              href={{
+                pathname: `${router.asPath}/apply`,
+                query: { jobPost: post.title },
+              }}
+            >
+              <a>Apply for this job</a>
+            </Link>
+          </div>
         </div>
       </section>
     </>
@@ -47,8 +42,8 @@ export default function CustomerStory({ post }) {
 export async function getStaticProps({ params }) {
   const post = getPostBySlug(
     params.slug,
-    ["title", "slug", "content", "cover", "authorAvatar", "author"],
-    "content/blogs"
+    ["title", "location", "content"],
+    "content/careers"
   );
   const content = await markdownToHtml(post.content || "");
 
@@ -63,7 +58,7 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-  const posts = getAllPosts(["slug"], "content/blogs");
+  const posts = getAllPosts(["slug"], "content/careers");
 
   return {
     paths: posts.map((post) => {
