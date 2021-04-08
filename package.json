@@ -33,6 +33,7 @@
     "remark": "^13.0.0",
     "remark-html": "^13.0.1",
     "tailwindcss": "^2.1.1",
+    "universal-cookie": "^4.0.4",
     "yup": "^0.32.9"
   }
 }

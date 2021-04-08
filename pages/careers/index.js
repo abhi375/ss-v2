@@ -6,13 +6,13 @@ import Link from "next/link";
 export default function CareersPage({ jobs }) {
   return (
     <>
-      <section className="px-12 py-20">
+      <section className="px-6 lg:px-12 py-20">
         <div className="max-w-screen-xl mx-auto">
-          <div className="w-4/6 mx-auto text-center">
-            <h1 className="text-5xl font-extrabold mb-6">
+          <div className="w-full md:w-4/6 mx-auto text-center">
+            <h1 className="text-3xl lg:text-5xl font-extrabold mb-6">
               We’re from Everywhere
             </h1>
-            <p className="text-2xl leading-normal mb-8">
+            <p className="text-xl md:text-2xl leading-normal mb-8">
               We searched the entire world - literally - to assemble our team.
               With global headquarters and a global workforce, we’re positioned
               perfectly to adapt to the constantly shifting state of things in
@@ -31,11 +31,13 @@ export default function CareersPage({ jobs }) {
         </div>
       </section>
 
-      <section className="px-12 py-20 bg-gray-50">
+      <section className="px-6 lg:px-12 py-20 bg-gray-50">
         <div className="max-w-screen-xl mx-auto">
-          <div className="w-4/6 mx-auto text-center">
-            <h1 className="text-5xl font-extrabold mb-6">Innovate, Always</h1>
-            <p className="text-2xl leading-normal mb-8">
+          <div className="w-full md:w-4/6 mx-auto text-center">
+            <h1 className="text-3xl lg:text-5xl font-extrabold mb-6">
+              Innovate, Always
+            </h1>
+            <p className="text-xl md:text-2xl leading-normal mb-8">
               To get ahead in the world as it is, you have to be up to date on
               the latest developments at all times. Samespace’s relentless
               passion for innovation means that everyone working here is way
@@ -52,12 +54,16 @@ export default function CareersPage({ jobs }) {
                       <a>
                         <div className="flex items-center justify-between text-left p-6 bg-white shadow-subtle rounded-lg">
                           <div>
-                            <p className="text-xl text-accent">{job.title}</p>
+                            <p className="text-lg md:text-xl text-accent">
+                              {job.title}
+                            </p>
                             <p className="text-lg opacity-60 mt-2">
                               {job.location}
                             </p>
                           </div>
-                          <ChevronRightIcon />
+                          <div className="hidden md:block">
+                            <ChevronRightIcon />
+                          </div>
                         </div>
                       </a>
                     </Link>

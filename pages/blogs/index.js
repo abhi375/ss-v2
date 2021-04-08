@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function BlogListing({ blogs }) {
   return (
     <>
-      <section className="px-12 py-20 bg-gray-50">
+      <section className="px-6 lg:px-12 py-20 bg-gray-50">
         <div className="max-w-[960px] mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {blogs &&

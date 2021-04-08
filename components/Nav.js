@@ -1,13 +1,21 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { LogoIcon } from "@/components/Icons";
 import Button from "@/components/Button";
 import SolutionsMegaMenu from "@/components/SolutionsMegaMenu";
 import { AnimatePresence, motion } from "framer-motion";
 import FeaturesMegaMenu from "./FeaturesMegaMenu";
+import { selectSpaceId } from "@/lib/session";
 
 export default function Nav({ toggleDemoForm }) {
   const [activeMegaMenu, setActiveMegaMenu] = useState("");
+  const [accounts, setAccounts] = useState([]);
+
+  useEffect(() => {
+    let cookies = getCookies();
+    var spaceIds = fetchSpaceIds(cookies, "account_");
+    setAccounts(spaceIds);
+  }, []);
 
   const handleActiveMegaMenu = (selectedItem) => {
     if (activeMegaMenu === selectedItem) {
@@ -15,6 +23,27 @@ export default function Nav({ toggleDemoForm }) {
     } else {
       setActiveMegaMenu(selectedItem);
     }
+  };
+
+  const getCookies = () => {
+    var pairs = document.cookie.split(";");
+    var cookies = {};
+    if (document.cookie.length > 0)
+      for (var i = 0; i < pairs.length; i++) {
+        var pair = pairs[i].split("=");
+        cookies[(pair[0] + "").trim()] = unescape(pair.slice(1).join("="));
+      }
+    return cookies;
+  };
+
+  const fetchSpaceIds = (obj, str) => {
+    var key,
+      results = [];
+    for (key in obj)
+      obj.hasOwnProperty(key) &&
+        key.indexOf(str) === 0 &&
+        results.push([key, JSON.parse(obj[key])]);
+    return results;
   };
 
   return (
@@ -30,7 +59,7 @@ export default function Nav({ toggleDemoForm }) {
           ></motion.div>
         </AnimatePresence>
       )}
-      <nav className="px-12 fixed inset-x-0 top-0 z-40 bg-white h-16 shadow-sm">
+      <nav className="px-6 lg:px-12 fixed inset-x-0 top-0 z-40 bg-white h-16 shadow-sm">
         <div className="max-w-screen-xl mx-auto w-full h-full flex items-center justify-between">
           <Link href="/">
             <a>
@@ -38,7 +67,7 @@ export default function Nav({ toggleDemoForm }) {
             </a>
           </Link>
 
-          <div className="flex flex-1 h-full">
+          <div className="hidden lg:flex flex-1 h-full ">
             <div className="grid grid-flow-col auto-cols-auto gap-0 items-center ml-8">
               <div
                 className="text-black place-items-center group cursor-pointer relative h-full grid px-4"
@@ -71,9 +100,36 @@ export default function Nav({ toggleDemoForm }) {
             </div>
 
             <div className="grid grid-flow-col auto-cols-auto gap-8 items-center ml-auto">
-              <Link href="/signin">
-                <a>Sign In</a>
-              </Link>
+              <>
+                {accounts && accounts.length > 1 ? (
+                  <div
+                    className="flex items-center cursor-pointer relative ml-auto"
+                    onClick={() => handleActiveMegaMenu("dashboard")}
+                  >
+                    <div className="text-black place-items-center hover:text-accent cursor-pointer px-4">
+                      Dashboard
+                    </div>
+
+                    {activeMegaMenu === "dashboard" && <div>Spaces</div>}
+                  </div>
+                ) : accounts && accounts.length === 1 ? (
+                  <div
+                    className="text-black place-items-center hover:text-accent cursor-pointer px-4"
+                    onClick={() => selectSpaceId(accounts[0])}
+                  >
+                    Dashboard
+                  </div>
+                ) : (
+                  <>
+                    <Link href="/signin">
+                      <a className="text-black place-items-center hover:text-accent cursor-pointer px-4">
+                        Sign In
+                      </a>
+                    </Link>
+                  </>
+                )}
+              </>
+
               <Button title="Get a demo" onClick={toggleDemoForm} />
             </div>
           </div>

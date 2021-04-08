@@ -15,7 +15,7 @@ export default function Section({
   const OneColumnLayout = () => {
     return (
       <div>
-        <h1 className="text-6xl font-extrabold w-4/6 mx-auto">
+        <h1 className="text-3xl md:text-4xl lg:text-6xl font-extrabold w-full md:w-4/6 mx-auto">
           {headline.map((heading, index) => {
             return <span key={index}>{heading}</span>;
           })}
@@ -24,7 +24,7 @@ export default function Section({
         {copy.map((para, index) => {
           return (
             <p
-              className={`text-2xl w-3/5 mx-auto mt-6 ${
+              className={`text-2xl w-full md:w-3/5 mx-auto mt-6 ${
                 callToActions ? "mb-6" : ""
               }`}
               key={index}
@@ -41,10 +41,10 @@ export default function Section({
 
   const TwoColumnLayout = () => {
     return (
-      <div className="w-full grid grid-cols-2 gap-20 items-center">
-        <div className={`${showMediaFirst ? "order-2" : "order-1"}`}>
+      <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
+        <div className={`${showMediaFirst ? "lg:order-2" : "order-1"}`}>
           {hero ? (
-            <h1 className="text-4xl mb-6 font-extrabold">
+            <h1 className="text-3xl lg:text-4xl mb-6 font-extrabold">
               {headline.map((heading, index) => {
                 return (
                   <span className="block" key={index}>
@@ -54,7 +54,7 @@ export default function Section({
               })}
             </h1>
           ) : (
-            <h3 className="text-4xl mb-6 font-extrabold">
+            <h3 className="text-3xl lg:text-4xl mb-6 font-extrabold">
               {headline.map((heading, index) => {
                 return (
                   <span className="block" key={index}>
@@ -68,7 +68,7 @@ export default function Section({
           {copy.map((para, index) => {
             return (
               <p
-                className={`text-2xl leading-normal ${
+                className={`text-xl md:text-2xl leading-normal ${
                   callToActions ? "mb-8" : ""
                 }`}
                 key={index}
@@ -81,7 +81,7 @@ export default function Section({
         </div>
         <div
           className={`w-full relative pt-[100%] ${
-            showMediaFirst ? "order-1" : "order-2"
+            showMediaFirst ? "lg:order-1" : "order-2"
           }`}
         >
           <div className="absolute inset-0 bg-black bg-opacity-5"></div>
@@ -92,7 +92,7 @@ export default function Section({
 
   return (
     <section
-      className={`${horizontalPadding ? horizontalPadding : "px-12"} ${
+      className={`${horizontalPadding ? horizontalPadding : "px-6 lg:px-12"} ${
         verticalPadding ? verticalPadding : "py-16"
       } ${backgroundClass ? backgroundClass : "bg-white"} ${
         foregroundClass ? foregroundClass : "text-black"

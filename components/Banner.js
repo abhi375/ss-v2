@@ -8,12 +8,12 @@ export default function Banner({
 }) {
   return (
     <section
-      className={`px-12 py-12 ${
+      className={`px-6 lg:px-12 py-12 ${
         backgroundClass ? backgroundClass : "bg-accent"
       } ${foregroundClass ? foregroundClass : "text-white"}`}
     >
       <div className="max-w-screen-xl mx-auto grid place-items-center">
-        <h4 className="text-3xl mb-6">
+        <h4 className="text-2xl md:text-3xl mb-6 text-center">
           {title ? title : "Would you like to see samespace in action?"}
         </h4>
         <Button

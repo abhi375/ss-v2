@@ -7,23 +7,23 @@ import Link from "next/link";
 export default function CustomersPage({ stories, toggleDemoForm }) {
   return (
     <>
-      <section className="px-12 pt-20">
+      <section className="px-6 lg:px-12 pt-20">
         <div className="max-w-screen-lg mx-auto ">
-          <h1 className="text-5xl font-extrabold">Our Customers</h1>
+          <h1 className="text-3xl md:text-5xl font-extrabold">Our Customers</h1>
           <p className="text-xl mt-4">
             Meet the companies that chose Samespace. They’re growing every day,
             and we love that.
           </p>
         </div>
       </section>
-      <section className="px-12 py-16">
-        <div className="max-w-screen-lg mx-auto grid grid-cols-2 gap-12">
+      <section className="px-6 lg:px-12 py-16">
+        <div className="max-w-screen-lg mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
           {stories &&
             stories.map((story) => {
               return (
                 <Link key={story.slug} href={`/customers/${story.slug}`}>
                   <a>
-                    <article className="bg-white p-4 -m-4 hover:shadow-subtle rounded-md">
+                    <article className="bg-white md:p-4 md:-m-4 hover:shadow-subtle rounded-md">
                       <div>
                         <Image
                           alt={story.title}
@@ -35,7 +35,7 @@ export default function CustomersPage({ stories, toggleDemoForm }) {
                         />
                       </div>
                       <div>
-                        <h3 className="text-xl font-semibold mt-4 mb-2">
+                        <h3 className="text-lg md:text-xl font-semibold mt-4 mb-2">
                           {story.title}
                         </h3>
 

@@ -12,7 +12,7 @@ import Link from "next/link";
 export default function About({ leaders }) {
   return (
     <>
-      <section className="px-12 py-20">
+      <section className="px-6 lg:px-12 py-20">
         <div className="max-w-[800px] mx-auto">
           <Image
             src="/company/fun.jpg"
@@ -21,7 +21,7 @@ export default function About({ leaders }) {
             height="400px"
             alt="Samespace"
           />
-          <h1 className="text-4xl font-extrabold my-8">
+          <h1 className="text-3xl md:text-4xl font-extrabold my-8">
             We Started in a Garage Too
           </h1>
           <p className="text-xl mb-8 leading-normal">
@@ -48,10 +48,10 @@ export default function About({ leaders }) {
           </p>
         </div>
       </section>
-      <section className="px-12 py-20 bg-gray-50">
+      <section className="px-6 lg:px-12 py-20 bg-gray-50">
         <div className="max-w-[800px] mx-auto">
-          <h3 className="text-4xl font-extrabold my-8">Beliefs</h3>
-          <div className="grid grid-cols-2 gap-8">
+          <h3 className="text-3xl md:text-4xl font-extrabold my-8">Beliefs</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="px-8 py-8 bg-white shadow-subtle rounded-lg">
               <div className="text-amber-600">
                 <BoltIcon />
@@ -91,10 +91,12 @@ export default function About({ leaders }) {
         </div>
       </section>
 
-      <section className="px-12 py-20">
+      <section className="px-8 lg:px-12 py-20">
         <div className="max-w-[800px] mx-auto">
-          <h3 className="text-4xl font-extrabold my-8">Leadership</h3>
-          <div className="grid grid-cols-2 gap-8">
+          <h3 className="text-3xl md:text-4xl font-extrabold my-8">
+            Leadership
+          </h3>
+          <div className="grid grid-cols-1  md:grid-cols-2 gap-8">
             {leaders.map((leader) => {
               return (
                 <div
@@ -152,10 +154,10 @@ export default function About({ leaders }) {
         </div>
       </section>
 
-      <section className="px-12 py-20 bg-gray-50">
+      <section className="px-6 lg:px-12 py-20 bg-gray-50">
         <div className="max-w-[800px] mx-auto">
-          <h3 className="text-4xl font-extrabold my-8">Offices</h3>
-          <div className="grid grid-cols-3 gap-8">
+          <h3 className="text-3xl md:text-4xl font-extrabold my-8">Offices</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="">
               <div className="relative ">
                 <Image

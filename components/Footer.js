@@ -3,9 +3,9 @@ import { LinkedInIcon, LogoIcon, TwitterIcon, YouTubeIcon } from "./Icons";
 
 export default function Footer() {
   return (
-    <footer className="px-12 pt-12 bg-gray-50">
+    <footer className="px-6 lg:px-12 pt-12 bg-gray-50">
       <div className="max-w-screen-xl mx-auto">
-        <div className="w-full grid grid-cols-4 gap-12">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div>
             <p className="font-bold">Solutions</p>
             <div className="inline-flex flex-col">
@@ -109,18 +109,16 @@ export default function Footer() {
           </div>
         </div>
         <div className="border-t border-solid border-black border-opacity-10 mt-8 py-6">
-          <div className="flex items-center justify-between">
+          <div className="flex flex-col md:flex-row md:items-center justify-between">
             <LogoIcon />
-            <div className="grid grid-flow-col auto-cols-auto gap-8 items-center">
+            <div className="grid mt-4 md:mt-0 md:grid-flow-col auto-cols-auto gap-2 md:gap-8 items-center">
               <Link href="/legal/privacy">
                 <a>Privacy</a>
               </Link>
               <Link href="/legal/terms">
                 <a>Terms</a>
               </Link>
-              <p className="opacity-50">
-                Copyright © 2021 Samespace Inc. All rights reserved.
-              </p>
+              <p className="opacity-50">Copyright © 2021 Samespace Inc.</p>
             </div>
           </div>
         </div>

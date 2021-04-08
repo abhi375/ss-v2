@@ -128,7 +128,7 @@ export default function DemoForm({ toggleDemoForm }) {
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         onClick={toggleDemoForm}
-        className="fixed inset-0 bg-white bg-opacity-90 z-50 shadow-lg"
+        className="fixed inset-0 bg-black bg-opacity-40 z-50 shadow-lg"
       ></motion.div>
       <motion.aside
         initial={{ x: "100%" }}
