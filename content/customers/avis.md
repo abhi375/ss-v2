@@ -2,7 +2,7 @@
 name: "Avis"
 title: "Avis India increased their productivity by integrating their Instaview360 CRM with Samespace’s Drag and Drop IVR. "
 industry: "Car Rental and Leasing"
-useCase: "Customer Support & Sales with Native CTI"
+useCase: "Customer Support with native CTI"
 isAnonymous: false
 weight: 2
 id: 1

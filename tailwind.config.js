@@ -35,6 +35,7 @@ module.exports = {
       },
       boxShadow: {
         inset: "inset 0px 0px 100px rgba(0, 0, 0, 0.2)",
+        consentbanner: "0 -8px 16px rgba(0,0,0,0.1)",
         subtle:
           "0 4px 8px 0 rgb(0 0 0 / 4%), 0 8px 16px 0 rgb(0 0 0 / 2%), 0 0 0 1px rgb(0 0 0 / 4%)",
         popover:

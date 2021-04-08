@@ -20,7 +20,7 @@ Here’s a breakdown of some of the biggest upgrades to our online presence and 
 
 ## The Logo
 
-![Say Hello to New Together](./logo-grid.png)
+![Say Hello to New Together](/blogs/logo-grid.png)
 
 In three words: Energy, Symmetry, Balance.
 

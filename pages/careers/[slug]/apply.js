@@ -7,7 +7,7 @@ import axios from "axios";
 import { AnimatePresence, motion } from "framer-motion";
 import Button from "@/components/Button";
 import Dropzone from "react-dropzone";
-import { AttachmentIcon, VisibilityIcon } from "@/components/Icons";
+import { AttachmentIcon, BackIcon, VisibilityIcon } from "@/components/Icons";
 import Link from "next/link";
 
 const phoneRegExp = /^(\+?\d{0,4})?\s?-?\s?(\(?\d{3}\)?)\s?-?\s?(\(?\d{3}\)?)\s?-?\s?(\(?\d{4}\)?)?$/;
@@ -140,7 +140,10 @@ export default function JobApplicationPage() {
         {!isSuccessful && (
           <div className="max-w-[560px] mx-auto">
             <Link href="/careers">
-              <a className="text-accent text-lg">Back</a>
+              <a className="text-accent inline-flex items-center text-lg">
+                <BackIcon />
+                <div className="ml-2">Back</div>
+              </a>
             </Link>
             <h1 className="text-4xl font-extrabold mt-4">
               {router.query.jobPost}

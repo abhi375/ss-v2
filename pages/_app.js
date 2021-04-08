@@ -6,6 +6,7 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import { AnimatePresence } from "framer-motion";
 import DemoForm from "@/components/DemoForm";
+import ConsentBanner from "@/components/ConsentBanner";
 
 function MyApp({ Component, pageProps }) {
   const [showDemoForm, setShowDemoForm] = useState(false);
@@ -19,6 +20,9 @@ function MyApp({ Component, pageProps }) {
       <AnimatePresence>
         {showDemoForm && <DemoForm toggleDemoForm={toggleDemoForm} />}
       </AnimatePresence>
+
+      <ConsentBanner />
+
       <Nav toggleDemoForm={toggleDemoForm} />
       <section className="mt-16">
         <Component {...pageProps} toggleDemoForm={toggleDemoForm} />

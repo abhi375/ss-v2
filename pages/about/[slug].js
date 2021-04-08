@@ -1,3 +1,4 @@
+import { BackIcon } from "@/components/Icons";
 import { getAllPosts, getPostBySlug } from "@/lib/api";
 import markdownToHtml from "@/lib/markdownToHtml";
 import Image from "next/image";
@@ -11,7 +12,10 @@ export default function LeaderPage({ post }) {
         <div className="max-w-screen-lg mx-auto">
           <div className="max-w-[640px] mx-auto">
             <Link href="/about">
-              <a className="text-accent text-lg">Back</a>
+              <a className="text-accent inline-flex items-center text-lg">
+                <BackIcon />
+                <div className="ml-2">Back</div>
+              </a>
             </Link>
 
             <div className="flex items-center  mt-8">

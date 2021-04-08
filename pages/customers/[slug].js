@@ -1,3 +1,4 @@
+import { BackIcon } from "@/components/Icons";
 import { getAllPosts, getPostBySlug } from "@/lib/api";
 import markdownToHtml from "@/lib/markdownToHtml";
 import Image from "next/image";
@@ -11,7 +12,10 @@ export default function CustomerStory({ post }) {
         <div className="max-w-screen-lg mx-auto">
           <div className="max-w-[640px] mx-auto">
             <Link href="/customers">
-              <a className="text-accent text-lg">Back</a>
+              <a className="text-accent inline-flex items-center text-lg">
+                <BackIcon />
+                <div className="ml-2">Back</div>
+              </a>
             </Link>
             <h1 className="text-3xl font-bold mb-8 mt-4">{post.title}</h1>
             <Image

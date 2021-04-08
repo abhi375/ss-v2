@@ -22,7 +22,7 @@ Standard phone calls work on narrowband frequencies which limit the quality of s
 
 ## Built-in authentication
 
-![Lead Popup in Salesforce with Samespace](./assets/lead-pop.png)
+![Lead Popup in Salesforce with Samespace](/blogs/lead-pop.png)
 
 Asking your customers their date of birth and social security number is not only frustrating but at times embarrassing. Your customers expect you to be smart and not repeat the same questions every time they need help. But Phone numbers can be spoofed easily and Caller IDs can not be trusted hence security questions are essential to identify callers. Now Imagine a call has the same authentication and security that we use for the web. Web HiFi is built on the same infrastructure. Every Web HiFi call will carry caller information even before your agent answers the call. No more date of birth questions, only birthday wishes. Pretty cool, isn't it?
 

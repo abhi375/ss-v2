@@ -4,6 +4,7 @@ import markdownToHtml from "@/lib/markdownToHtml";
 import Link from "next/link";
 import ReactMarkdown from "react-markdown/with-html";
 import { useRouter } from "next/router";
+import { BackIcon } from "@/components/Icons";
 
 export default function JobDetailPage({ post }) {
   const router = useRouter();
@@ -14,7 +15,10 @@ export default function JobDetailPage({ post }) {
         <div className="max-w-screen-lg mx-auto">
           <div className="max-w-[640px] mx-auto">
             <Link href="/careers">
-              <a className="text-accent text-lg">Back</a>
+              <a className="text-accent inline-flex items-center text-lg">
+                <BackIcon />
+                <div className="ml-2">Back</div>
+              </a>
             </Link>
             <h1 className="text-4xl font-extrabold mt-4">{post.title}</h1>
           </div>
