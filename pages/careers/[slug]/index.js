@@ -23,7 +23,7 @@ export default function JobDetailPage({ post }) {
             escapeHtml={false}
             source={post.content}
           />
-          <div className="prose max-w-[640px] mx-auto text-center pt-8 border-t border-solid border-black border-opacity-10">
+          <div className="max-w-[640px] mx-auto text-center pt-8 border-t border-solid border-black border-opacity-10">
             <Link
               href={{
                 pathname: `${router.asPath}/apply`,

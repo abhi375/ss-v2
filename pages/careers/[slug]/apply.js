@@ -276,6 +276,7 @@ export default function JobApplicationPage() {
                   resize="none"
                   name="additionalInformation"
                   className="w-full p-2 border border-solid border-black border-opacity-10"
+                  style={{ resize: "none" }}
                   onChange={handleChange}
                   onBlur={handleBlur}
                   value={values.additionalInformation}

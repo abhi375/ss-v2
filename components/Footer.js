@@ -10,19 +10,21 @@ export default function Footer() {
             <p className="font-bold">Solutions</p>
             <div className="inline-flex flex-col">
               <Link href="/solutions/salesforce">
-                <a className="mt-2">Salesforce</a>
+                <a className="mt-2 hover:text-accent">Salesforce</a>
               </Link>
               <Link href="/solutions/hubspot">
-                <a className="mt-2">Hubspot</a>
+                <a className="mt-2 hover:text-accent">Hubspot</a>
               </Link>
               <Link href="/solutions/crm-integrations">
-                <a className="mt-2">All other CRMs</a>
+                <a className="mt-2 hover:text-accent">All other CRMs</a>
               </Link>
               <Link href="/solutions/smb">
-                <a className="mt-2">Small & Midsize Business</a>
+                <a className="mt-2 hover:text-accent">
+                  Small & Midsize Business
+                </a>
               </Link>
               <Link href="/solutions/enterprise">
-                <a className="mt-2">Enterprise</a>
+                <a className="mt-2 hover:text-accent">Enterprise</a>
               </Link>
             </div>
           </div>
@@ -31,22 +33,22 @@ export default function Footer() {
             <p className=" font-bold">Features</p>
             <div className="inline-flex flex-col">
               <Link href="/features/contact-center">
-                <a className="mt-2">Contact Center</a>
+                <a className="mt-2 hover:text-accent">Contact Center</a>
               </Link>
               <Link href="/features/studio">
-                <a className="mt-2">Conversational Studio</a>
+                <a className="mt-2 hover:text-accent">Conversational Studio</a>
               </Link>
               <Link href="/features/analytics">
-                <a className="mt-2">Analytics</a>
+                <a className="mt-2 hover:text-accent">Analytics</a>
               </Link>
               <Link href="/features/developers">
-                <a className="mt-2">Developer Tools</a>
+                <a className="mt-2 hover:text-accent">Developer Tools</a>
               </Link>
               <Link href="/features/voicecloud">
-                <a className="mt-2">Voice Cloud</a>
+                <a className="mt-2 hover:text-accent">Voice Cloud</a>
               </Link>
               <Link href="/pricing">
-                <a className="mt-2">Pricing</a>
+                <a className="mt-2 hover:text-accent">Pricing</a>
               </Link>
             </div>
           </div>
@@ -55,21 +57,21 @@ export default function Footer() {
             <p className="font-bold">Company</p>
             <div className="inline-flex flex-col">
               <Link href="/about">
-                <a className="mt-2">About</a>
+                <a className="mt-2 hover:text-accent">About</a>
               </Link>
               <Link href="/customers">
-                <a className="mt-2">Customers</a>
+                <a className="mt-2 hover:text-accent">Customers</a>
               </Link>
               <Link href="/blogs">
-                <a className="mt-2">Blog</a>
+                <a className="mt-2 hover:text-accent">Blog</a>
               </Link>
               <Link href="/careers">
-                <a className="mt-2">Careers</a>
+                <a className="mt-2 hover:text-accent">Careers</a>
               </Link>
               <a
                 href="https://www.support.samespace.com"
                 target="_blank"
-                className="mt-2"
+                className="mt-2 hover:text-accent"
                 rel="noreferer noopener"
               >
                 Support
@@ -80,7 +82,7 @@ export default function Footer() {
             <p className="mb-2 font-bold">Social</p>
             <div className="grid grid-flow-col auto-cols-min gap-4">
               <a
-                href="https://www.support.samespace.com"
+                href="https://twitter.com/samespace"
                 target="_blank"
                 rel="noreferer noopener"
                 className="grid place-items-center w-12 h-12 bg-white shadow-sm rounded-full"
@@ -88,7 +90,7 @@ export default function Footer() {
                 <TwitterIcon />
               </a>
               <a
-                href="https://www.support.samespace.com"
+                href="https://www.youtube.com/channel/UC5EcIN95BUrNIOJ5c21E3CA/featured"
                 target="_blank"
                 rel="noreferer noopener"
                 className="grid place-items-center w-12 h-12 bg-white shadow-sm rounded-full"
@@ -96,7 +98,7 @@ export default function Footer() {
                 <YouTubeIcon />
               </a>
               <a
-                href="https://www.support.samespace.com"
+                href="https://www.linkedin.com/company/samespace/"
                 target="_blank"
                 rel="noreferer noopener"
                 className="grid place-items-center w-12 h-12 bg-white shadow-sm rounded-full"
