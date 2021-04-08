@@ -5,7 +5,7 @@ import Section from "@/components/Section";
 import Testimonial from "@/components/Testimonial";
 import Image from "next/image";
 
-export default function Home() {
+export default function Home({ toggleDemoForm }) {
   return (
     <>
       <Section
@@ -18,7 +18,7 @@ export default function Home() {
         ]}
         callToActions={
           <div className="mt-8">
-            <Button size="large" title="Get a demo" />
+            <Button size="large" title="Get a demo" onClick={toggleDemoForm} />
           </div>
         }
       />
@@ -85,7 +85,7 @@ export default function Home() {
           />
         }
       />
-      <Banner />
+      <Banner bannerAction={toggleDemoForm} />
     </>
   );
 }

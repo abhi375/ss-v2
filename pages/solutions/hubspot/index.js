@@ -5,7 +5,7 @@ import Testimonial from "@/components/Testimonial";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function CRMIntegrationPage() {
+export default function CRMIntegrationPage({ toggleDemoForm }) {
   return (
     <>
       <Section
@@ -77,7 +77,10 @@ export default function CRMIntegrationPage() {
         }
       />
 
-      <Banner title="Take Hubspot to a higher level with Samespace." />
+      <Banner
+        bannerAction={toggleDemoForm}
+        title="Take Hubspot to a higher level with Samespace."
+      />
     </>
   );
 }

@@ -5,7 +5,7 @@ import Section from "@/components/Section";
 import Testimonial from "@/components/Testimonial";
 import Image from "next/image";
 
-export default function SalesCRM() {
+export default function SalesCRM({ toggleDemoForm }) {
   return (
     <>
       <Section
@@ -62,7 +62,10 @@ export default function SalesCRM() {
           />
         }
       />
-      <Banner title="Take Hubspot to a higher level with Samespace." />
+      <Banner
+        bannerAction={toggleDemoForm}
+        title="Take Hubspot to a higher level with Samespace."
+      />
     </>
   );
 }

@@ -1,8 +1,9 @@
+import { useState } from "react";
 import Link from "next/link";
 import { LogoIcon } from "@/components/Icons";
 import Button from "@/components/Button";
 
-export default function Nav() {
+export default function Nav({ toggleDemoForm }) {
   return (
     <nav className="px-12 fixed inset-x-0 top-0 z-40 bg-white h-16 shadow-sm">
       <div className="max-w-screen-xl mx-auto w-full h-full flex items-center justify-between">
@@ -36,7 +37,7 @@ export default function Nav() {
             <Link href="/signin">
               <a>Sign In</a>
             </Link>
-            <Button title="Get a demo" />
+            <Button title="Get a demo" onClick={toggleDemoForm} />
           </div>
         </div>
       </div>

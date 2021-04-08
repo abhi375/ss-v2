@@ -4,7 +4,7 @@ import Section from "@/components/Section";
 import Testimonial from "@/components/Testimonial";
 import Image from "next/image";
 
-export default function VoiceCloudPage() {
+export default function VoiceCloudPage({ toggleDemoForm }) {
   return (
     <>
       <Section
@@ -63,7 +63,7 @@ export default function VoiceCloudPage() {
           />
         }
       />
-      <Banner />
+      <Banner bannerAction={toggleDemoForm} />
     </>
   );
 }

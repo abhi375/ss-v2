@@ -5,7 +5,7 @@ import Section from "@/components/Section";
 import Testimonial from "@/components/Testimonial";
 import Image from "next/image";
 
-export default function AnalyticsPage() {
+export default function AnalyticsPage({ toggleDemoForm }) {
   return (
     <>
       <Section
@@ -58,7 +58,10 @@ export default function AnalyticsPage() {
           />
         }
       />
-      <Banner title="Turn insights into action and action into results." />
+      <Banner
+        title="Turn insights into action and action into results."
+        bannerAction={toggleDemoForm}
+      />
     </>
   );
 }

@@ -4,7 +4,7 @@ import Section from "@/components/Section";
 import Testimonial from "@/components/Testimonial";
 import Image from "next/image";
 
-export default function SMBPage() {
+export default function SMBPage({ toggleDemoForm }) {
   return (
     <>
       <Section
@@ -59,7 +59,7 @@ export default function SMBPage() {
           />
         }
       />
-      <Banner />
+      <Banner bannerAction={toggleDemoForm} />
     </>
   );
 }

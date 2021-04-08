@@ -4,7 +4,7 @@ import Section from "@/components/Section";
 import Testimonial from "@/components/Testimonial";
 import Image from "next/image";
 
-export default function EnterprisePage() {
+export default function EnterprisePage({ toggleDemoForm }) {
   return (
     <>
       <Section
@@ -56,7 +56,7 @@ export default function EnterprisePage() {
           />
         }
       />
-      <Banner />
+      <Banner bannerAction={toggleDemoForm} />
     </>
   );
 }

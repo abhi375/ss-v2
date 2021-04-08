@@ -4,7 +4,7 @@ import { getAllPosts } from "@/lib/api";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function CustomersPage({ stories }) {
+export default function CustomersPage({ stories, toggleDemoForm }) {
   return (
     <>
       <section className="px-12 pt-20">
@@ -50,7 +50,7 @@ export default function CustomersPage({ stories }) {
         </div>
       </section>
       <LogoWall />
-      <Banner />
+      <Banner bannerAction={toggleDemoForm} />
     </>
   );
 }

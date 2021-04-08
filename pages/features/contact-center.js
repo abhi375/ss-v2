@@ -5,7 +5,7 @@ import Section from "@/components/Section";
 import Testimonial from "@/components/Testimonial";
 import Image from "next/image";
 
-export default function ContactCenterPage() {
+export default function ContactCenterPage({ toggleDemoForm }) {
   return (
     <>
       <Section
@@ -78,7 +78,7 @@ export default function ContactCenterPage() {
           />
         }
       />
-      <Banner />
+      <Banner bannerAction={toggleDemoForm} />
     </>
   );
 }

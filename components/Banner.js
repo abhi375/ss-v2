@@ -1,6 +1,11 @@
 import Button from "./Button";
 
-export default function Banner({ title, backgroundClass, foregroundClass }) {
+export default function Banner({
+  title,
+  backgroundClass,
+  foregroundClass,
+  bannerAction,
+}) {
   return (
     <section
       className={`px-12 py-12 ${
@@ -15,6 +20,7 @@ export default function Banner({ title, backgroundClass, foregroundClass }) {
           title="Get a demo"
           backgroundClass="bg-white"
           foregroundClass="text-black"
+          onClick={bannerAction && bannerAction}
         />
       </div>
     </section>

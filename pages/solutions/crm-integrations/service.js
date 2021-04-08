@@ -5,7 +5,7 @@ import Section from "@/components/Section";
 import Testimonial from "@/components/Testimonial";
 import Image from "next/image";
 
-export default function SalesCRM() {
+export default function SalesCRM({ toggleDemoForm }) {
   return (
     <>
       <Section
@@ -73,7 +73,7 @@ export default function SalesCRM() {
           />
         }
       />
-      <Banner />
+      <Banner bannerAction={toggleDemoForm} />
     </>
   );
 }
