@@ -1,5 +1,5 @@
 ---
-name: "Privacy Policy"
+title: "Privacy Policy"
 ---
 
 ## Types of Data collected

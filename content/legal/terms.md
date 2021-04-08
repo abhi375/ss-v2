@@ -1,5 +1,5 @@
 ---
-title: Terms.
+title: Terms
 ---
 
 ### 1. Services

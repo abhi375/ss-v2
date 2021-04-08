@@ -7,7 +7,7 @@ export default function PrivacyPolicyPage({ post }) {
     <>
       <section className="px-12 py-16 bg-gray-50">
         <div className=" max-w-[640px] mx-auto">
-          <h1 className="text-5xl font-extrabold">Terms</h1>
+          <h1 className="text-5xl font-extrabold">{post.title}</h1>
         </div>
       </section>
       <section className="px-12 py-12">
@@ -25,7 +25,7 @@ export default function PrivacyPolicyPage({ post }) {
 
 export async function getStaticProps({ params }) {
   const post = getPostBySlug(
-    "terms",
+    params.slug,
     ["title", "slug", "content"],
     "content/legal"
   );
