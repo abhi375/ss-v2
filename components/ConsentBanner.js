@@ -60,7 +60,7 @@ export default function ConsentBanner() {
             <div className="text-lg">
               This site uses cookies to give you a better user experience.
               <wbr /> See our{" "}
-              <Link href="/legal/terms">
+              <Link href="/legal/cookies">
                 <a className="text-accent">cookie policy</a>
               </Link>
               .
