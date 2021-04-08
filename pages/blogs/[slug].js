@@ -44,6 +44,7 @@ export default function CustomerStory({ post }) {
                   width="40px"
                   height="40px"
                   className="rounded-full"
+                  alt={post.author}
                 />
                 <p className="ml-2 text-lg">{post.author}</p>
               </div>
@@ -53,6 +54,7 @@ export default function CustomerStory({ post }) {
               width="640px"
               height="320px"
               priority
+              alt={post.title}
               className="border border-solid border-black border-opacity-10 rounded-md overflow-hidden"
             />
           </div>

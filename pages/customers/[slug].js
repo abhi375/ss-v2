@@ -20,6 +20,7 @@ export default function CustomerStory({ post }) {
             <h1 className="text-3xl font-bold mb-8 mt-4">{post.title}</h1>
             <Image
               src={post.coverImage}
+              alt={post.title}
               width="640px"
               height="384px"
               priority

@@ -66,7 +66,12 @@ export default function ContactCenterPage({ toggleDemoForm }) {
         personName="Mukhtadir Syed"
         personDesignation="AVP - Sales and Customer Success"
         companyLogo={
-          <Image src="/logos/endurance.svg" width="200px" height="56px" />
+          <Image
+            src="/logos/endurance.svg"
+            width="200px"
+            height="56px"
+            alt="Endurance Logo"
+          />
         }
         personAvatar={
           <Image
@@ -75,6 +80,7 @@ export default function ContactCenterPage({ toggleDemoForm }) {
             height="64px"
             objectFit="cover"
             className="rounded-full overflow-hidden"
+            alt="Mukhtadir Syed"
           />
         }
       />

@@ -64,7 +64,7 @@ export default function CRMIntegrationPage({ toggleDemoForm }) {
         personName="Deepak Bisht"
         personDesignation="IT Head at Hear.com"
         companyLogo={
-          <Image src="/logos/hear.svg" width="200px" height="56px" />
+          <Image src="/logos/hear.svg" width="200px" height="56px" alt="Hear" />
         }
         personAvatar={
           <Image
@@ -73,6 +73,7 @@ export default function CRMIntegrationPage({ toggleDemoForm }) {
             height="64px"
             objectFit="cover"
             className="rounded-full overflow-hidden"
+            alt="Deepak Bisht"
           />
         }
       />

@@ -73,11 +73,17 @@ export default function Home({ toggleDemoForm }) {
         personName="Mukhtadir Syed"
         personDesignation="AVP - Sales and Customer Success"
         companyLogo={
-          <Image src="/logos/endurance.svg" width="200px" height="56px" />
+          <Image
+            src="/logos/endurance.svg"
+            width="200px"
+            height="56px"
+            alt="Endurance Logo"
+          />
         }
         personAvatar={
           <Image
             src="/people/mukhtadir.jpeg"
+            alt="Mukhtadir Syed"
             width="64px"
             height="64px"
             objectFit="cover"

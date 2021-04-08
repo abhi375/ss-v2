@@ -26,6 +26,7 @@ export default function CustomersPage({ stories, toggleDemoForm }) {
                     <article className="bg-white p-4 -m-4 hover:shadow-subtle rounded-md">
                       <div>
                         <Image
+                          alt={story.title}
                           src={story.coverImage}
                           width="500px"
                           height="300px"
