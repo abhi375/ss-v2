@@ -28,7 +28,7 @@ module.exports = {
         },
       },
       colors: {
-        accent: "#4f50ff",
+        accent: "#ff2753",
         gray: colors.trueGray,
         amber: colors.amber,
         rose: colors.rose,

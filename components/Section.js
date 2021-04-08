@@ -44,7 +44,7 @@ export default function Section({
       <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
         <div className={`${showMediaFirst ? "lg:order-2" : "order-1"}`}>
           {hero ? (
-            <h1 className="text-3xl lg:text-4xl mb-6 font-extrabold">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl mb-6 font-extrabold">
               {headline.map((heading, index) => {
                 return (
                   <span className="block" key={index}>
@@ -79,24 +79,34 @@ export default function Section({
           })}
           {callToActions && callToActions}
         </div>
-        <div
-          className={`w-full relative pt-[100%] ${
-            showMediaFirst ? "lg:order-1" : "order-2"
-          }`}
-        >
-          <div className="absolute inset-0 bg-black bg-opacity-5"></div>
-        </div>
+        {media ? (
+          <div
+            className={`grid place-items-center ${
+              showMediaFirst ? "lg:order-1" : "order-2"
+            }`}
+          >
+            {media}
+          </div>
+        ) : (
+          <div
+            className={`w-full relative pt-[100%] ${
+              showMediaFirst ? "lg:order-1" : "order-2"
+            }`}
+          >
+            <div className="absolute inset-0 bg-black bg-opacity-5"></div>
+          </div>
+        )}
       </div>
     );
   };
 
   return (
     <section
-      className={`${horizontalPadding ? horizontalPadding : "px-6 lg:px-12"} ${
-        verticalPadding ? verticalPadding : "py-16"
-      } ${backgroundClass ? backgroundClass : "bg-white"} ${
-        foregroundClass ? foregroundClass : "text-black"
-      }`}
+      className={`${
+        horizontalPadding ? horizontalPadding : "px-6 sm:px-10 lg:px-12"
+      } ${verticalPadding ? verticalPadding : "py-16"} ${
+        backgroundClass ? backgroundClass : "bg-white"
+      } ${foregroundClass ? foregroundClass : "text-black"}`}
     >
       <div
         className={`max-w-screen-xl mx-auto ${

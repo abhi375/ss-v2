@@ -18,12 +18,12 @@ export default function CRMIntegrationPage() {
         callToActions={
           <div className="">
             <Link href="/solutions/crm-integrations/sales">
-              <a className="text-lg px-9 py-3 rounded-full bg-accent text-white rounded-full mr-6">
+              <a className="text-lg px-9 py-3 rounded-full bg-accent text-white mr-6">
                 For Sales
               </a>
             </Link>
             <Link href="/solutions/crm-integrations/service">
-              <a className="text-lg px-9 py-3 rounded-full text-accent border border-solid border-accent rounded-full">
+              <a className="text-lg px-9 py-3 rounded-full text-accent border border-solid border-accent ">
                 For Service
               </a>
             </Link>

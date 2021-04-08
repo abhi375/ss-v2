@@ -59,7 +59,7 @@ export default function Nav({ toggleDemoForm }) {
           ></motion.div>
         </AnimatePresence>
       )}
-      <nav className="px-6 lg:px-12 fixed inset-x-0 top-0 z-40 bg-white h-16 shadow-sm">
+      <nav className="px-6 sm:px-10 lg:px-12 fixed inset-x-0 top-0 z-40 bg-white h-16 shadow-sm">
         <div className="max-w-screen-xl mx-auto w-full h-full flex items-center justify-between">
           <Link href="/">
             <a>
