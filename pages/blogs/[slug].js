@@ -22,7 +22,6 @@ export default function CustomerStory({ post }) {
   const [shareURL, setShareURL] = useState("");
 
   useEffect(() => {
-    console.log(window.location);
     setShareURL(window && window.location.href);
   }, []);
 

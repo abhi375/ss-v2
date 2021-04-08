@@ -60,15 +60,15 @@ export default function CRMIntegrationPage({ toggleDemoForm }) {
       />
 
       <Testimonial
-        quote="The first thing that differentiated Samespace was they matched solutions to our complex needs. Delivery team ensured our needs were met, and now our sales & service teams have a solid CTI solution."
-        personName="Mukhtadir Syed"
-        personDesignation="AVP - Sales and Customer Success"
+        quote="Constant innovation in areas like dialer solution and crm integration has been a game-changing experience for us to serve our most valuable customers."
+        personName="Deepak Bisht"
+        personDesignation="IT Head at Hear.com"
         companyLogo={
-          <Image src="/logos/endurance.svg" width="200px" height="56px" />
+          <Image src="/logos/hear.svg" width="200px" height="56px" />
         }
         personAvatar={
           <Image
-            src="/people/mukhtadir.jpeg"
+            src="/people/deepak.jpg"
             width="64px"
             height="64px"
             objectFit="cover"
