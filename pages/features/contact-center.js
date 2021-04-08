@@ -14,10 +14,17 @@ export default function ContactCenterPage({ toggleDemoForm }) {
         copy={[
           "Built from the ground up with cutting edge Internet technologies, Samespace unites your business communication in one place, from anywhere.",
         ]}
-        textAlignment="center"
-        columns="one"
-        verticalPadding="py-28"
+        verticalPadding="py-14"
         callToActions={<Button title="Get a demo" size="large" />}
+        media={
+          <Image
+            src="/features/callcenter-hero.png"
+            width={520}
+            height={520}
+            priority
+            alt="Samespace Contact Center Platform"
+          />
+        }
       />
       <LogoWall />
       <Section
@@ -33,6 +40,15 @@ export default function ContactCenterPage({ toggleDemoForm }) {
         copy={[
           "Whether you use our Contact Center Suite or your existing solution, Samespace AI agents can offload up to 60 % of tier 1 conversations. So your live agents are open for more valuable conversations.",
         ]}
+        media={
+          <Image
+            src="/features/ai-with-other-callcenter.png"
+            width={520}
+            height={520}
+            quality={100}
+            alt="AI agents for any contact center solution"
+          />
+        }
       />
       <Section
         headline={["Integrate with all your apps."]}
@@ -40,12 +56,30 @@ export default function ContactCenterPage({ toggleDemoForm }) {
         copy={[
           "Many of our customers have existing CRM solutions, like Salesforce or HubSpot. We turn all of them into world-class contact center tools with off-the-shelf CTI integration, rapid custom integration using Samespace Studio, and adaptable open APIs.",
         ]}
+        media={
+          <Image
+            src="/features/crm-integrations.png"
+            width={520}
+            height={520}
+            quality={100}
+            alt="Integrate with your CRM"
+          />
+        }
       />
       <Section
         headline={["Live Monitoring and coaching"]}
         copy={[
           "Imagine every call handled by a top performer. We will help you get there with innovative analytics, monitoring & coaching features that allow managers and experienced agents to easily coach colleagues in real time.",
         ]}
+        media={
+          <Image
+            src="/features/live-monitoring-and-coaching.png"
+            width={520}
+            height={520}
+            quality={100}
+            alt="Live monitoring and coaching"
+          />
+        }
       />
       <Section
         headline={["Web Chat & Web Call"]}

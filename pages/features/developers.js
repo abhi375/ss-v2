@@ -10,7 +10,7 @@ export default function DevelopersPage({ toggleDemoForm }) {
       <Section
         headline={[
           <>
-            <span className="bg-clip-text text-transparent bg-gradient bg-gradient-to-r from-rose-600 to-amber-600">
+            <span className="bg-clip-text text-transparent bg-gradient bg-gradient-to-r from-accent to-indigo-500">
               Advanced
             </span>{" "}
             <span>Communication APIs</span>
