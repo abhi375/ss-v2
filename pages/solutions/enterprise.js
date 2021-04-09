@@ -9,13 +9,28 @@ export default function EnterprisePage({ toggleDemoForm }) {
     <>
       <Section
         hero
+        backgroundClass="bg-gray-50"
         headline={[
           "A Fully Stocked Contact Center Platform Docked Right in Your CRM",
         ]}
         copy={[
           "Imagine a solution without gluing multiple systems. Samespace offers a comprehensive platform right in your CRM, so everything you need is always within reach.",
         ]}
-        callToActions={<Button onClick={toggleDemoForm} title="Get a demo" />}
+        columns={"one"}
+        textAlignment="center"
+        callToActions={
+          <Button size="large" onClick={toggleDemoForm} title="Get a demo" />
+        }
+        media={
+          <Image
+            src={"/features/crm-stack.png"}
+            alt="Samespace Integration"
+            width={1200}
+            height={280}
+            priority
+            quality={100}
+          />
+        }
       />
 
       <Section
@@ -24,6 +39,15 @@ export default function EnterprisePage({ toggleDemoForm }) {
         copy={[
           "With Samespace, you’re getting application security at the highest level, and we know you’d accept no less. GDPR and SOC 2 compliance is a given. We provide an on-premises option for compliance and data sovereignty, and our resilient data centers allow for maximum uptime.",
         ]}
+        media={
+          <Image
+            src={"/features/complience.png"}
+            alt="Samespace Integration"
+            width={480}
+            height={480}
+            quality={100}
+          />
+        }
       />
 
       <Section
@@ -31,12 +55,31 @@ export default function EnterprisePage({ toggleDemoForm }) {
         copy={[
           "Our global support team means we’re on the same schedule as your Contact Centers, no matter where, or when, they are.",
         ]}
+        backgroundClass="bg-gray-50"
+        media={
+          <Image
+            src={"/features/ss-support.png"}
+            alt="Samespace Integration"
+            width={480}
+            height={480}
+            quality={100}
+          />
+        }
       />
       <Section
         headline={["Easier to Integrate,", "Faster to Deploy"]}
         copy={[
           "We have no out-dated legacy architecture, our tech stack was designed to provide rapid integration, and our Conversation Studio makes flows easier to build than anyone else on the market.",
         ]}
+        media={
+          <Image
+            src={"/features/crm-integrations.png"}
+            alt="Samespace Integration"
+            width={480}
+            height={480}
+            quality={100}
+          />
+        }
         showMediaFirst
       />
       <Testimonial
