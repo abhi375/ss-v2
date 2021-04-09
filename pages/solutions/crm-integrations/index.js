@@ -29,6 +29,16 @@ export default function CRMIntegrationPage() {
             </Link>
           </div>
         }
+        media={
+          <Image
+            width={520}
+            height={520}
+            priority
+            quality={100}
+            src={"/features/crm-galaxy.png"}
+            alt="Samespace Platform Components"
+          />
+        }
       />
       <LogoWall />
       <Section
@@ -39,12 +49,31 @@ export default function CRMIntegrationPage() {
           "Our dynamic routing directs inbound leads based on anything you know about the caller, including lead source, campaign, past interaction history, and more.",
         ]}
         showMediaFirst
+        media={
+          <Image
+            width={520}
+            height={520}
+            quality={100}
+            src={"/features/dynamic-routing-flow.png"}
+            alt="Samespace Platform Components"
+          />
+        }
       />
       <Section
         headline={["Ditch the Time Wasting Tasks"]}
         copy={[
           "Let your agents focus on what’s important: talking to more prospects. Let Samespace handle the rest.",
         ]}
+        backgroundClass="bg-gray-50"
+        media={
+          <Image
+            width={520}
+            height={520}
+            quality={100}
+            src={"/features/notes-on-chrome-dock.png"}
+            alt="Samespace Call Logging"
+          />
+        }
       />
       <Section
         showMediaFirst
@@ -52,6 +81,15 @@ export default function CRMIntegrationPage() {
         copy={[
           "Be there for your reps when it counts in real time using our visibility features. And with call recordings saved and stored automatically in your CRM, you can use crucial learning tools to keep your team’s skill set sharp.",
         ]}
+        media={
+          <Image
+            width={520}
+            height={520}
+            quality={100}
+            src={"/features/live-monitoring-and-coaching.png"}
+            alt="Live monitoring and coaching"
+          />
+        }
       />
 
       <Section
@@ -59,14 +97,33 @@ export default function CRMIntegrationPage() {
         copy={[
           "Samespace’s AI powered insights use Speech Recognition to transcribe calls. Our APIs enable you to collate multiple data points into one single source, so your call flow gets smarter, faster.",
         ]}
+        backgroundClass="bg-gray-50"
+        media={
+          <Image
+            width={520}
+            height={520}
+            quality={100}
+            src={"/features/sentiment-analysis.png"}
+            alt="Sentiment Analysis"
+          />
+        }
       />
 
       <Section
         showMediaFirst
         headline={["Customize Your Conversations"]}
         copy={[
-          "What used to take weeks with developers now takes minutes thanks to our easy and intuitive Conversation Studio",
+          "What used to take weeks with developers now takes minutes thanks to our easy and intuitive Conversation Studio.",
         ]}
+        media={
+          <Image
+            width={520}
+            height={520}
+            quality={100}
+            src={"/features/studio-flow.png"}
+            alt="Samespace Studio"
+          />
+        }
       />
 
       <Testimonial
