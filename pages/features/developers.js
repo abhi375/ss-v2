@@ -5,6 +5,10 @@ import Section from "@/components/Section";
 import Image from "next/image";
 
 export default function DevelopersPage({ toggleDemoForm }) {
+  const openDeveloperDocs = () => {
+    window.open("https://support.samespace.com/voice-api/", "_blank");
+  };
+
   return (
     <>
       <Section
@@ -13,13 +17,19 @@ export default function DevelopersPage({ toggleDemoForm }) {
             <span className="bg-clip-text text-transparent bg-gradient bg-gradient-to-r from-accent to-indigo-500">
               Advanced
             </span>{" "}
-            <span>Communication APIs</span>
+            <span className="md:block">Communication APIs</span>
           </>,
         ]}
         copy={[
           "You don’t need to be an expert to build and integrate custom apps with Samespace. We make it easy and accessible to every user.",
         ]}
-        callToActions={<Button title="Explore the docs" size="large" />}
+        callToActions={
+          <Button
+            onClick={openDeveloperDocs}
+            title="Explore the docs"
+            size="large"
+          />
+        }
         media={
           <Image
             src="/features/devtools-hero.png"

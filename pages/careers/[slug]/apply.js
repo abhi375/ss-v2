@@ -112,7 +112,7 @@ export default function JobApplicationPage() {
       }
     });
     const data = await axios
-      .post(`https://api.samespace.com/web`, formData, {
+      .post(`https://api.samespace.com/web/`, formData, {
         headers: {
           "x-token": "31E66891825F41F457C8D16BB731E",
         },

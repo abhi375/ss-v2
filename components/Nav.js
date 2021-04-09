@@ -6,6 +6,7 @@ import SolutionsMegaMenu from "@/components/SolutionsMegaMenu";
 import { AnimatePresence, motion } from "framer-motion";
 import FeaturesMegaMenu from "./FeaturesMegaMenu";
 import { selectSpaceId } from "@/lib/session";
+import SpaceIDPopover from "./SpaceIDPopover";
 
 export default function Nav({ toggleDemoForm }) {
   const [activeMegaMenu, setActiveMegaMenu] = useState("");
@@ -109,20 +110,23 @@ export default function Nav({ toggleDemoForm }) {
 
             <div className="grid grid-flow-col auto-cols-auto gap-8 items-center ml-auto">
               <>
+                {console.log("accounts are ", accounts)}
                 {accounts && accounts.length > 1 ? (
                   <div
-                    className="flex items-center cursor-pointer relative ml-auto"
+                    className="flex items-center cursor-pointer relative ml-auto h-full"
                     onClick={() => handleActiveMegaMenu("dashboard")}
                   >
-                    <div className="text-black place-items-center hover:text-accent cursor-pointer px-4">
+                    <div className="text-black place-items-center hover:text-accent text-[12px] uppercase font-semibold tracking-wide cursor-pointer px-4">
                       Dashboard
                     </div>
 
-                    {activeMegaMenu === "dashboard" && <div>Spaces</div>}
+                    {activeMegaMenu === "dashboard" && (
+                      <SpaceIDPopover accounts={accounts} />
+                    )}
                   </div>
                 ) : accounts && accounts.length === 1 ? (
                   <div
-                    className="text-black place-items-center hover:text-accent cursor-pointer px-4"
+                    className="text-black place-items-center hover:text-accent text-[12px] uppercase font-semibold tracking-wide cursor-pointer px-4"
                     onClick={() => selectSpaceId(accounts[0])}
                   >
                     Dashboard
