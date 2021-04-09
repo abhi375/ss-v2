@@ -1,8 +1,12 @@
 import Image from "next/image";
 
-export default function LogoWall() {
+export default function LogoWall({ backgroundClass }) {
   return (
-    <section className="px-12 py-10 bg-gray-50">
+    <section
+      className={`px-12 py-10 ${
+        backgroundClass ? backgroundClass : "bg-gray-50"
+      }`}
+    >
       <div className="max-w-screen-xl mx-auto grid grid-cols-2 gap-6 md:grid-cols-4 lg:grid-cols-8 md:gap-8 lg:gap-4 items-center">
         <Image
           alt="Samespace Customer"

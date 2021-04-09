@@ -9,14 +9,34 @@ export default function AnalyticsPage({ toggleDemoForm }) {
   return (
     <>
       <Section
+        backgroundClass="bg-accent bg-opacity-5"
         hero
-        headline={["Better Insights with Meticulous Metrics."]}
+        headline={[
+          <>
+            <span>Better</span>{" "}
+            <span className="bg-clip-text text-transparent bg-gradient-to-tr from-accent to-indigo-500">
+              Insights
+            </span>{" "}
+            <span> with Meticulous Metrics.</span>
+          </>,
+        ]}
         copy={[
           "Get the dashboards and comprehensive measurements you need to improve your conversations with prospects and customers.",
         ]}
-        callToActions={<Button title="Get a demo" size="large" />}
+        callToActions={
+          <Button onClick={toggleDemoForm} title="Get a demo" size="large" />
+        }
+        media={
+          <Image
+            src="/features/analytics-hero.png"
+            width={520}
+            height={520}
+            quality={100}
+            alt="Samespace Analytics"
+          />
+        }
       />
-      <LogoWall />
+      <LogoWall backgroundClass="bg-white" />
       <Section
         headline={["Powerful Insights"]}
         showMediaFirst
@@ -24,13 +44,31 @@ export default function AnalyticsPage({ toggleDemoForm }) {
           "Stop struggling to find data. With Samespace, the data finds you! Our powerful and simple analytics module shows AHT, ASA, sentiment, abandon rate, and more, all in one distinct display.",
           "Easily view, filter, save and export in seconds, so you can turn your insights into actions sooner.",
         ]}
+        media={
+          <Image
+            src="/features/ss-dashboard.png"
+            width={520}
+            height={520}
+            quality={100}
+            alt="Samespace Analytics"
+          />
+        }
       />
       <Section
-        headline={["AI-Powered Sentiment Analysis"]}
+        headline={["AI-Powered", " Sentiment Analysis"]}
         copy={[
           "We humans don’t just speak thoughts; we speak feelings. Samespace’s AI-powered sentiment analysis decodes the raw data of emotion to crucially supplement your NPS and CSAT tracking.",
           "We help you stay in tune with your customer base by recognizing words, phrases, and tones that shed light on the ever evolving trends of your products, brand, and competition, and the feelings that move them.",
         ]}
+        media={
+          <Image
+            src="/features/sentiment-analysis.png"
+            width={520}
+            height={520}
+            quality={100}
+            alt="Bring your own data"
+          />
+        }
       />
       <Section
         headline={["Bring your own data"]}
@@ -39,6 +77,15 @@ export default function AnalyticsPage({ toggleDemoForm }) {
           "Our analytics tool is suped up enough to be your single visualization engine. That’s by design. Many of our midsize customers use Samespace to visualize data across platforms, displaying their entire call center operations at a glance.",
           "If you have your own BI or visualization software, you can easily send Samespace data to the tool of your choice.",
         ]}
+        media={
+          <Image
+            src="/features/bring-your-own-data.png"
+            width={520}
+            height={520}
+            quality={100}
+            alt="Bring your own data"
+          />
+        }
       />
 
       <Testimonial

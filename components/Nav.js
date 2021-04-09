@@ -75,7 +75,9 @@ export default function Nav({ toggleDemoForm }) {
                 onMouseEnter={() => handleActiveMegaMenu("features")}
                 onMouseLeave={() => handleActiveMegaMenu("")}
               >
-                <div className="group-hover:text-accent">Features</div>
+                <div className="group-hover:text-accent text-[12px] uppercase font-semibold tracking-wide">
+                  Features
+                </div>
                 {activeMegaMenu === "features" && <FeaturesMegaMenu />}
               </div>
               <div
@@ -84,17 +86,23 @@ export default function Nav({ toggleDemoForm }) {
                 onMouseEnter={() => handleActiveMegaMenu("solutions")}
                 onMouseLeave={() => handleActiveMegaMenu("")}
               >
-                <div className="group-hover:text-accent">Solutions</div>
+                <div className="group-hover:text-accent text-[12px] uppercase font-semibold tracking-wide">
+                  Solutions
+                </div>
                 {activeMegaMenu === "solutions" && <SolutionsMegaMenu />}
               </div>
-              <div className="text-black place-items-center hover:text-accent cursor-pointer px-4">
+              <div className="text-black grid place-items-center hover:text-accent relative h-full cursor-pointer px-4">
                 <Link href="/pricing">
-                  <a>Pricing</a>
+                  <a className="text-[12px] uppercase font-semibold tracking-wide">
+                    Pricing
+                  </a>
                 </Link>
               </div>
-              <div className="text-black place-items-center hover:text-accent cursor-pointer px-4">
+              <div className="text-black grid place-items-center hover:text-accent relative h-full cursor-pointer px-4">
                 <Link href="/customers">
-                  <a>Customers</a>
+                  <a className="text-[12px] uppercase font-semibold tracking-wide">
+                    Customers
+                  </a>
                 </Link>
               </div>
             </div>
@@ -120,13 +128,13 @@ export default function Nav({ toggleDemoForm }) {
                     Dashboard
                   </div>
                 ) : (
-                  <>
+                  <div className="text-black grid place-items-center hover:text-accent relative h-full cursor-pointer px-4">
                     <Link href="/signin">
-                      <a className="text-black place-items-center hover:text-accent cursor-pointer px-4">
+                      <a className="text-[12px] uppercase font-semibold tracking-wide">
                         Sign In
                       </a>
                     </Link>
-                  </>
+                  </div>
                 )}
               </>
 
