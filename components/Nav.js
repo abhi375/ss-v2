@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { LogoIcon } from "@/components/Icons";
+import { LogoIcon, MenuIcon } from "@/components/Icons";
 import Button from "@/components/Button";
 import SolutionsMegaMenu from "@/components/SolutionsMegaMenu";
 import { AnimatePresence, motion } from "framer-motion";
@@ -143,6 +143,10 @@ export default function Nav({ toggleDemoForm }) {
 
               <Button title="Get a demo" onClick={toggleDemoForm} />
             </div>
+          </div>
+
+          <div className="w-8 h-8 grid lg:hidden place-items-center cursor-pointer">
+            <MenuIcon />
           </div>
         </div>
       </nav>
