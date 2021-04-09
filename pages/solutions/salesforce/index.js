@@ -1,5 +1,4 @@
 import Banner from "@/components/Banner";
-import Button from "@/components/Button";
 import LogoWall from "@/components/LogoWall";
 import Section from "@/components/Section";
 import Testimonial from "@/components/Testimonial";
@@ -11,23 +10,36 @@ export default function CRMIntegrationPage({ toggleDemoForm }) {
     <>
       <Section
         hero
+        foregroundClass="text-white"
+        backgroundClass="bg-gradient-to-r from-[#1A81E2] to-accent"
         headline={["The Full Force of Salesforce"]}
         copy={[
           "Take your Salesforce to the next level with our native CTI and automation.",
         ]}
+        verticalPadding="lg:py-24"
         callToActions={
           <div className="">
             <Link href="/solutions/salesforce/sales">
-              <a className="text-lg px-9 py-3 rounded-full bg-accent text-white  mr-6">
+              <a className="text-lg px-9 py-3 rounded-full bg-white text-accent font-semibold mr-6">
                 For Sales
               </a>
             </Link>
             <Link href="/solutions/salesforce/service">
-              <a className="text-lg px-9 py-3 rounded-full text-accent border border-solid border-accent ">
+              <a className="text-lg px-9 py-3 rounded-full text-white border border-solid border-white font-semibold hover:text-accent hover:bg-white">
                 For Service
               </a>
             </Link>
           </div>
+        }
+        media={
+          <Image
+            src="/features/sf-automation-hero.png"
+            alt="Samespace + Salesforce"
+            width={1000}
+            height={800}
+            priority
+            quality={100}
+          />
         }
       />
       <LogoWall />
@@ -37,12 +49,31 @@ export default function CRMIntegrationPage({ toggleDemoForm }) {
           "Double your productivity by allowing teams to handle twice as many calls while automatically logging call activity.",
         ]}
         showMediaFirst
+        media={
+          <Image
+            src="/features/playbooks.png"
+            alt="Samespace Playbooks"
+            width={500}
+            height={500}
+            quality={100}
+          />
+        }
       />
       <Section
+        backgroundClass="bg-gray-50"
         headline={["Deeper Insights with AI"]}
         copy={[
           "Access crucial data on what your customers are saying during calls including feedback on your product, as well as mentions of competitors, so you can implement changes to make improvements across the board.",
         ]}
+        media={
+          <Image
+            src="/features/sentiment-analysis.png"
+            alt="Samespace Sentiment Analysis"
+            width={500}
+            height={500}
+            quality={100}
+          />
+        }
       />
       <Section
         showMediaFirst
@@ -50,6 +81,15 @@ export default function CRMIntegrationPage({ toggleDemoForm }) {
         copy={[
           "The smart solution to your prospect call flow. Leverage intelligent routing to make sure the right agent gets the call every time.",
         ]}
+        media={
+          <Image
+            src="/features/studio-flow.png"
+            alt="Samespace Studio"
+            width={500}
+            height={500}
+            quality={100}
+          />
+        }
       />
 
       <Testimonial
