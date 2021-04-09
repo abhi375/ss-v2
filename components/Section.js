@@ -11,6 +11,7 @@ export default function Section({
   backgroundClass,
   foregroundClass,
   media,
+  patternChild,
 }) {
   const OneColumnLayout = () => {
     return (
@@ -34,7 +35,7 @@ export default function Section({
           );
         })}
         {callToActions && callToActions}
-        <div className="mt-6">{media && media}</div>
+        <div>{media && <div className="mt-6">{media}</div>}</div>
       </div>
     );
   };
@@ -102,14 +103,15 @@ export default function Section({
 
   return (
     <section
-      className={`${
+      className={`relative ${
         horizontalPadding ? horizontalPadding : "px-6 sm:px-10 lg:px-12"
       } ${verticalPadding ? verticalPadding : "py-16"} ${
         backgroundClass ? backgroundClass : "bg-white"
       } ${foregroundClass ? foregroundClass : "text-black"}`}
     >
+      {patternChild && patternChild}
       <div
-        className={`max-w-screen-xl mx-auto ${
+        className={`max-w-screen-xl relative z-10 mx-auto ${
           textAlignment === "center" ? "text-center" : "text-left"
         }`}
       >
