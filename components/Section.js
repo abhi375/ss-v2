@@ -14,7 +14,7 @@ export default function Section({
 }) {
   const OneColumnLayout = () => {
     return (
-      <div>
+      <div className="grid grid-cols-1 place-items-center">
         <h1 className="text-3xl md:text-4xl lg:text-6xl font-extrabold w-full md:w-4/6 mx-auto">
           {headline.map((heading, index) => {
             return <span key={index}>{heading}</span>;
@@ -24,8 +24,8 @@ export default function Section({
         {copy.map((para, index) => {
           return (
             <p
-              className={`text-2xl w-full md:w-3/5 mx-auto mt-6 ${
-                callToActions ? "mb-6" : ""
+              className={`text-xl md:text-2xl leading-normal w-full md:w-3/5 mx-auto mt-6 ${
+                callToActions ? "mb-8" : ""
               }`}
               key={index}
             >
@@ -34,7 +34,7 @@ export default function Section({
           );
         })}
         {callToActions && callToActions}
-        {media && media}
+        <div className="mt-6">{media && media}</div>
       </div>
     );
   };
