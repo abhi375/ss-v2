@@ -17,7 +17,7 @@ export default function Home({ toggleDemoForm }) {
           "Built on cutting-edge Internet technologies and design thinking principles, samespace elates customer experience, increases agent productivity and saves a ton of money.",
         ]}
         callToActions={
-          <div className="mt-8">
+          <div className="">
             <Button size="large" title="Get a demo" onClick={toggleDemoForm} />
           </div>
         }
