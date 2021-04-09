@@ -18,14 +18,14 @@ export default function CRMIntegrationPage({ toggleDemoForm }) {
         ]}
         verticalPadding="lg:py-24"
         callToActions={
-          <div className="">
+          <div className="flex flex-col sm:flex-row items-center">
             <Link href="/solutions/salesforce/sales">
-              <a className="text-lg px-9 py-3 rounded-full bg-white text-accent font-semibold mr-6">
+              <a className="text-lg px-9 py-3 rounded-full bg-white text-accent grid place-items-center hover:shadow-inset sm:mr-6 mb-6 sm:mb-0 w-full sm:w-auto">
                 For Sales
               </a>
             </Link>
             <Link href="/solutions/salesforce/service">
-              <a className="text-lg px-9 py-3 rounded-full text-white border border-solid border-white font-semibold hover:text-accent hover:bg-white">
+              <a className="text-lg px-9 py-3 rounded-full text-white border border-solid grid place-items-center border-white hover:text-accent hover:bg-white w-full sm:w-auto">
                 For Service
               </a>
             </Link>

@@ -10,20 +10,22 @@ export default function CRMIntegrationPage({ toggleDemoForm }) {
     <>
       <Section
         hero
-        verticalPadding="lg:py-24"
+        backgroundClass="bg-[#2F404F]"
+        foregroundClass="text-white"
+        verticalPadding="py-16 lg:py-24"
         headline={["Supercharge Your Sales and Support Teams"]}
         copy={[
           "Our HubSpot Integration enables your entire team to streamline their call workflows, increase productivity, and track customers through the whole customer journey: from marketing to sales and success.",
         ]}
         callToActions={
-          <div className="">
+          <div className="flex flex-col sm:flex-row items-center">
             <Link href="/solutions/hubspot/sales">
-              <a className="text-lg px-9 py-3 rounded-full bg-accent text-white mr-6 hover:shadow-inset">
+              <a className="text-lg px-9 py-3 rounded-full bg-[#FF6F1F] text-white grid place-items-center hover:shadow-inset sm:mr-6 mb-6 sm:mb-0 w-full sm:w-auto">
                 For Sales
               </a>
             </Link>
             <Link href="/solutions/hubspot/service">
-              <a className="text-lg px-9 py-3 rounded-full text-accent border border-solid border-accent hover:text-white hover:bg-accent">
+              <a className="text-lg px-9 py-3 rounded-full text-[#FF6F1F] border border-solid grid place-items-center border-[#FF6F1F] hover:text-white hover:bg-[#FF6F1F] w-full sm:w-auto">
                 For Service
               </a>
             </Link>

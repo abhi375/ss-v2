@@ -11,19 +11,20 @@ export default function CRMIntegrationPage() {
     <>
       <Section
         hero
+        backgroundClass="bg-gray-50"
         headline={["The Final Piece of Your", "CRM Puzzle"]}
         copy={[
           "Your CRM isn’t complete without Samespace. We seamlessly integrate into any CRM to make your contact center agile and adaptable, expertly enhancing all of your calls.",
         ]}
         callToActions={
-          <div className="">
+          <div className="flex flex-col sm:flex-row items-center">
             <Link href="/solutions/crm-integrations/sales">
-              <a className="text-lg px-9 py-3 rounded-full bg-accent text-white mr-6 hover:shadow-inset">
+              <a className="text-lg px-9 py-3 rounded-full bg-accent text-white grid place-items-center hover:shadow-inset sm:mr-6 mb-6 sm:mb-0 w-full sm:w-auto">
                 For Sales
               </a>
             </Link>
             <Link href="/solutions/crm-integrations/service">
-              <a className="text-lg px-9 py-3 rounded-full text-accent border border-solid border-accent hover:text-white hover:bg-accent">
+              <a className="text-lg px-9 py-3 rounded-full text-accent border border-solid grid place-items-center border-accent hover:text-white hover:bg-accent w-full sm:w-auto">
                 For Service
               </a>
             </Link>
@@ -40,7 +41,7 @@ export default function CRMIntegrationPage() {
           />
         }
       />
-      <LogoWall />
+      <LogoWall backgroundClass="bg-white" />
       <Section
         headline={[
           "Connect Prospects to the Right Reps the First Time. Every Time.",

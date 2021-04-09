@@ -12,14 +12,10 @@ export default function DevelopersPage({ toggleDemoForm }) {
   return (
     <>
       <Section
-        headline={[
-          <>
-            <span className="bg-clip-text text-transparent bg-gradient bg-gradient-to-r from-accent to-indigo-500">
-              Advanced
-            </span>{" "}
-            <span className="md:block">Communication APIs</span>
-          </>,
-        ]}
+        verticalPadding="py-20 lg:py-24"
+        foregroundClass="text-white"
+        backgroundClass="bg-gradient-to-r from-[#0A2FB4] to-[#120078]"
+        headline={["Advanced", " Communication APIs"]}
         copy={[
           "You don’t need to be an expert to build and integrate custom apps with Samespace. We make it easy and accessible to every user.",
         ]}
@@ -28,12 +24,14 @@ export default function DevelopersPage({ toggleDemoForm }) {
             onClick={openDeveloperDocs}
             title="Explore the docs"
             size="large"
+            foregroundClass="text-[#120078]"
+            backgroundClass="bg-white"
           />
         }
         media={
           <Image
             src="/features/devtools-hero.png"
-            width={500}
+            width={650}
             height={500}
             quality={100}
             priority

@@ -10,12 +10,20 @@ export default function SMBPage({ toggleDemoForm }) {
     <>
       <Section
         hero
+        backgroundClass="bg-gradient-to-r from-accent to-indigo-400"
+        foregroundClass="text-white"
         headline={["Scale and Grow with", "Enterprise-Grade Tools"]}
         copy={[
           "You’re focusing your cash and attention on growth. We get it. We’ve been there too. See how Samespace gives you cutting edge Contact Center tech for less.",
         ]}
         callToActions={
-          <Button onClick={toggleDemoForm} title="Get a demo" size="large" />
+          <Button
+            onClick={toggleDemoForm}
+            backgroundClass="bg-white"
+            foregroundClass="text-accent"
+            title="Get a demo"
+            size="large"
+          />
         }
         verticalPadding="py-12"
         media={

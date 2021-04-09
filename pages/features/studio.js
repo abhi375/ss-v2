@@ -17,7 +17,7 @@ export default function StudioPage({ toggleDemoForm }) {
         copy={[
           "Our Conversation Studio is uniquely intuitive and easy to use, reducing training and deployment times to an absolute minimum.",
         ]}
-        backgroundClass="bg-accent bg-opacity-5"
+        backgroundClass="bg-gray-50"
         textAlignment="center"
         columns="one"
         callToActions={

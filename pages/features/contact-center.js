@@ -10,25 +10,21 @@ export default function ContactCenterPage({ toggleDemoForm }) {
     <>
       <Section
         hero
-        headline={[
-          <>
-            <span>Radically </span>
-            <span className="bg-clip-text text-transparent bg-gradient bg-gradient-to-r from-accent to-indigo-500">
-              simple{" "}
-            </span>{" "}
-            <span>and </span>{" "}
-            <span className="bg-clip-text text-transparent bg-gradient bg-gradient-to-r from-accent to-indigo-500">
-              affordable{" "}
-            </span>
-            <span> Contact Center Platform</span>
-          </>,
-        ]}
+        foregroundClass="text-white"
+        backgroundClass="bg-gradient-to-r from-accent to-indigo-500"
+        headline={["Radically simple and affordable Contact Center Platform"]}
         copy={[
           "Built from the ground up with cutting edge Internet technologies, Samespace unites your business communication in one place, from anywhere.",
         ]}
         verticalPadding="py-14"
         callToActions={
-          <Button title="Get a demo" size="large" onClick={toggleDemoForm} />
+          <Button
+            title="Get a demo"
+            foregroundClass="text-accent"
+            backgroundClass="bg-white"
+            size="large"
+            onClick={toggleDemoForm}
+          />
         }
         media={
           <Image
