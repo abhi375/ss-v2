@@ -11,7 +11,7 @@ export default function PricingPage({ toggleDemoForm }) {
 
   return (
     <>
-      <section className="px-12 py-12 bg-gray-100 sticky top-16 z-10">
+      <section className="px-12 py-8 bg-gray-50 sticky top-16 z-10">
         <div className="max-w-screen-lg mx-auto grid grid-cols-10 gap-6">
           <div className="col-span-4">
             <h1 className="text-3xl font-extrabold">
@@ -55,7 +55,7 @@ export default function PricingPage({ toggleDemoForm }) {
                     return (
                       <div
                         key={index}
-                        className="py-4 grid grid-cols-10 gap-6 px-2 rounded items-center odd:bg-gray-50"
+                        className="py-4 grid grid-cols-10 gap-6 px-2 items-center border-b border-solid border-black border-opacity-10"
                       >
                         <div
                           data-tip={feature.description && feature.description}
