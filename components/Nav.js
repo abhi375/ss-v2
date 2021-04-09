@@ -54,7 +54,7 @@ export default function Nav({ toggleDemoForm }) {
           <motion.div
             transition={{ duration: 0.3, easings: "easeInOut" }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-10 bg-black bg-opacity-20 transition duration-300"
+            className="fixed inset-0 z-30 bg-black bg-opacity-20 transition duration-300"
             key={"overlay"}
             onClick={() => handleActiveMegaMenu("")}
           ></motion.div>

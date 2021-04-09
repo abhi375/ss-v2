@@ -112,7 +112,7 @@ export default function JobApplicationPage() {
       }
     });
     const data = await axios
-      .post(`https://api.samespace.com/web/`, formData, {
+      .post(`https://api.samespace.com/web/careers`, formData, {
         headers: {
           "x-token": "31E66891825F41F457C8D16BB731E",
         },
@@ -166,7 +166,7 @@ export default function JobApplicationPage() {
             )}
           </AnimatePresence>
           {isSuccessful ? (
-            <div className="p-12 text-center w-4/6 mx-auto flex flex-col bg-white ">
+            <div className="p-12 text-center w-full mx-auto flex flex-col bg-white ">
               <h3 className="mb-4 text-2xl font-semibold">
                 Thank you so much for your interest.
               </h3>
