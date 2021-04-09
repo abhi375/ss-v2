@@ -10,7 +10,7 @@ export default function SalesCRM({ toggleDemoForm }) {
     <>
       <Section
         hero
-        headline={["Enhance your CRM and double your productivity"]}
+        headline={["Enhance your CRM", " and double your productivity"]}
         copy={[
           "Streamline your support team’s productivity by automating data entry and their call workflow.",
         ]}

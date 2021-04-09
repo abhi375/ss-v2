@@ -110,7 +110,6 @@ export default function Nav({ toggleDemoForm }) {
 
             <div className="grid grid-flow-col auto-cols-auto gap-8 items-center ml-auto">
               <>
-                {console.log("accounts are ", accounts)}
                 {accounts && accounts.length > 1 ? (
                   <div
                     className="flex items-center cursor-pointer relative ml-auto h-full"

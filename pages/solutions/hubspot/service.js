@@ -17,6 +17,16 @@ export default function SalesCRM({ toggleDemoForm }) {
         callToActions={
           <Button onClick={toggleDemoForm} title="Get a demo" size="large" />
         }
+        media={
+          <Image
+            src="/features/hubspot-missing-piece.png"
+            width={500}
+            height={500}
+            property
+            alt="Samespace Integration with Hubspot"
+            quality={100}
+          />
+        }
       />
       <LogoWall />
       <Section
@@ -25,12 +35,31 @@ export default function SalesCRM({ toggleDemoForm }) {
         copy={[
           "Samespace CTI provides reps with rich contextual data that helps them serve faster. Inbound and outbound calls trigger a screenpop that provides data about prospects including past calls, notes, conversation info and key insights.",
         ]}
+        media={
+          <Image
+            src="/features/hubspot-screen-pop.png"
+            width={840}
+            height={560}
+            alt="Samespace Integration with Hubspot"
+            quality={100}
+          />
+        }
       />
       <Section
         headline={["No More Manual Entry"]}
         copy={[
           "Skip the time wasting busywork and let Samespace's native CTI automatically sync all call data, immediately triggering the next conversation for your agent.",
         ]}
+        backgroundClass="bg-gray-50"
+        media={
+          <Image
+            src="/features/hubspot-call-logs.png"
+            width={800}
+            height={600}
+            alt="Samespace Integration with Hubspot"
+            quality={100}
+          />
+        }
       />
       <Section
         headline={["Put AI to work"]}
@@ -38,12 +67,31 @@ export default function SalesCRM({ toggleDemoForm }) {
           "60% of your tier-1 customer queries can be handled by Samespace AI bots, freeing up your live agents for more valuable conversations.",
         ]}
         showMediaFirst
+        media={
+          <Image
+            src="/features/ai-workload.png"
+            width={500}
+            height={500}
+            alt="AI Workload"
+            quality={100}
+          />
+        }
       />
       <Section
         headline={["Customer Feedback from Every Call"]}
+        backgroundClass="bg-gray-50"
         copy={[
           "Know for certain what your customers are thinking with a CSAT survey that collects feedback as soon an agent hangs up.",
         ]}
+        media={
+          <Image
+            src="/features/csat.png"
+            width={640}
+            height={400}
+            alt="CSAT"
+            quality={100}
+          />
+        }
       />
       <Section
         headline={["The Next Evolution in Omnichannel Experiences"]}
@@ -51,13 +99,32 @@ export default function SalesCRM({ toggleDemoForm }) {
           "Allow customers to connect with you on their channel of choice, and curate the best possible experience for that individual, every time.",
         ]}
         showMediaFirst
+        media={
+          <Image
+            src="/features/omnichannel-flow.png"
+            width={500}
+            height={500}
+            alt="Omnichannel Flows with Samespace Studio"
+            quality={100}
+          />
+        }
       />
 
       <Section
         headline={["Stay in Sync with", " Your Customers"]}
+        backgroundClass="bg-gray-50"
         copy={[
           "Access crucial data on what your customers are saying during calls, including feedback on your product, as well as mentions of competitors, so you can implement changes to make improvements across the board.",
         ]}
+        media={
+          <Image
+            src="/features/ai-enhanced-hubspot-cti.png"
+            width={500}
+            height={500}
+            alt="Samespace AI Assist"
+            quality={100}
+          />
+        }
       />
       <Testimonial
         quote="The first thing that differentiated Samespace was they matched solutions to our complex needs. Delivery team ensured our needs were met, and now our sales & service teams have a solid CTI solution."

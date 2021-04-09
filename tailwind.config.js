@@ -1,17 +1,34 @@
 const colors = require("tailwindcss/colors");
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
   mode: "jit",
   purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    screens: {
+      sm: "640px",
+      // => @media (min-width: 640px) { ... }
+
+      md: "768px",
+      // => @media (min-width: 768px) { ... }
+
+      lg: "1024px",
+      // => @media (min-width: 1024px) { ... }
+
+      xl: "1160px",
+      // => @media (min-width: 1280px) { ... }
+
+      "2xl": "1536px",
+      // => @media (min-width: 1536px) { ... }
+    },
     fontSize: {
       "7xl": ["72px", "80px"],
       "6xl": ["64px", "68px"],
       "5xl": ["48px", "56px"],
       "4xl": ["40px", "48px"],
       "3xl": ["32px", "44px"],
-      "2xl": ["24px", "32px"],
+      "2xl": ["24px", "36px"],
       xl: ["21px", "28px"],
       lg: ["18px", "24px"],
       base: ["16px", "24px"],
@@ -29,7 +46,6 @@ module.exports = {
       },
       colors: {
         accent: "#006aff",
-        // accent: "#ff2753",
         gray: colors.trueGray,
         amber: colors.amber,
         rose: colors.rose,

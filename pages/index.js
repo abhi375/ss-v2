@@ -58,7 +58,7 @@ export default function Home({ toggleDemoForm }) {
         }
       />
       <Section
-        headline={["Plug it and let your CRM play."]}
+        headline={["Plug it and let your", " CRM play."]}
         columns="two"
         copy={[
           "Samespace offers ready to run native CTI integration with popular CRMs, and open APIs for custom integrations.",
@@ -74,7 +74,7 @@ export default function Home({ toggleDemoForm }) {
         }
       />
       <Section
-        headline={["AI that speaks your language."]}
+        headline={["AI that speaks", " your language."]}
         columns="two"
         showMediaFirst
         backgroundClass="bg-gray-50"
@@ -108,7 +108,7 @@ export default function Home({ toggleDemoForm }) {
         }
       />
       <Section
-        headline={["Set the bar higher with HiFi."]}
+        headline={["Set the bar higher", " with HiFi."]}
         columns="two"
         showMediaFirst
         backgroundClass="bg-gray-50"

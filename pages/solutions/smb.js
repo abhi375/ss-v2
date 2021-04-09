@@ -10,7 +10,7 @@ export default function SMBPage({ toggleDemoForm }) {
     <>
       <Section
         hero
-        headline={["Scale and Grow with Enterprise-Grade Tools"]}
+        headline={["Scale and Grow with", "Enterprise-Grade Tools"]}
         copy={[
           "You’re focusing your cash and attention on growth. We get it. We’ve been there too. See how Samespace gives you cutting edge Contact Center tech for less.",
         ]}
@@ -31,7 +31,7 @@ export default function SMBPage({ toggleDemoForm }) {
       />
       <LogoWall />
       <Section
-        headline={["Faster Deployment by Design"]}
+        headline={["Faster Deployment", " by Design"]}
         showMediaFirst
         copy={[
           "Growing businesses need to move fast, but software deployments can be slow, complex, and costly. Samespace is just different.",

@@ -10,6 +10,7 @@ export default function CRMIntegrationPage({ toggleDemoForm }) {
     <>
       <Section
         hero
+        verticalPadding="lg:py-24"
         headline={["Supercharge Your Sales and Support Teams"]}
         copy={[
           "Our HubSpot Integration enables your entire team to streamline their call workflows, increase productivity, and track customers through the whole customer journey: from marketing to sales and success.",
@@ -17,16 +18,26 @@ export default function CRMIntegrationPage({ toggleDemoForm }) {
         callToActions={
           <div className="">
             <Link href="/solutions/hubspot/sales">
-              <a className="text-lg px-9 py-3 rounded-full bg-accent text-white  mr-6">
+              <a className="text-lg px-9 py-3 rounded-full bg-accent text-white mr-6 hover:shadow-inset">
                 For Sales
               </a>
             </Link>
             <Link href="/solutions/hubspot/service">
-              <a className="text-lg px-9 py-3 rounded-full text-accent border border-solid border-accent">
+              <a className="text-lg px-9 py-3 rounded-full text-accent border border-solid border-accent hover:text-white hover:bg-accent">
                 For Service
               </a>
             </Link>
           </div>
+        }
+        media={
+          <Image
+            src="/features/hubspot-dock-hero.png"
+            width={800}
+            height={600}
+            priority
+            alt="Samespace Hubspot Integrations"
+            quality={100}
+          />
         }
       />
       <LogoWall />
@@ -38,25 +49,67 @@ export default function CRMIntegrationPage({ toggleDemoForm }) {
           "Our dynamic routing directs inbound leads based on anything you know about the caller, including lead source, campaign, past interaction history, and more.",
         ]}
         showMediaFirst
+        media={
+          <Image
+            src="/features/dynamic-routing-flow.png"
+            width={500}
+            height={500}
+            alt="Samespace Studio"
+            quality={100}
+          />
+        }
       />
       <Section
         headline={["Ditch the time wasting tasks."]}
         copy={[
           "Let your agents focus on what’s important: talking to more prospects. Let Samespace handle the rest.",
         ]}
+        backgroundClass="bg-gray-50"
+        media={
+          <Image
+            src="/features/hubspot-call-logs.png"
+            width={800}
+            height={600}
+            alt="Samespace Integration with Hubspot"
+            quality={100}
+          />
+        }
       />
       <Section
         showMediaFirst
-        headline={["Get Your Reps the Help They Need When They Need It."]}
+        headline={[
+          "Get Your Reps",
+          " the Help They Need",
+          " When They Need It.",
+        ]}
         copy={[
           "Be there for your reps when it counts in real time using our visibility features. And with call recordings saved and stored automatically in your CRM, you can use crucial learning tools to keep your team’s skill set sharp.",
         ]}
+        media={
+          <Image
+            src="/features/live-monitoring-and-coaching.png"
+            width={500}
+            height={500}
+            alt="Samespace Pulse"
+            quality={100}
+          />
+        }
       />
       <Section
         headline={["See What an AI Enhanced Sales Team Can Do"]}
         copy={[
           "Our AI powered insights use Speech Recognition to transcribe calls. Our APIs enable you to collate multiple data points into one single source, so your call flow gets smarter, faster.",
         ]}
+        backgroundClass="bg-gray-50"
+        media={
+          <Image
+            src="/features/sentiment-analysis.png"
+            width={500}
+            height={500}
+            alt="Sentiment Analysis"
+            quality={100}
+          />
+        }
       />
 
       <Testimonial

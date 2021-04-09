@@ -18,12 +18,12 @@ export default function CRMIntegrationPage() {
         callToActions={
           <div className="">
             <Link href="/solutions/crm-integrations/sales">
-              <a className="text-lg px-9 py-3 rounded-full bg-accent text-white mr-6">
+              <a className="text-lg px-9 py-3 rounded-full bg-accent text-white mr-6 hover:shadow-inset">
                 For Sales
               </a>
             </Link>
             <Link href="/solutions/crm-integrations/service">
-              <a className="text-lg px-9 py-3 rounded-full text-accent border border-solid border-accent ">
+              <a className="text-lg px-9 py-3 rounded-full text-accent border border-solid border-accent hover:text-white hover:bg-accent">
                 For Service
               </a>
             </Link>
@@ -60,7 +60,7 @@ export default function CRMIntegrationPage() {
         }
       />
       <Section
-        headline={["Ditch the Time Wasting Tasks"]}
+        headline={["Ditch the Time", " Wasting Tasks"]}
         copy={[
           "Let your agents focus on what’s important: talking to more prospects. Let Samespace handle the rest.",
         ]}
@@ -77,7 +77,11 @@ export default function CRMIntegrationPage() {
       />
       <Section
         showMediaFirst
-        headline={["Get Your Reps the Help They Need When They Need It."]}
+        headline={[
+          "Get Your Reps",
+          " the Help They Need",
+          " When They Need It.",
+        ]}
         copy={[
           "Be there for your reps when it counts in real time using our visibility features. And with call recordings saved and stored automatically in your CRM, you can use crucial learning tools to keep your team’s skill set sharp.",
         ]}

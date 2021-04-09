@@ -75,7 +75,7 @@ export default function ContactCenterPage({ toggleDemoForm }) {
         }
       />
       <Section
-        headline={["Integrate with all your apps."]}
+        headline={["Integrate with all", " your apps."]}
         showMediaFirst
         copy={[
           "Many of our customers have existing CRM solutions, like Salesforce or HubSpot. We turn all of them into world-class contact center tools with off-the-shelf CTI integration, rapid custom integration using Samespace Studio, and adaptable open APIs.",
@@ -92,7 +92,7 @@ export default function ContactCenterPage({ toggleDemoForm }) {
       />
       <Section
         backgroundClass="bg-gray-50"
-        headline={["Live Monitoring and coaching"]}
+        headline={["Live Monitoring", " and coaching"]}
         copy={[
           "Imagine every call handled by a top performer. We will help you get there with innovative analytics, monitoring & coaching features that allow managers and experienced agents to easily coach colleagues in real time.",
         ]}

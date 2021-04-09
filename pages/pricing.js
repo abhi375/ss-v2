@@ -12,7 +12,7 @@ export default function PricingPage({ toggleDemoForm }) {
   return (
     <>
       <section className="px-12 py-8 bg-gray-50 sticky top-16 z-10">
-        <div className="max-w-screen-lg mx-auto grid grid-cols-10 gap-6">
+        <div className="max-w-screen-xl mx-auto grid grid-cols-10 gap-6">
           <div className="col-span-4">
             <h1 className="text-3xl font-extrabold">
               The Every-Size <span className="block">Solution</span>
@@ -32,7 +32,6 @@ export default function PricingPage({ toggleDemoForm }) {
                 onClick={toggleDemoForm}
                 title="Get a quote"
                 size="large"
-                fullWidth
               />
             </div>
             <div className="opacity-50 mt-2">Starting at 100 users.</div>
@@ -40,7 +39,7 @@ export default function PricingPage({ toggleDemoForm }) {
         </div>
       </section>
       <section className="pt-16 px-8">
-        <div className="max-w-screen-lg mx-auto">
+        <div className="max-w-screen-xl mx-auto">
           {pricingStructure.map((section) => {
             return (
               <div key={section.id}>

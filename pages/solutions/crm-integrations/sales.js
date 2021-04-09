@@ -48,7 +48,7 @@ export default function SalesCRM({ toggleDemoForm }) {
         }
       />
       <Section
-        headline={["Live Monitoring and Coaching"]}
+        headline={["Live Monitoring", " and Coaching"]}
         copy={[
           "Be there for your reps when it counts in real time using our easy on the eyes visibility features. You’ll see what each rep is up to so you can monitor their activity and support your team when needed.",
           "With call recordings saved and stored automatically in your CRM, you can use crucial learning tools to keep your team’s skill set sharp.",

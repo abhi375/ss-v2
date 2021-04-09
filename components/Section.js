@@ -41,7 +41,7 @@ export default function Section({
 
   const TwoColumnLayout = () => {
     return (
-      <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
+      <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-20 items-center">
         <div className={`${showMediaFirst ? "lg:order-2" : "order-1"}`}>
           {hero ? (
             <h1 className="text-3xl md:text-4xl lg:text-5xl mb-6 font-extrabold">
