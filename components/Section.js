@@ -47,7 +47,7 @@ export default function Section({
             <h1 className="text-3xl md:text-4xl lg:text-5xl mb-6 font-extrabold">
               {headline.map((heading, index) => {
                 return (
-                  <span className="block" key={index}>
+                  <span className="inline sm:block" key={index}>
                     {heading}
                   </span>
                 );
@@ -57,7 +57,7 @@ export default function Section({
             <h3 className="text-3xl lg:text-4xl mb-6 font-extrabold">
               {headline.map((heading, index) => {
                 return (
-                  <span className="block" key={index}>
+                  <span className="inline sm:block" key={index}>
                     {heading}
                   </span>
                 );
