@@ -47,8 +47,8 @@ export default function AnalyticsPage({ toggleDemoForm }) {
         media={
           <Image
             src="/features/ss-dashboard.png"
-            width={520}
-            height={520}
+            width={720}
+            height={578}
             quality={100}
             alt="Samespace Analytics"
           />
