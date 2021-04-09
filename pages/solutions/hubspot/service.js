@@ -14,7 +14,9 @@ export default function SalesCRM({ toggleDemoForm }) {
         copy={[
           "Our Hubspot app streamlines your customer service team’s productivity by automating data entry and their call workflow like never before, saving them time and empowering them to work smarter and harder.",
         ]}
-        callToActions={<Button title="Get a demo" size="large" />}
+        callToActions={
+          <Button onClick={toggleDemoForm} title="Get a demo" size="large" />
+        }
       />
       <LogoWall />
       <Section

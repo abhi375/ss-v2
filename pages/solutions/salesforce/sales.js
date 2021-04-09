@@ -14,7 +14,9 @@ export default function SalesCRM() {
         copy={[
           "Samespace makes your sales team super productive. They’ll handle double the calls with our automation and streamlined workflows.",
         ]}
-        callToActions={<Button title="Get a demo" size="large" />}
+        callToActions={
+          <Button onClick={toggleDemoForm} title="Get a demo" size="large" />
+        }
       />
       <LogoWall />
       <Section

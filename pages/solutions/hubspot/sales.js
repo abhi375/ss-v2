@@ -14,7 +14,9 @@ export default function SalesCRM({ toggleDemoForm }) {
         copy={[
           "Give your team the CRM enhancement they need to get super productive. They’ll take and make double the calls per effortlessly thanks to automation and streamlined workflows. At the end of the day, that means more revenue for you.",
         ]}
-        callToActions={<Button title="Get a demo" size="large" />}
+        callToActions={
+          <Button onClick={toggleDemoForm} title="Get a demo" size="large" />
+        }
       />
       <LogoWall />
       <Section

@@ -15,7 +15,7 @@ export default function EnterprisePage({ toggleDemoForm }) {
         copy={[
           "Imagine a solution without gluing multiple systems. Samespace offers a comprehensive platform right in your CRM, so everything you need is always within reach.",
         ]}
-        callToActions={<Button title="Get a demo" />}
+        callToActions={<Button onClick={toggleDemoForm} title="Get a demo" />}
       />
 
       <Section

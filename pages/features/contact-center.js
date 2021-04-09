@@ -27,7 +27,9 @@ export default function ContactCenterPage({ toggleDemoForm }) {
           "Built from the ground up with cutting edge Internet technologies, Samespace unites your business communication in one place, from anywhere.",
         ]}
         verticalPadding="py-14"
-        callToActions={<Button title="Get a demo" size="large" />}
+        callToActions={
+          <Button title="Get a demo" size="large" onClick={toggleDemoForm} />
+        }
         media={
           <Image
             src="/features/callcenter-hero.png"

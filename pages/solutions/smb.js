@@ -13,7 +13,9 @@ export default function SMBPage({ toggleDemoForm }) {
         copy={[
           "You’re focusing your cash and attention on growth. We get it. We’ve been there too. See how Samespace gives you cutting edge Contact Center tech for less.",
         ]}
-        callToActions={<Button title="Get a demo" size="large" />}
+        callToActions={
+          <Button onClick={toggleDemoForm} title="Get a demo" size="large" />
+        }
       />
       <Section
         headline={["Faster Deployment by Design"]}

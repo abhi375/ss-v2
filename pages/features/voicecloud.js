@@ -17,7 +17,9 @@ export default function VoiceCloudPage({ toggleDemoForm }) {
         copy={[
           "We’ve spent 15 years perfecting our VoIP technology and building one of the world’s most reliable telephony networks, which handles over 10 million calls per day.",
         ]}
-        callToActions={<Button title="Get a demo" size="large" />}
+        callToActions={
+          <Button onClick={toggleDemoForm} title="Get a demo" size="large" />
+        }
       />
 
       <LogoWall />
