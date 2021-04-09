@@ -17,6 +17,17 @@ export default function SalesCRM({ toggleDemoForm }) {
         callToActions={
           <Button onClick={toggleDemoForm} title="Get a demo" size="large" />
         }
+        verticalPadding="py-12"
+        media={
+          <Image
+            width={560}
+            height={560}
+            priority
+            quality={100}
+            src={"/features/samespace-docks.png"}
+            alt="Samespace CTI"
+          />
+        }
       />
       <LogoWall />
       <Section
@@ -25,12 +36,31 @@ export default function SalesCRM({ toggleDemoForm }) {
           "Samespace AI agents can offload up to 60 % of tier 1 conversations, so your live agents are open for more valuable conversations.",
         ]}
         showMediaFirst
+        media={
+          <Image
+            width={560}
+            height={560}
+            quality={100}
+            src={"/features/ai-workload.png"}
+            alt="Samespace CTI"
+          />
+        }
       />
       <Section
         headline={["Instant Information"]}
         copy={[
           "Samespace CTI provides reps with rich contextual data that helps them serve faster. Inbound and outbound calls trigger a screenpop that provides data about prospects including past calls, notes, conversation info and key insights",
         ]}
+        backgroundClass="bg-gray-50"
+        media={
+          <Image
+            width={840}
+            height={560}
+            quality={100}
+            src={"/features/crm-screen-pop.png"}
+            alt="Samespace CTI"
+          />
+        }
       />
       <Section
         headline={["No More Manual Entry"]}
@@ -38,12 +68,31 @@ export default function SalesCRM({ toggleDemoForm }) {
           "Skip the time wasting busywork and let Samespace's native CTI automatically sync all call data, immediately triggering the next conversation for your agent.",
         ]}
         showMediaFirst
+        media={
+          <Image
+            width={560}
+            height={560}
+            quality={100}
+            src={"/features/dock-acw.png"}
+            alt="Samespace CTI"
+          />
+        }
       />
       <Section
         headline={["Customer Feedback", " from Every Call"]}
         copy={[
           "Know for certain what your customers are thinking with a CSAT survey that collects feedback as soon an agent hangs up.",
         ]}
+        backgroundClass="bg-gray-50"
+        media={
+          <Image
+            width={640}
+            height={400}
+            quality={100}
+            src={"/features/csat.png"}
+            alt="CSAT Surveys with Samespace"
+          />
+        }
       />
       <Section
         headline={["Optimized Omnichannel Experiences"]}
@@ -51,12 +100,31 @@ export default function SalesCRM({ toggleDemoForm }) {
           "Connect every channel and platforms your team uses to support customers, no matter where you interact with them. By meeting the customer on their channel of choice, you’re able to curate the best possible experience for that individual, every time.",
         ]}
         showMediaFirst
+        media={
+          <Image
+            width={520}
+            height={520}
+            quality={100}
+            src={"/features/omnichannel.png"}
+            alt="Omnichannel"
+          />
+        }
       />
       <Section
         headline={["Stay in Sync with", " Your Customers"]}
         copy={[
           "Access crucial data on what your customers are saying during calls, including feedback on your product, as well as mentions of competitors, so you can implement changes to make improvements across the board.",
         ]}
+        backgroundClass="bg-gray-50"
+        media={
+          <Image
+            width={520}
+            height={520}
+            quality={100}
+            src={"/features/sentiment-analysis.png"}
+            alt="Sentiment Analysis with Samespace"
+          />
+        }
       />
       <Testimonial
         quote="The first thing that differentiated Samespace was they matched solutions to our complex needs. Delivery team ensured our needs were met, and now our sales & service teams have a solid CTI solution."
