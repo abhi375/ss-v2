@@ -24,7 +24,7 @@ export default function FeaturesMegaMenu() {
         transition={{ ease: "easeInOut", duration: 0.3 }}
         key={"solutions-megamenu"}
       >
-        <Link href="/features/contact-center">
+        <Link href="/platform/contact-center">
           <a>
             <motion.div className="flex items-center group duration-300 transition bg-white hover:bg-green-600 hover:bg-opacity-10 px-4 py-3 -mx-4 rounded-md">
               <div className="w-8 h-8 bg-green-600 rounded-full grid place-items-center mr-2">
@@ -34,7 +34,7 @@ export default function FeaturesMegaMenu() {
             </motion.div>
           </a>
         </Link>
-        <Link href="/features/studio">
+        <Link href="/platform/studio">
           <a>
             <motion.div className="flex items-center group duration-300 transition bg-white hover:bg-yellow-500 hover:bg-opacity-10 px-4 py-3 -mx-4 rounded-md">
               <div className="w-8 h-8 bg-yellow-500 rounded-full grid place-items-center mr-2">
@@ -44,7 +44,7 @@ export default function FeaturesMegaMenu() {
             </motion.div>
           </a>
         </Link>
-        <Link href="/features/analytics">
+        <Link href="/platform/analytics">
           <a>
             <motion.div className="flex items-center group duration-300 transition bg-white hover:bg-rose-500 hover:bg-opacity-10 px-4 py-3 -mx-4 rounded-md">
               <div className="w-8 h-8 bg-rose-500 rounded-full grid place-items-center mr-2">
@@ -55,7 +55,7 @@ export default function FeaturesMegaMenu() {
           </a>
         </Link>
 
-        <Link href="/features/developers">
+        <Link href="/platform/developers">
           <a>
             <motion.div className="flex items-center group duration-300 transition bg-white hover:bg-indigo-600 hover:bg-opacity-10 px-4 py-3 -mx-4 rounded-md">
               <div className="w-8 h-8 bg-indigo-600 rounded-full grid place-items-center mr-2">
@@ -66,7 +66,7 @@ export default function FeaturesMegaMenu() {
           </a>
         </Link>
 
-        <Link href="/features/voicecloud">
+        <Link href="/platform/voicecloud">
           <a>
             <motion.div className="flex items-center group duration-300 transition bg-white hover:bg-gray-600 hover:bg-opacity-10 px-4 py-3 -mx-4 rounded-md">
               <div className="w-8 h-8 bg-gray-600 rounded-full grid place-items-center mr-2">

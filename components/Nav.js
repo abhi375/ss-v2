@@ -77,7 +77,7 @@ export default function Nav({ toggleDemoForm }) {
                 onMouseLeave={() => handleActiveMegaMenu("")}
               >
                 <div className="group-hover:text-accent text-[12px] uppercase font-semibold tracking-wide">
-                  Features
+                  Platform
                 </div>
                 {activeMegaMenu === "features" && <FeaturesMegaMenu />}
               </div>

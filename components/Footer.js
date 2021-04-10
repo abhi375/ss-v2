@@ -30,21 +30,21 @@ export default function Footer() {
           </div>
 
           <div>
-            <p className=" font-bold">Features</p>
+            <p className=" font-bold">Platform</p>
             <div className="inline-flex flex-col">
-              <Link href="/features/contact-center">
+              <Link href="/platform/contact-center">
                 <a className="mt-2 hover:text-accent">Contact Center</a>
               </Link>
-              <Link href="/features/studio">
+              <Link href="/platform/studio">
                 <a className="mt-2 hover:text-accent">Conversational Studio</a>
               </Link>
-              <Link href="/features/analytics">
+              <Link href="/platform/analytics">
                 <a className="mt-2 hover:text-accent">Analytics</a>
               </Link>
-              <Link href="/features/developers">
+              <Link href="/platform/developers">
                 <a className="mt-2 hover:text-accent">Developer Tools</a>
               </Link>
-              <Link href="/features/voicecloud">
+              <Link href="/platform/voicecloud">
                 <a className="mt-2 hover:text-accent">Voice Cloud</a>
               </Link>
               <Link href="/pricing">
