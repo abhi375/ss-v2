@@ -12,7 +12,7 @@ export default function Home({ toggleDemoForm }) {
         headline={["Cloud Contact Center Software.", "Centered on Experience."]}
         columns="one"
         textAlignment="center"
-        verticalPadding="py-16 md:py-28"
+        verticalPadding="py-16 md:py-32"
         copy={[
           "Built on cutting-edge Internet technologies and design thinking principles, samespace elates customer experience, increases agent productivity and saves a ton of money.",
         ]}
@@ -42,7 +42,7 @@ export default function Home({ toggleDemoForm }) {
       <Section
         headline={["Scale your sales without scaling teams."]}
         columns="two"
-        backgroundClass="bg-gray-50"
+        backgroundClass="bg-snowwhite"
         showMediaFirst
         copy={[
           "Our smart automation increases the number of connected calls by 100% and makes sales teams 50% more productive by automatically logging activity.",
@@ -65,8 +65,8 @@ export default function Home({ toggleDemoForm }) {
         ]}
         media={
           <Image
-            src="/features/crm-integrations.png"
-            alt="Samespace Playbooks"
+            src="/features/crm-galaxy.png"
+            alt="Samespace Integrations"
             width={520}
             height={520}
             quality={100}
@@ -77,14 +77,14 @@ export default function Home({ toggleDemoForm }) {
         headline={["AI that speaks", " your language."]}
         columns="two"
         showMediaFirst
-        backgroundClass="bg-gray-50"
+        backgroundClass="bg-snowwhite"
         copy={[
           "Built from the ground up, Samespace Conversational AI provides customizable and adaptable AI Bots with built-in sentiment analysis.",
         ]}
         media={
           <Image
             src="/features/sentiment-analysis.png"
-            alt="Samespace Playbooks"
+            alt="Samespace Sentiment Analysis"
             width={520}
             height={520}
             quality={100}
@@ -100,7 +100,7 @@ export default function Home({ toggleDemoForm }) {
         media={
           <Image
             src="/features/cc-analytics.png"
-            alt="Samespace Playbooks"
+            alt="Samespace Analytics"
             width={520}
             height={520}
             quality={100}
@@ -111,7 +111,7 @@ export default function Home({ toggleDemoForm }) {
         headline={["Set the bar higher", " with HiFi."]}
         columns="two"
         showMediaFirst
-        backgroundClass="bg-gray-50"
+        backgroundClass="bg-snowwhite"
         copy={[
           "Embed high fidelity calls into your web with built-in authentication and fastlane routing.",
         ]}

@@ -1,5 +1,5 @@
 import { AnimatePresence, motion } from "framer-motion";
-import { IconClose } from "./Icons";
+import { HoverArrowIcon, IconClose } from "./Icons";
 import * as Yup from "yup";
 import { useFormik } from "formik";
 import { isBrowser } from "react-device-detect";
@@ -208,12 +208,19 @@ export default function DemoForm({ toggleDemoForm }) {
               <FormField>
                 <button
                   type="submit"
-                  className={`text-lg px-9 py-3 text-white rounded-full ${
+                  className={`text-lg group flex items-center justify-center px-9 py-3 text-white rounded-full ${
                     isFormSubmitted ? "bg-green-600" : "bg-accent"
                   } w-full md:w-full`}
                   disabled={isLoading}
                 >
-                  {isFormSubmitted ? "Done" : isLoading ? "Sending..." : "Send"}
+                  <span>
+                    {isFormSubmitted
+                      ? "Done"
+                      : isLoading
+                      ? "Sending..."
+                      : "Send"}
+                  </span>
+                  <HoverArrowIcon />
                 </button>
               </FormField>
             </div>

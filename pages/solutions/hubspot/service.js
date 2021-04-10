@@ -50,7 +50,7 @@ export default function SalesCRM({ toggleDemoForm }) {
         copy={[
           "Skip the time wasting busywork and let Samespace's native CTI automatically sync all call data, immediately triggering the next conversation for your agent.",
         ]}
-        backgroundClass="bg-gray-50"
+        backgroundClass="bg-snowwhite"
         media={
           <Image
             src="/features/hubspot-call-logs.png"
@@ -79,7 +79,7 @@ export default function SalesCRM({ toggleDemoForm }) {
       />
       <Section
         headline={["Customer Feedback from Every Call"]}
-        backgroundClass="bg-gray-50"
+        backgroundClass="bg-snowwhite"
         copy={[
           "Know for certain what your customers are thinking with a CSAT survey that collects feedback as soon an agent hangs up.",
         ]}
@@ -112,7 +112,7 @@ export default function SalesCRM({ toggleDemoForm }) {
 
       <Section
         headline={["Stay in Sync with", " Your Customers"]}
-        backgroundClass="bg-gray-50"
+        backgroundClass="bg-snowwhite"
         copy={[
           "Access crucial data on what your customers are saying during calls, including feedback on your product, as well as mentions of competitors, so you can implement changes to make improvements across the board.",
         ]}

@@ -36,7 +36,7 @@ export default function AnalyticsPage({ toggleDemoForm }) {
           />
         }
       />
-      <LogoWall backgroundClass="bg-white" />
+
       <Section
         headline={["Powerful Insights"]}
         showMediaFirst
@@ -111,6 +111,7 @@ export default function AnalyticsPage({ toggleDemoForm }) {
           />
         }
       />
+      <LogoWall backgroundClass="bg-white" />
       <Banner
         title="Turn insights into action and action into results."
         bannerAction={toggleDemoForm}

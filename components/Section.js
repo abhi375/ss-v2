@@ -16,7 +16,7 @@ export default function Section({
   const OneColumnLayout = () => {
     return (
       <div className="grid grid-cols-1 place-items-center">
-        <h1 className="text-3xl md:text-4xl lg:text-6xl font-black w-full md:w-5/6 mx-auto">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-black w-full md:w-5/6 mx-auto">
           {headline.map((heading, index) => {
             return (
               <span className="inline md:block" key={index}>
@@ -29,7 +29,7 @@ export default function Section({
         {copy.map((para, index) => {
           return (
             <p
-              className={`text-xl md:text-2xl leading-normal w-full md:w-3/5 mx-auto mt-6 ${
+              className={`text-xl leading-normal w-full md:w-3/5 mx-auto mt-6 ${
                 callToActions ? "mb-8" : ""
               }`}
               key={index}
@@ -73,7 +73,7 @@ export default function Section({
           {copy.map((para, index) => {
             return (
               <p
-                className={`text-xl md:text-2xl leading-normal ${
+                className={`text-xl leading-normal ${
                   callToActions ? "mb-8" : ""
                 }`}
                 key={index}

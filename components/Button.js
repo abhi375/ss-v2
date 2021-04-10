@@ -15,7 +15,7 @@ export default function Button({
     <motion.button
       type={type && type}
       className={`text-base rounded-full transition duration-300  focus:outline-none font-semibold flex place-items-center group hover:shadow-inset
-      ${size === "large" ? "px-6 py-3" : "px-4 py-1.5"}
+      ${size === "large" ? "px-6 py-2.5" : "px-4 py-1.5"}
       ${backgroundClass ? backgroundClass : "bg-accent"}
       ${foregroundClass ? foregroundClass : "text-white"}
       ${fullWidth && "w-full"}
@@ -25,9 +25,7 @@ export default function Button({
       disabled={disabled && disabled}
     >
       <span
-        className={`inline-block mr-2 ${
-          size === "large" ? "text-lg" : "text-base"
-        }`}
+        className={`inline-block ${size === "large" ? "text-lg" : "text-base"}`}
       >
         {title}
       </span>

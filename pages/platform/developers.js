@@ -39,10 +39,9 @@ export default function DevelopersPage({ toggleDemoForm }) {
           />
         }
       />
-      <LogoWall />
 
       <Section
-        backgroundClass="bg-gray-50"
+        backgroundClass="bg-snowwhite"
         headline={["Speech Recognition"]}
         copy={[
           "Get real-time speech and intent recognition and offer more personalized and intuitive customer care.",
@@ -77,7 +76,7 @@ export default function DevelopersPage({ toggleDemoForm }) {
 
       <Section
         headline={["Chat SDK"]}
-        backgroundClass="bg-gray-50"
+        backgroundClass="bg-snowwhite"
         copy={[
           "Integrate the Samespace chat widget on your website and mobile apps.",
         ]}
@@ -111,7 +110,7 @@ export default function DevelopersPage({ toggleDemoForm }) {
 
       <Section
         headline={["Serverless Apps"]}
-        backgroundClass="bg-gray-50"
+        backgroundClass="bg-snowwhite"
         copy={[
           "Build and deploy your codes right within Samespace, without need for additional resources and hosting.",
         ]}
@@ -126,6 +125,8 @@ export default function DevelopersPage({ toggleDemoForm }) {
           />
         }
       />
+
+      <LogoWall />
 
       <Banner
         title="See why developers love us."

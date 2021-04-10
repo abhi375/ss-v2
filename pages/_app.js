@@ -1,5 +1,6 @@
 import "tailwindcss/tailwind.css";
 import "../styles/globals.css";
+import { DefaultSeo } from "next-seo";
 
 import { useState } from "react";
 import Nav from "@/components/Nav";
@@ -30,6 +31,11 @@ function MyApp({ Component, pageProps }) {
           </AnimatePresence>
 
           <ConsentBanner />
+
+          <DefaultSeo
+            title="Samespace"
+            description="Cloud Contact Center Software. Centered on Experience."
+          />
 
           <Nav toggleDemoForm={toggleDemoForm} />
           <section className="mt-16">

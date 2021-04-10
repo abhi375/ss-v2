@@ -36,7 +36,7 @@ export default function ContactCenterPage({ toggleDemoForm }) {
           />
         }
       />
-      <LogoWall />
+
       <Section
         headline={["A Single tool for Sales", " and Support"]}
         showMediaFirst
@@ -55,7 +55,7 @@ export default function ContactCenterPage({ toggleDemoForm }) {
         }
       />
       <Section
-        backgroundClass="bg-gray-50"
+        backgroundClass="bg-snowwhite"
         headline={["AI agents for any contact center solution"]}
         copy={[
           "Whether you use our Contact Center Suite or your existing solution, Samespace AI agents can offload up to 60 % of tier 1 conversations. So your live agents are open for more valuable conversations.",
@@ -87,7 +87,7 @@ export default function ContactCenterPage({ toggleDemoForm }) {
         }
       />
       <Section
-        backgroundClass="bg-gray-50"
+        backgroundClass="bg-snowwhite"
         headline={["Live Monitoring", " and coaching"]}
         copy={[
           "Imagine every call handled by a top performer. We will help you get there with innovative analytics, monitoring & coaching features that allow managers and experienced agents to easily coach colleagues in real time.",
@@ -119,7 +119,7 @@ export default function ContactCenterPage({ toggleDemoForm }) {
         }
       />
       <Section
-        backgroundClass="bg-gray-50"
+        backgroundClass="bg-snowwhite"
         headline={["Powerful Insights"]}
         copy={[
           "Stop struggling to find data. With Samespace, the data finds you! Our powerful and simple analytics module shows AHT, ASA, sentiment, abandon rate, and more, all in one distinct display.",
@@ -158,6 +158,7 @@ export default function ContactCenterPage({ toggleDemoForm }) {
           />
         }
       />
+      <LogoWall />
       <Banner bannerAction={toggleDemoForm} />
     </>
   );

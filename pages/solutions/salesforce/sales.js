@@ -35,7 +35,7 @@ export default function SalesCRM({ toggleDemoForm }) {
           </div>
         }
       />
-      <LogoWall />
+      <LogoWall singleColumn />
       <Section
         headline={["No More Tab Switching"]}
         copy={[
@@ -56,7 +56,7 @@ export default function SalesCRM({ toggleDemoForm }) {
         headline={[
           "Connect Prospects to the Right Reps the First Time. Every Time.",
         ]}
-        backgroundClass="bg-gray-50"
+        backgroundClass="bg-snowwhite"
         copy={[
           "Our dynamic routing directs leads based on anything you know about the caller, including lead source, campaign, past interaction history, and more.",
         ]}
@@ -88,7 +88,7 @@ export default function SalesCRM({ toggleDemoForm }) {
       />
       <Section
         headline={["Get Your Reps the Help They Need, When They Need It."]}
-        backgroundClass="bg-gray-50"
+        backgroundClass="bg-snowwhite"
         copy={[
           "Using our live monitoring and coaching, you’ll see what each rep is up to so you can monitor their activity and assist your team when needed, even during live calls.",
         ]}

@@ -1,4 +1,5 @@
 import Banner from "@/components/Banner";
+import { HoverArrowIcon } from "@/components/Icons";
 import LogoWall from "@/components/LogoWall";
 import Section from "@/components/Section";
 import Testimonial from "@/components/Testimonial";
@@ -20,13 +21,15 @@ export default function CRMIntegrationPage({ toggleDemoForm }) {
         callToActions={
           <div className="flex flex-col sm:flex-row items-center">
             <Link href="/solutions/salesforce/sales">
-              <a className="text-lg px-9 py-3 rounded-full bg-white text-accent grid place-items-center hover:shadow-inset sm:mr-6 mb-6 sm:mb-0 w-full sm:w-auto">
-                For Sales
+              <a className="text-lg px-6 py-2.5 rounded-full bg-white group text-accent flex items-center justify-center hover:shadow-inset sm:mr-6 mb-6 sm:mb-0 w-full sm:w-auto font-semibold">
+                <span> For Sales</span>
+                <HoverArrowIcon />
               </a>
             </Link>
             <Link href="/solutions/salesforce/service">
-              <a className="text-lg px-9 py-3 rounded-full text-white border border-solid grid place-items-center border-white hover:text-accent hover:bg-white w-full sm:w-auto">
-                For Service
+              <a className="text-lg px-6 py-2.5 rounded-full text-white border border-solid flex items-center justify-center group border-white hover:text-accent hover:bg-white w-full sm:w-auto font-semibold">
+                <span>For Service</span>
+                <HoverArrowIcon />
               </a>
             </Link>
           </div>
@@ -42,7 +45,7 @@ export default function CRMIntegrationPage({ toggleDemoForm }) {
           />
         }
       />
-      <LogoWall />
+      <LogoWall singleColumn />
       <Section
         headline={["2x the Calls"]}
         copy={[
@@ -60,7 +63,7 @@ export default function CRMIntegrationPage({ toggleDemoForm }) {
         }
       />
       <Section
-        backgroundClass="bg-gray-50"
+        backgroundClass="bg-snowwhite"
         headline={["Deeper Insights with AI"]}
         copy={[
           "Access crucial data on what your customers are saying during calls including feedback on your product, as well as mentions of competitors, so you can implement changes to make improvements across the board.",

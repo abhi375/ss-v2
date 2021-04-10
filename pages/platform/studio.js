@@ -17,7 +17,7 @@ export default function StudioPage({ toggleDemoForm }) {
         copy={[
           "Our Conversation Studio is uniquely intuitive and easy to use, reducing training and deployment times to an absolute minimum.",
         ]}
-        backgroundClass="bg-gray-50"
+        backgroundClass="bg-snowwhite"
         textAlignment="center"
         columns="one"
         callToActions={
@@ -52,7 +52,7 @@ export default function StudioPage({ toggleDemoForm }) {
         }
       />
       <Section
-        backgroundClass="bg-gray-50"
+        backgroundClass="bg-snowwhite"
         headline={["One Studio:", "So. Many. Channels"]}
         copy={[
           "Samespace Studio allows you to create more meaningful customer interactions on the platforms they use most frequently.",
@@ -84,7 +84,7 @@ export default function StudioPage({ toggleDemoForm }) {
         }
       />
       <Section
-        backgroundClass="bg-gray-50"
+        backgroundClass="bg-snowwhite"
         headline={["The Platform Developers", "  Love Too"]}
         copy={[
           "Extend Studio functionality with advanced business logic using custom functions and webhooks.",

@@ -43,7 +43,7 @@ export default function VoiceCloudPage({ toggleDemoForm }) {
 
       <Section
         headline={["100% Uptime,", "100% of the Time"]}
-        backgroundClass="bg-gray-50"
+        backgroundClass="bg-snowwhite"
         copy={[
           "Our multi-region cloud has no single point of failure, so your calls always go through, even when a data center faces an outage.",
         ]}
@@ -77,7 +77,7 @@ export default function VoiceCloudPage({ toggleDemoForm }) {
 
       <Section
         headline={["Optimized for Online"]}
-        backgroundClass="bg-gray-50"
+        backgroundClass="bg-snowwhite"
         copy={[
           "Our routing algorithm dynamically selects the ideal path to cope with latency and packet drops for a singularly crisp and jitter-free call experience.",
         ]}

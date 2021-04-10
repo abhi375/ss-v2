@@ -1,5 +1,6 @@
 import Banner from "@/components/Banner";
 import Button from "@/components/Button";
+import { HoverArrowIcon } from "@/components/Icons";
 import LogoWall from "@/components/LogoWall";
 import Section from "@/components/Section";
 import Testimonial from "@/components/Testimonial";
@@ -11,7 +12,7 @@ export default function CRMIntegrationPage() {
     <>
       <Section
         hero
-        backgroundClass="bg-gray-50"
+        backgroundClass="bg-snowwhite"
         headline={["The Final Piece of Your", "CRM Puzzle"]}
         copy={[
           "Your CRM isn’t complete without Samespace. We seamlessly integrate into any CRM to make your contact center agile and adaptable, expertly enhancing all of your calls.",
@@ -19,13 +20,15 @@ export default function CRMIntegrationPage() {
         callToActions={
           <div className="flex flex-col sm:flex-row items-center">
             <Link href="/solutions/crm-integrations/sales">
-              <a className="text-lg px-9 py-3 rounded-full bg-accent text-white grid place-items-center hover:shadow-inset sm:mr-6 mb-6 sm:mb-0 w-full sm:w-auto">
-                For Sales
+              <a className="text-lg px-9 py-3 rounded-full bg-accent text-white flex items-center justify-center font-semibold group hover:shadow-inset sm:mr-6 mb-6 sm:mb-0 w-full sm:w-auto">
+                <span>For Sales</span>
+                <HoverArrowIcon />
               </a>
             </Link>
             <Link href="/solutions/crm-integrations/service">
-              <a className="text-lg px-9 py-3 rounded-full text-accent border border-solid grid place-items-center border-accent hover:text-white hover:bg-accent w-full sm:w-auto">
+              <a className="text-lg px-9 py-3 rounded-full text-accent border border-solid flex items-center justify-center font-semibold group border-accent hover:text-white hover:bg-accent w-full sm:w-auto">
                 For Service
+                <HoverArrowIcon />
               </a>
             </Link>
           </div>
@@ -65,7 +68,7 @@ export default function CRMIntegrationPage() {
         copy={[
           "Let your agents focus on what’s important: talking to more prospects. Let Samespace handle the rest.",
         ]}
-        backgroundClass="bg-gray-50"
+        backgroundClass="bg-snowwhite"
         media={
           <Image
             width={520}
@@ -102,7 +105,7 @@ export default function CRMIntegrationPage() {
         copy={[
           "Samespace’s AI powered insights use Speech Recognition to transcribe calls. Our APIs enable you to collate multiple data points into one single source, so your call flow gets smarter, faster.",
         ]}
-        backgroundClass="bg-gray-50"
+        backgroundClass="bg-snowwhite"
         media={
           <Image
             width={520}

@@ -1,4 +1,5 @@
 import Banner from "@/components/Banner";
+import { HoverArrowIcon } from "@/components/Icons";
 import LogoWall from "@/components/LogoWall";
 import Section from "@/components/Section";
 import Testimonial from "@/components/Testimonial";
@@ -12,7 +13,7 @@ export default function CRMIntegrationPage({ toggleDemoForm }) {
         hero
         backgroundClass="bg-[#2F404F]"
         foregroundClass="text-white"
-        verticalPadding="py-16 lg:py-24"
+        verticalPadding="py-16 lg:py-28"
         headline={["Supercharge Your Sales and Support Teams"]}
         copy={[
           "Our HubSpot Integration enables your entire team to streamline their call workflows, increase productivity, and track customers through the whole customer journey: from marketing to sales and success.",
@@ -20,13 +21,15 @@ export default function CRMIntegrationPage({ toggleDemoForm }) {
         callToActions={
           <div className="flex flex-col sm:flex-row items-center">
             <Link href="/solutions/hubspot/sales">
-              <a className="text-lg px-9 py-3 rounded-full bg-[#FF6F1F] text-white grid place-items-center hover:shadow-inset sm:mr-6 mb-6 sm:mb-0 w-full sm:w-auto">
-                For Sales
+              <a className="text-lg px-9 py-3 rounded-full bg-[#FF6F1F] text-white flex items-center justify-center group hover:shadow-inset sm:mr-6 mb-6 sm:mb-0 w-full sm:w-auto font-semibold">
+                <span>For Sales</span>
+                <HoverArrowIcon />
               </a>
             </Link>
             <Link href="/solutions/hubspot/service">
-              <a className="text-lg px-9 py-3 rounded-full text-[#FF6F1F] border border-solid grid place-items-center border-[#FF6F1F] hover:text-white hover:bg-[#FF6F1F] w-full sm:w-auto">
-                For Service
+              <a className="text-lg px-9 py-3 rounded-full text-[#FF6F1F] border border-solid flex items-center justify-center group border-[#FF6F1F] hover:text-white hover:bg-[#FF6F1F] w-full sm:w-auto font-semibold">
+                <span>For Service</span>
+                <HoverArrowIcon />
               </a>
             </Link>
           </div>
@@ -42,7 +45,7 @@ export default function CRMIntegrationPage({ toggleDemoForm }) {
           />
         }
       />
-      <LogoWall />
+      <LogoWall singleColumn />
       <Section
         headline={[
           "Connect Prospects to the Right Reps the First Time. Every Time.",
@@ -66,7 +69,7 @@ export default function CRMIntegrationPage({ toggleDemoForm }) {
         copy={[
           "Let your agents focus on what’s important: talking to more prospects. Let Samespace handle the rest.",
         ]}
-        backgroundClass="bg-gray-50"
+        backgroundClass="bg-snowwhite"
         media={
           <Image
             src="/features/hubspot-call-logs.png"
@@ -102,7 +105,7 @@ export default function CRMIntegrationPage({ toggleDemoForm }) {
         copy={[
           "Our AI powered insights use Speech Recognition to transcribe calls. Our APIs enable you to collate multiple data points into one single source, so your call flow gets smarter, faster.",
         ]}
-        backgroundClass="bg-gray-50"
+        backgroundClass="bg-snowwhite"
         media={
           <Image
             src="/features/sentiment-analysis.png"

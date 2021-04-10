@@ -9,7 +9,7 @@ export default function EnterprisePage({ toggleDemoForm }) {
     <>
       <Section
         hero
-        backgroundClass="bg-gray-50"
+        backgroundClass="bg-snowwhite"
         headline={[
           "A Fully Stocked Contact Center Platform Docked Right in Your CRM",
         ]}
@@ -55,7 +55,7 @@ export default function EnterprisePage({ toggleDemoForm }) {
         copy={[
           "Our global support team means we’re on the same schedule as your Contact Centers, no matter where, or when, they are.",
         ]}
-        backgroundClass="bg-gray-50"
+        backgroundClass="bg-snowwhite"
         media={
           <Image
             src={"/features/ss-support.png"}

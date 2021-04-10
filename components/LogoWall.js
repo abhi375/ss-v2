@@ -1,13 +1,17 @@
 import Image from "next/image";
 
-export default function LogoWall({ backgroundClass }) {
+export default function LogoWall({ backgroundClass, singleColumn }) {
   return (
     <section
-      className={`px-12 py-10 ${
-        backgroundClass ? backgroundClass : "bg-gray-50"
+      className={`px-12 py-8 ${
+        backgroundClass ? backgroundClass : "bg-snowwhite"
       }`}
     >
-      <div className="max-w-screen-xl mx-auto grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-12  items-center">
+      <div
+        className={`max-w-screen-xl mx-auto grid grid-cols-2 md:grid-cols-4 ${
+          singleColumn ? "lg:grid-cols-8" : "lg:grid-cols-4"
+        } gap-12 items-center`}
+      >
         <Image
           alt="Samespace Customer"
           src="/logos/uhc.svg"
