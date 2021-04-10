@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { HoverArrowIcon } from "./Icons";
 
 export default function Button({
   title,
@@ -13,10 +14,8 @@ export default function Button({
   return (
     <motion.button
       type={type && type}
-      whileHover={{ scale: 1.02 }}
-      whileTap={{ scale: 0.98 }}
-      className={`text-sm rounded-full transition duration-300 hover:shadow-inset focus:outline-none font-semibold
-      ${size === "large" ? "text-lg px-9 py-3" : "px-6 py-2 "}
+      className={`text-base rounded-full transition duration-300  focus:outline-none font-semibold flex place-items-center group hover:shadow-inset
+      ${size === "large" ? "px-6 py-3" : "px-4 py-1.5"}
       ${backgroundClass ? backgroundClass : "bg-accent"}
       ${foregroundClass ? foregroundClass : "text-white"}
       ${fullWidth && "w-full"}
@@ -25,7 +24,14 @@ export default function Button({
       onClick={onClick && onClick}
       disabled={disabled && disabled}
     >
-      {title}
+      <span
+        className={`inline-block mr-2 ${
+          size === "large" ? "text-lg" : "text-base"
+        }`}
+      >
+        {title}
+      </span>
+      <HoverArrowIcon />
     </motion.button>
   );
 }
