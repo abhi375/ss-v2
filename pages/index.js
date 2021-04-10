@@ -9,7 +9,7 @@ export default function Home({ toggleDemoForm }) {
   return (
     <>
       <Section
-        headline={["Cloud Contact Center software—centered on experience."]}
+        headline={["Cloud Contact Center Software.", "Centered on Experience."]}
         columns="one"
         textAlignment="center"
         verticalPadding="py-16 md:py-24"
@@ -21,19 +21,8 @@ export default function Home({ toggleDemoForm }) {
             <Button size="large" title="Get a demo" onClick={toggleDemoForm} />
           </div>
         }
-        patternChild={
-          <div className="absolute inset-0 opacity-30">
-            <Image
-              src="/glow.png"
-              alt="samespace"
-              priority
-              className="w-full h-full z-[0]"
-              layout="fill"
-            />
-          </div>
-        }
       />
-      <LogoWall backgroundClass="bg-white" />
+      <LogoWall />
       <Section
         headline={["Complexity now a thing", " of the past."]}
         columns="two"

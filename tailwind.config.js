@@ -1,11 +1,13 @@
 const colors = require("tailwindcss/colors");
-const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
   mode: "jit",
   purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    fontFamily: {
+      sans: ["lato", "sans-serif"],
+    },
     screens: {
       sm: "640px",
       // => @media (min-width: 640px) { ... }
@@ -46,6 +48,7 @@ module.exports = {
       },
       colors: {
         accent: "#006aff",
+        // accent: "#645BFF",
         gray: colors.trueGray,
         amber: colors.amber,
         rose: colors.rose,
