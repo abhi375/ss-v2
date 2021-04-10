@@ -16,7 +16,7 @@ export default function CRMIntegrationPage({ toggleDemoForm }) {
         copy={[
           "Take your Salesforce to the next level with our native CTI and automation.",
         ]}
-        verticalPadding="lg:py-24"
+        verticalPadding="py-16 lg:py-24"
         callToActions={
           <div className="flex flex-col sm:flex-row items-center">
             <Link href="/solutions/salesforce/sales">

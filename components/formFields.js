@@ -43,7 +43,7 @@ export function Input({
         autoFocus={autoFocus && autoFocus}
         className={`${
           error ? "border-red-600" : "border-gray-200"
-        } w-full px-2 py-2 border border-solid  rounded-md`}
+        } w-full px-2 py-3 border border-solid  rounded-md`}
       />
       {error && (
         <p className="absolute -bottom-6 text-[13px] text-red-600">

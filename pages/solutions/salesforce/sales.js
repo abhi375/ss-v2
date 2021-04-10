@@ -13,7 +13,7 @@ export default function SalesCRM({ toggleDemoForm }) {
       <Section
         hero
         headline={["A Superior Sales Team"]}
-        verticalPadding="lg:py-28"
+        verticalPadding="py-20 lg:py-28"
         copy={[
           "Samespace makes your sales team super productive. They’ll handle double the calls with our automation and streamlined workflows.",
         ]}
