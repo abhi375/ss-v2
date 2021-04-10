@@ -16,7 +16,7 @@ export default function Section({
   const OneColumnLayout = () => {
     return (
       <div className="grid grid-cols-1 place-items-center">
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-black w-full md:w-4/6 mx-auto">
+        <h1 className="text-3xl md:text-4xl lg:text-6xl font-black w-full md:w-5/6 mx-auto">
           {headline.map((heading, index) => {
             return (
               <span className="inline md:block" key={index}>

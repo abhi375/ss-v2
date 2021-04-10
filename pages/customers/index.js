@@ -8,7 +8,7 @@ export default function CustomersPage({ stories, toggleDemoForm }) {
   return (
     <>
       <section className="px-6 lg:px-12 pt-20">
-        <div className="max-w-screen-lg mx-auto ">
+        <div className="max-w-screen-xl mx-auto ">
           <h1 className="text-3xl md:text-5xl font-extrabold">Our Customers</h1>
           <p className="text-xl mt-4">
             Meet the companies that chose Samespace. They’re growing every day,
@@ -17,7 +17,7 @@ export default function CustomersPage({ stories, toggleDemoForm }) {
         </div>
       </section>
       <section className="px-6 lg:px-12 py-16">
-        <div className="max-w-screen-lg mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {stories &&
             stories.map((story) => {
               return (
@@ -35,7 +35,7 @@ export default function CustomersPage({ stories, toggleDemoForm }) {
                         />
                       </div>
                       <div>
-                        <h3 className="text-lg md:text-xl font-semibold mt-4 mb-2">
+                        <h3 className="text-lg md:text-lg font-semibold mt-4 mb-2">
                           {story.title}
                         </h3>
 

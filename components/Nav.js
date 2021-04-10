@@ -141,7 +141,7 @@ export default function Nav({ toggleDemoForm }) {
                 )}
               </>
 
-              <Button title="Get a demo" onClick={toggleDemoForm} />
+              <Button title="Talk to an Expert" onClick={toggleDemoForm} />
             </div>
           </div>
 

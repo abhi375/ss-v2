@@ -12,7 +12,7 @@ export default function Home({ toggleDemoForm }) {
         headline={["Cloud Contact Center Software.", "Centered on Experience."]}
         columns="one"
         textAlignment="center"
-        verticalPadding="py-16 md:py-24"
+        verticalPadding="py-16 md:py-28"
         copy={[
           "Built on cutting-edge Internet technologies and design thinking principles, samespace elates customer experience, increases agent productivity and saves a ton of money.",
         ]}

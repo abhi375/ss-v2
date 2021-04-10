@@ -7,7 +7,7 @@ export default function LogoWall({ backgroundClass }) {
         backgroundClass ? backgroundClass : "bg-gray-50"
       }`}
     >
-      <div className="max-w-screen-xl mx-auto grid grid-cols-2 gap-4 md:grid-cols-4 lg:grid-cols-8 md:gap-8 lg:gap-4 items-center">
+      <div className="max-w-screen-xl mx-auto grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-12  items-center">
         <Image
           alt="Samespace Customer"
           src="/logos/uhc.svg"
@@ -36,13 +36,13 @@ export default function LogoWall({ backgroundClass }) {
           alt="Samespace Customer"
           src="/logos/homecredit.svg"
           width="100%"
-          height="32px"
+          height="36px"
         />
         <Image
           alt="Samespace Customer"
           src="/logos/hear.svg"
           width="100%"
-          height="40px"
+          height="44px"
         />
         <Image
           alt="Samespace Customer"
