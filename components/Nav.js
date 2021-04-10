@@ -3,7 +3,7 @@ import Link from "next/link";
 import { LogoIcon, MenuIcon } from "@/components/Icons";
 import Button from "@/components/Button";
 import SolutionsMegaMenu from "@/components/SolutionsMegaMenu";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, AnimateSharedLayout, motion } from "framer-motion";
 import FeaturesMegaMenu from "./FeaturesMegaMenu";
 import { selectSpaceId } from "@/lib/session";
 import SpaceIDPopover from "./SpaceIDPopover";
@@ -70,28 +70,30 @@ export default function Nav({ toggleDemoForm }) {
 
           <div className="hidden lg:flex flex-1 h-full ">
             <div className="grid grid-flow-col auto-cols-auto gap-0 items-center ml-8">
-              <div
-                className="text-black place-items-center group cursor-pointer relative h-full grid px-4"
-                onClick={() => handleActiveMegaMenu("features")}
-                onMouseEnter={() => handleActiveMegaMenu("features")}
-                onMouseLeave={() => handleActiveMegaMenu("")}
-              >
-                <div className="group-hover:text-accent text-[12px] uppercase font-semibold tracking-wide">
-                  Platform
+              <AnimateSharedLayout>
+                <div
+                  className="text-black place-items-center group cursor-pointer relative h-full grid px-4"
+                  onClick={() => handleActiveMegaMenu("features")}
+                  onMouseEnter={() => handleActiveMegaMenu("features")}
+                  onMouseLeave={() => handleActiveMegaMenu("")}
+                >
+                  <div className="group-hover:text-accent text-[12px] uppercase font-semibold tracking-wide">
+                    Platform
+                  </div>
+                  {activeMegaMenu === "features" && <FeaturesMegaMenu />}
                 </div>
-                {activeMegaMenu === "features" && <FeaturesMegaMenu />}
-              </div>
-              <div
-                className="text-black place-items-center group cursor-pointer relative h-full grid px-4"
-                onClick={() => handleActiveMegaMenu("solutions")}
-                onMouseEnter={() => handleActiveMegaMenu("solutions")}
-                onMouseLeave={() => handleActiveMegaMenu("")}
-              >
-                <div className="group-hover:text-accent text-[12px] uppercase font-semibold tracking-wide">
-                  Solutions
+                <div
+                  className="text-black place-items-center group cursor-pointer relative h-full grid px-4"
+                  onClick={() => handleActiveMegaMenu("solutions")}
+                  onMouseEnter={() => handleActiveMegaMenu("solutions")}
+                  onMouseLeave={() => handleActiveMegaMenu("")}
+                >
+                  <div className="group-hover:text-accent text-[12px] uppercase font-semibold tracking-wide">
+                    Solutions
+                  </div>
+                  {activeMegaMenu === "solutions" && <SolutionsMegaMenu />}
                 </div>
-                {activeMegaMenu === "solutions" && <SolutionsMegaMenu />}
-              </div>
+              </AnimateSharedLayout>
               <div className="text-black grid place-items-center hover:text-accent relative h-full cursor-pointer px-4">
                 <Link href="/pricing">
                   <a className="text-[12px] uppercase font-semibold tracking-wide">
