@@ -40,68 +40,6 @@ export default function DevelopersPage({ toggleDemoForm }) {
         }
       />
       <LogoWall />
-      <section className="px-12 py-20">
-        <div className="max-w-screen-lg mx-auto grid lg:grid-cols-2 gap-10 lg:gap-0">
-          <div className="text-center  lg:p-20 lg:border-r lg:border-b border-solid border-gray-200">
-            <Image
-              src="/features/rest-api.png"
-              width={88}
-              height={88}
-              quality={100}
-              alt="Rest APIs"
-            />
-            <p className="text-3xl lg:text-2xl font-bold">Rest API</p>
-            <p className="text-xl lg:text-lg opacity-70 mt-2 leading-normal">
-              Use REST APIs to route, initiate, bridge, record, and control
-              calls.
-            </p>
-          </div>
-          <div className="text-center lg:p-20 lg:border-b border-solid border-gray-200">
-            <Image
-              src="/features/global-voice-network.png"
-              width={88}
-              height={88}
-              quality={100}
-              alt="Rest APIs"
-            />
-            <p className="text-3xl lg:text-2xl font-bold">
-              Global Voice Network
-            </p>
-            <p className="text-xl lg:text-lg opacity-70 mt-2 leading-normal">
-              Integrate a high-quality global voice network to call anywhere in
-              the world.
-            </p>
-          </div>
-          <div className="text-center lg:p-20 lg:border-r border-solid border-gray-200">
-            <Image
-              src="/features/phone-number-api.png"
-              width={88}
-              height={88}
-              quality={100}
-              alt="Rest APIs"
-            />
-            <p className="text-3xl lg:text-2xl font-bold">Phone Numbers</p>
-            <p className="text-xl lg:text-lg opacity-70 mt-2 leading-normal">
-              Get Local and Toll-Free phone numbers in 100+ countries with
-              Samespace.
-            </p>
-          </div>
-          <div className="text-center lg:p-20">
-            <Image
-              src="/features/sip.png"
-              width={88}
-              height={88}
-              quality={100}
-              alt="Rest APIs"
-            />
-            <p className="text-3xl lg:text-2xl font-bold">SIP</p>
-            <p className="text-xl lg:text-lg opacity-70 mt-2 leading-normal">
-              Connect your existing communication infrastructure via SIP
-              Network.
-            </p>
-          </div>
-        </div>
-      </section>
 
       <Section
         backgroundClass="bg-gray-50"
