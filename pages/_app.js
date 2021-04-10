@@ -13,8 +13,6 @@ function MyApp({ Component, pageProps }) {
   const [showDemoForm, setShowDemoForm] = useState(false);
   const router = useRouter();
 
-  console.log(router);
-
   const toggleDemoForm = () => {
     return setShowDemoForm(!showDemoForm);
   };
