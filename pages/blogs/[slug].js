@@ -16,6 +16,7 @@ import {
 import ReactMarkdown from "react-markdown/with-html";
 import { useEffect, useState } from "react";
 import { NextSeo } from "next-seo";
+import NewsletterSubscriptionForm from "@/components/NewsletterSubscriptionForm";
 
 export default function CustomerStory({ post }) {
   const [shareURL, setShareURL] = useState("");
@@ -27,7 +28,7 @@ export default function CustomerStory({ post }) {
   return (
     <>
       <NextSeo title={`${post.title}`} />
-      <section className="px-12 py-20">
+      <section className="px-6 sm:px-10 lg:px-12 pt-20 pb-10">
         <div className="max-w-screen-lg mx-auto">
           <div className="max-w-[640px] mx-auto">
             <Link href="/blogs">
@@ -71,7 +72,7 @@ export default function CustomerStory({ post }) {
                 className="mx-4 focus:outline-none"
                 url={shareURL ? shareURL : "https://www.samespace.com/blog"}
               >
-                <div className="flex items-center justify-center w-12 h-12 bg-[#1DA1F2] hover:shadow-inset text-white font-semibold rounded-full ">
+                <div className="flex items-center justify-center w-10 h-10 bg-[#1DA1F2] hover:shadow-inset text-white font-semibold rounded-full ">
                   <TwitterIcon />
                 </div>
               </TwitterShareButton>
@@ -80,7 +81,7 @@ export default function CustomerStory({ post }) {
                 url={shareURL ? shareURL : "https://www.samespace.com/blog"}
                 className="mx-4  focus:outline-none"
               >
-                <div className="flex items-center justify-center w-12 h-12 bg-[#0077b5] hover:shadow-inset text-white font-semibold rounded-full ">
+                <div className="flex items-center justify-center w-10 h-10 bg-[#0077b5] hover:shadow-inset text-white font-semibold rounded-full ">
                   <LinkedInIcon />
                 </div>
               </LinkedinShareButton>
@@ -90,11 +91,22 @@ export default function CustomerStory({ post }) {
                 quote={`Read "${post.title}" by ${post.author} on the Samespace blog`}
                 className="mx-4 focus:outline-none"
               >
-                <div className="flex items-center justify-center w-12 h-12 bg-[#4267B2] hover:shadow-inset text-white font-semibold rounded-full ">
+                <div className="flex items-center justify-center w-10 h-10 bg-[#4267B2] hover:shadow-inset text-white font-semibold rounded-full ">
                   <FBIcon />
                 </div>
               </FacebookShareButton>
             </div>
+          </div>
+        </div>
+      </section>
+      <section className="px-6 sm:px-10 lg:px-12 py-20 border-t border-solid border-black border-opacity-5">
+        <div className="max-w-screen-xl mx-auto text-center">
+          <h3 className="text-2xl">Stay Connected</h3>
+          <p className="text-xl mt-3 mb-6 opacity-60">
+            Subscribe to receive new blog posts and updates from Samespace.
+          </p>
+          <div className="max-w-[480px] mx-auto">
+            <NewsletterSubscriptionForm />
           </div>
         </div>
       </section>
