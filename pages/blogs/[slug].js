@@ -33,7 +33,6 @@ export default function CustomerStory({ post }) {
           type: "website",
           url: shareURL ? shareURL : "https://www.samespace.com/blogs",
           title: post.title ? post.title : "Read Samespace Blog",
-
           images: [
             {
               url: post.cover,
@@ -41,13 +40,12 @@ export default function CustomerStory({ post }) {
               height: 600,
               alt: "Og Image Alt",
             },
-            {
-              url: post.cover,
-              width: 800,
-              height: 600,
-              alt: post.title,
-            },
           ],
+        }}
+        twitter={{
+          handle: "@samespace",
+          site: "https://www.samespace,com",
+          cardType: "summary_large_image",
         }}
       />
       <section className="px-6 sm:px-10 lg:px-12 pt-20 pb-10">
