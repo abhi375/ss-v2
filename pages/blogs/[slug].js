@@ -27,7 +27,29 @@ export default function CustomerStory({ post }) {
 
   return (
     <>
-      <NextSeo title={`${post.title}`} />
+      <NextSeo
+        title={`${post.title}`}
+        openGraph={{
+          type: "website",
+          url: shareURL ? shareURL : "https://www.samespace.com/blogs",
+          title: post.title ? post.title : "Read Samespace Blog",
+
+          images: [
+            {
+              url: post.cover,
+              width: 800,
+              height: 600,
+              alt: "Og Image Alt",
+            },
+            {
+              url: post.cover,
+              width: 800,
+              height: 600,
+              alt: post.title,
+            },
+          ],
+        }}
+      />
       <section className="px-6 sm:px-10 lg:px-12 pt-20 pb-10">
         <div className="max-w-screen-lg mx-auto">
           <div className="max-w-[640px] mx-auto">

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Formik } from "formik";
-import { AlertIcon, EnterIcon, HoverArrowIcon } from "@/components/Icons";
+import { HoverArrowIcon } from "@/components/Icons";
 import { useCookies } from "react-cookie";
 import { isBrowser } from "react-device-detect";
 import axios from "axios";
