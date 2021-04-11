@@ -14,12 +14,15 @@ export default function Home({ toggleDemoForm }) {
           <div className="grid grid-cols-1 gap-8 w-full lg:w-5/12">
             <h1 className="hidden xl:block text-5xl font-black">
               Cloud Contact Center Software—Centered on{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-tr from-accent via-indigo-600 to-blue-600">
+              <span className="text-transparent bg-clip-text bg-gradient-to-tr from-[#0A2FB4] to-accent">
                 Experience.
               </span>
             </h1>
             <h1 className="block xl:hidden text-4xl font-black">
-              Cloud Contact Center Software. Centered on Experience.
+              Cloud Contact Center Software. Centered on{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-tr from-[#0A2FB4] to-accent">
+                Experience.
+              </span>
             </h1>
             <p className="text-xl leading-normal">
               Built on cutting-edge technologies and design thinking principles,
@@ -34,7 +37,7 @@ export default function Home({ toggleDemoForm }) {
               />
             </div>
           </div>
-          <div className="w-full lg:w-7/12 relative mt-8 lg:mt-0">
+          <div className="w-full lg:w-7/12 hidden sm:block relative mt-8 lg:mt-0">
             <motion.div
               style={{
                 width: 360,
@@ -77,7 +80,15 @@ export default function Home({ toggleDemoForm }) {
 
       <LogoWall />
       <Section
-        headline={["Complexity now a ", " thing of the past."]}
+        headline={[
+          <>
+            <span>Complexity now a </span>
+
+            <span className="inline md:block bg-clip-text text-transparent bg-gradient-to-r from-green-600 to-blue-600">
+              thing of the past.
+            </span>
+          </>,
+        ]}
         columns="two"
         copy={[
           "Samespace lets you create, route, and deploy voice, chat and messaging flows in minutes. Whether for customer support or sales, simply drag and drop, no coding needed.",
@@ -93,7 +104,17 @@ export default function Home({ toggleDemoForm }) {
         }
       />
       <Section
-        headline={["Scale your sales without scaling teams."]}
+        headline={[
+          <>
+            <span>
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-accent to-purple-600">
+                Scale your sales
+              </span>{" "}
+              without
+            </span>
+            <span className="inline md:block">scaling teams.</span>
+          </>,
+        ]}
         columns="two"
         backgroundClass="bg-gray-50"
         showMediaFirst
@@ -111,7 +132,15 @@ export default function Home({ toggleDemoForm }) {
         }
       />
       <Section
-        headline={["Plug it and let your", " CRM play."]}
+        headline={[
+          <>
+            <span>Plug it and</span>
+            <span className="inline md:block bg-clip-text text-transparent bg-gradient-to-r from-rose-500 to-amber-600">
+              {" "}
+              let your CRM play.
+            </span>
+          </>,
+        ]}
         columns="two"
         copy={[
           "Samespace offers ready to run native CTI integration with popular CRMs, and open APIs for custom integrations.",
@@ -127,7 +156,17 @@ export default function Home({ toggleDemoForm }) {
         }
       />
       <Section
-        headline={["AI that speaks", " your language."]}
+        headline={[
+          <>
+            <span className="inline md:block">
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-blue-600">
+                AI
+              </span>{" "}
+              that speaks
+            </span>
+            <span> your language.</span>
+          </>,
+        ]}
         columns="two"
         showMediaFirst
         backgroundClass="bg-gray-50"
@@ -145,7 +184,14 @@ export default function Home({ toggleDemoForm }) {
         }
       />
       <Section
-        headline={["Your data, your way."]}
+        headline={[
+          <>
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-rose-600">
+              Your Data,
+            </span>
+            <span> your way.</span>
+          </>,
+        ]}
         columns="two"
         copy={[
           "Customize dashboards with drag and drop widgets and create granular reports by applying advanced filters. Bring your own data to see the big picture in one place.",
@@ -161,7 +207,15 @@ export default function Home({ toggleDemoForm }) {
         }
       />
       <Section
-        headline={["Set the bar higher", " with HiFi."]}
+        headline={[
+          <>
+            <span>Set the bar higher</span>
+            <span className="block bg-clip-text text-transparent bg-gradient-to-r from-[#0A2FB4] to-accent">
+              {" "}
+              with HiFi.
+            </span>
+          </>,
+        ]}
         columns="two"
         showMediaFirst
         backgroundClass="bg-gray-50"
