@@ -66,7 +66,12 @@ export default function Footer() {
                 <a className="mt-2 hover:text-accent">Blog</a>
               </Link>
               <Link href="/careers">
-                <a className="mt-2 hover:text-accent">Careers</a>
+                <a className="mt-2 hover:text-accent">
+                  <span>Careers</span>
+                  <span className="inline-flex ml-2 px-2 py-0.5 bg-rose-600 bg-opacity-10 text-rose-600 text-[13px] rounded-full font-bold">
+                    We're hiring
+                  </span>
+                </a>
               </Link>
               <a
                 href="https://www.support.samespace.com"
