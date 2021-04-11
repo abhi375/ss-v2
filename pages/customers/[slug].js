@@ -7,6 +7,12 @@ import Link from "next/link";
 import ReactMarkdown from "react-markdown/with-html";
 
 export default function CustomerStory({ post }) {
+  const [shareURL, setShareURL] = useState("");
+
+  useEffect(() => {
+    setShareURL(window && window.location.href);
+  }, []);
+
   return (
     <>
       <NextSeo
