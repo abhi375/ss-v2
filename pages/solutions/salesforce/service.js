@@ -50,7 +50,7 @@ export default function SalesCRM({ toggleDemoForm }) {
         copy={[
           "Samespace's native CTI provides reps with rich contextual data that helps them serve faster. Calls trigger a screenpop that provides data about prospects including past calls, notes, conversation info and key insights.",
         ]}
-        backgroundClass="bg-snowwhite"
+        backgroundClass="bg-gray-50"
         media={
           <Image
             src="/features/ai-enhanced-sf-dialer.png"
@@ -82,7 +82,7 @@ export default function SalesCRM({ toggleDemoForm }) {
         copy={[
           "60% of your tier-1 customer queries can be handled by Samespace AI bots, freeing up your live agents for more valuable conversations.",
         ]}
-        backgroundClass="bg-snowwhite"
+        backgroundClass="bg-gray-50"
         media={
           <Image
             src="/features/ai-workload.png"
@@ -114,7 +114,7 @@ export default function SalesCRM({ toggleDemoForm }) {
         copy={[
           "Know for certain what your customers are thinking with a CSAT survey that collects feedback as soon an agent hangs up.",
         ]}
-        backgroundClass="bg-snowwhite"
+        backgroundClass="bg-gray-50"
         media={
           <Image
             src="/features/csat.png"

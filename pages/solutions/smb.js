@@ -59,7 +59,7 @@ export default function SMBPage({ toggleDemoForm }) {
         copy={[
           "Many small to midsize companies don’t have a company-wide BI solution. With Samespace, you get a beautiful tool to visualize data from any source that provides insights essential to your growing business, and for no additional cost.",
         ]}
-        backgroundClass="bg-snowwhite"
+        backgroundClass="bg-gray-50"
         media={
           <Image
             width={480}
@@ -89,7 +89,7 @@ export default function SMBPage({ toggleDemoForm }) {
         copy={[
           "You’re growing and so are we. We’re constantly innovating to develop new tools to meet your needs, now and in the future",
         ]}
-        backgroundClass="bg-snowwhite"
+        backgroundClass="bg-gray-50"
         media={
           <Image
             width={480}

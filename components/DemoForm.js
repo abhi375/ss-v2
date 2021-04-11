@@ -2,7 +2,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { HoverArrowIcon, IconClose } from "./Icons";
 import * as Yup from "yup";
 import { useFormik } from "formik";
-import { isBrowser } from "react-device-detect";
+import { isBrowser, isMobile } from "react-device-detect";
 import axios from "axios";
 import { useState } from "react";
 import { useCookies } from "react-cookie";
@@ -135,9 +135,9 @@ export default function DemoForm({ toggleDemoForm }) {
         animate={{ x: 0 }}
         exit={{ x: "100%" }}
         transition={{ ease: "easeInOut", duration: 0.3 }}
-        className="fixed top-0 right-0 bottom-0 w-[496px] bg-white z-50 shadow-lg p-8"
+        className="fixed top-0 right-0 bottom-0 max-w-[496px] w-full bg-white z-50 shadow-lg p-8 overflow-auto"
       >
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between bg-white">
           <div className="text-2xl font-bold">Get a demo</div>
           <button
             onClick={toggleDemoForm}
@@ -147,7 +147,7 @@ export default function DemoForm({ toggleDemoForm }) {
           </button>
         </div>
 
-        <div className="mt-8">
+        <div className="mt-8 ">
           <Form onSubmit={handleSubmit} className={`overflow-auto relative`}>
             <div className={`grid gap-8 grid-cols-1`}>
               <FormField>
@@ -156,7 +156,7 @@ export default function DemoForm({ toggleDemoForm }) {
                   label="First Name"
                   onChange={handleChange}
                   onBlur={handleBlur}
-                  autoFocus
+                  autoFocus={!isMobile}
                   value={values.firstname}
                   errorText={errors.firstname}
                   error={errors.firstname && touched.firstname}

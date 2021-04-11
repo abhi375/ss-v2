@@ -36,7 +36,7 @@ export default function SalesCRM({ toggleDemoForm }) {
           "With Samespace, your reps don’t have to click around for data before a call, nor enter it afterwards. Everything’s automated, letting the calls flow fluidly all day long.",
         ]}
         showMediaFirst
-        backgroundClass="bg-snowwhite"
+        backgroundClass="bg-gray-50"
         media={
           <Image
             width={800}
@@ -69,7 +69,7 @@ export default function SalesCRM({ toggleDemoForm }) {
           "With Samespace, data is always working for you. Our suped up API enables you to collate multiple data sources into one single set, so you can turn data into plans and plans into action concerning team productivity, customer trends, and more.",
         ]}
         showMediaFirst
-        backgroundClass="bg-snowwhite"
+        backgroundClass="bg-gray-50"
         media={
           <Image
             width={520}

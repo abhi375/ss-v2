@@ -50,7 +50,6 @@ module.exports = {
       colors: {
         accent: "#006aff",
         // accent: "#645BFF",
-        snowwhite: "#F7F9FC",
         gray: colors.trueGray,
         amber: colors.amber,
         rose: colors.rose,

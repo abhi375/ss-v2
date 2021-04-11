@@ -4,7 +4,7 @@ export default function LogoWall({ backgroundClass, singleColumn }) {
   return (
     <section
       className={`px-12 py-8 ${
-        backgroundClass ? backgroundClass : "bg-snowwhite"
+        backgroundClass ? backgroundClass : "bg-gray-50"
       }`}
     >
       <div

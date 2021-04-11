@@ -30,8 +30,8 @@ export default function FeaturesMegaMenu() {
         >
           <Link href="/platform/contact-center">
             <a>
-              <motion.div className="flex items-center group duration-300 transition bg-white hover:bg-green-600 hover:bg-opacity-10 px-4 py-3 -mx-4 rounded-md">
-                <div className="w-8 h-8 bg-green-600 bg-opacity-20 text-green-600 rounded-full grid place-items-center mr-2">
+              <motion.div className="flex items-center group duration-300 transition bg-white hover:bg-accent hover:bg-opacity-10 px-4 py-3 -mx-4 rounded-md">
+                <div className="w-8 h-8  rounded-full grid place-items-center mr-2">
                   <CCIcon />
                 </div>
                 <div>Contact Center</div>
@@ -40,8 +40,8 @@ export default function FeaturesMegaMenu() {
           </Link>
           <Link href="/platform/studio">
             <a>
-              <motion.div className="flex items-center group duration-300 transition bg-white hover:bg-yellow-500 hover:bg-opacity-10 px-4 py-3 -mx-4 rounded-md">
-                <div className="w-8 h-8 bg-yellow-500 bg-opacity-20 text-yellow-600 rounded-full grid place-items-center mr-2">
+              <motion.div className="flex items-center group duration-300 transition bg-white hover:bg-accent hover:bg-opacity-10 px-4 py-3 -mx-4 rounded-md">
+                <div className="w-8 h-8 rounded-full grid place-items-center mr-2">
                   <StudioIcon />
                 </div>
                 <div>Conversation Studio</div>
@@ -50,8 +50,8 @@ export default function FeaturesMegaMenu() {
           </Link>
           <Link href="/platform/analytics">
             <a>
-              <motion.div className="flex items-center group duration-300 transition bg-white hover:bg-rose-500 hover:bg-opacity-10 px-4 py-3 -mx-4 rounded-md">
-                <div className="w-8 h-8 bg-rose-500 rounded-full grid place-items-center mr-2 bg-opacity-20 text-rose-600">
+              <motion.div className="flex items-center group duration-300 transition bg-white hover:bg-accent hover:bg-opacity-10 px-4 py-3 -mx-4 rounded-md">
+                <div className="w-8 h-8 rounded-full grid place-items-center mr-2 ">
                   <AnalyticsIcon />
                 </div>
                 <div>Analytics</div>
@@ -61,8 +61,8 @@ export default function FeaturesMegaMenu() {
 
           <Link href="/platform/developers">
             <a>
-              <motion.div className="flex items-center group duration-300 transition bg-white hover:bg-indigo-600 hover:bg-opacity-10 px-4 py-3 -mx-4 rounded-md">
-                <div className="w-8 h-8 bg-indigo-600 rounded-full grid place-items-center mr-2 bg-opacity-20 text-indigo-600">
+              <motion.div className="flex items-center group duration-300 transition bg-white hover:bg-accent hover:bg-opacity-10 px-4 py-3 -mx-4 rounded-md">
+                <div className="w-8 h-8  rounded-full grid place-items-center mr-2 ">
                   <DeveloperToolsIcon />
                 </div>
                 <div>Developer Tools</div>
@@ -72,8 +72,8 @@ export default function FeaturesMegaMenu() {
 
           <Link href="/platform/voicecloud">
             <a>
-              <motion.div className="flex items-center group duration-300 transition bg-white hover:bg-gray-600 hover:bg-opacity-10 px-4 py-3 -mx-4 rounded-md">
-                <div className="w-8 h-8 bg-gray-600 rounded-full grid place-items-center mr-2 bg-opacity-20 text-gray-600">
+              <motion.div className="flex items-center group duration-300 transition bg-white hover:bg-accent hover:bg-opacity-10 px-4 py-3 -mx-4 rounded-md">
+                <div className="w-8 h-8 rounded-full grid place-items-center mr-2 ">
                   <VoiceCloudIcon />
                 </div>
                 <div>Voice Cloud</div>

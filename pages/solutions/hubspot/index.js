@@ -69,7 +69,7 @@ export default function CRMIntegrationPage({ toggleDemoForm }) {
         copy={[
           "Let your agents focus on what’s important: talking to more prospects. Let Samespace handle the rest.",
         ]}
-        backgroundClass="bg-snowwhite"
+        backgroundClass="bg-gray-50"
         media={
           <Image
             src="/features/hubspot-call-logs.png"
@@ -105,7 +105,7 @@ export default function CRMIntegrationPage({ toggleDemoForm }) {
         copy={[
           "Our AI powered insights use Speech Recognition to transcribe calls. Our APIs enable you to collate multiple data points into one single source, so your call flow gets smarter, faster.",
         ]}
-        backgroundClass="bg-snowwhite"
+        backgroundClass="bg-gray-50"
         media={
           <Image
             src="/features/sentiment-analysis.png"

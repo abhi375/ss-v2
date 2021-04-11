@@ -50,7 +50,7 @@ export default function SalesCRM({ toggleDemoForm }) {
           "Be there for your reps when it counts in real time using our easy on the eyes visibility features. You’ll see what each rep is up to so you can monitor their activity and support your team when needed.",
           "With call recordings saved and stored automatically in your CRM, you can use crucial learning tools to keep your team’s skill set sharp.",
         ]}
-        backgroundClass="bg-snowwhite"
+        backgroundClass="bg-gray-50"
         media={
           <Image
             src="/features/live-monitoring-and-coaching.png"
@@ -82,7 +82,7 @@ export default function SalesCRM({ toggleDemoForm }) {
         copy={[
           "Samespace’s AI powered insights use Speech Recognition to transcribe calls automatically log them into Salesforce. Our suped up API enables you to collate multiple data sources into one single set, so you can turn data into plans and plans into action concerning team productivity, customer trends, and more.",
         ]}
-        backgroundClass="bg-snowwhite"
+        backgroundClass="bg-gray-50"
         media={
           <Image
             src="/features/sentiment-analysis.png"

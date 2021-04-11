@@ -63,7 +63,7 @@ export default function CRMIntegrationPage({ toggleDemoForm }) {
         }
       />
       <Section
-        backgroundClass="bg-snowwhite"
+        backgroundClass="bg-gray-50"
         headline={["Deeper Insights with AI"]}
         copy={[
           "Access crucial data on what your customers are saying during calls including feedback on your product, as well as mentions of competitors, so you can implement changes to make improvements across the board.",

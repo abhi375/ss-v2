@@ -7,6 +7,7 @@ import {
   insertZoomInfoTracker,
 } from "@/lib/tracker";
 import Link from "next/link";
+import { HoverArrowIcon } from "./Icons";
 
 export default function ConsentBanner() {
   const [consent, setConsent] = useState(undefined);
@@ -54,10 +55,10 @@ export default function ConsentBanner() {
             opacity: 1,
           }}
           transition={{ easings: "easeInOut", duration: 0.4 }}
-          className="px-12 py-4 fixed z-50 inset-x-0 bottom-0 bg-white shadow-consentbanner"
+          className="px-12 py-2 fixed z-50 inset-x-0 bottom-0 bg-white shadow-consentbanner"
         >
           <div className="max-w-screen-lg mx-auto flex items-center justify-between">
-            <div className="text-lg">
+            <div className="text-base">
               This site uses cookies to give you a better user experience.
               <wbr /> See our{" "}
               <Link href="/legal/cookies">
@@ -69,10 +70,11 @@ export default function ConsentBanner() {
             <motion.div
               whileTap={{ scale: 0.96 }}
               whileHover={{ scale: 1.04 }}
-              className="px-4 py-1 border-2 border-solid border-accent text-accent font-semibold rounded-full cursor-pointer"
+              className="px-5 py-1 border-2 border-solid border-accent text-accent group flex items-center justify-center font-semibold rounded-full cursor-pointer"
               onClick={() => handleConsent(true)}
             >
               Agree
+              <HoverArrowIcon />
             </motion.div>
           </div>
         </motion.div>

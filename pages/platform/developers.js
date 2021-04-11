@@ -12,7 +12,8 @@ export default function DevelopersPage({ toggleDemoForm }) {
   return (
     <>
       <Section
-        verticalPadding="py-20 lg:py-24"
+        hero
+        verticalPadding={"py-20 lg:py-24"}
         foregroundClass="text-white"
         backgroundClass="bg-gradient-to-r from-[#0A2FB4] to-[#120078]"
         headline={["Advanced", " Communication APIs"]}
@@ -31,8 +32,8 @@ export default function DevelopersPage({ toggleDemoForm }) {
         media={
           <Image
             src="/features/devtools-hero.png"
-            width={650}
-            height={500}
+            width={450}
+            height={400}
             quality={100}
             priority
             alt="Samespace APIs"
@@ -41,7 +42,6 @@ export default function DevelopersPage({ toggleDemoForm }) {
       />
 
       <Section
-        backgroundClass="bg-snowwhite"
         headline={["Speech Recognition"]}
         copy={[
           "Get real-time speech and intent recognition and offer more personalized and intuitive customer care.",
@@ -60,6 +60,7 @@ export default function DevelopersPage({ toggleDemoForm }) {
 
       <Section
         headline={["Text-to-Speech"]}
+        backgroundClass="bg-gray-50"
         copy={[
           " Speak text in multiple languages and accents to provide answers to your customers in a familiar way.",
         ]}
@@ -76,7 +77,6 @@ export default function DevelopersPage({ toggleDemoForm }) {
 
       <Section
         headline={["Chat SDK"]}
-        backgroundClass="bg-snowwhite"
         copy={[
           "Integrate the Samespace chat widget on your website and mobile apps.",
         ]}
@@ -94,6 +94,7 @@ export default function DevelopersPage({ toggleDemoForm }) {
 
       <Section
         headline={["Text and email"]}
+        backgroundClass="bg-gray-50"
         copy={[
           "Create two-way communication, authenticate callers, and send text & email notifications.",
         ]}
@@ -110,7 +111,6 @@ export default function DevelopersPage({ toggleDemoForm }) {
 
       <Section
         headline={["Serverless Apps"]}
-        backgroundClass="bg-snowwhite"
         copy={[
           "Build and deploy your codes right within Samespace, without need for additional resources and hosting.",
         ]}

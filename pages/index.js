@@ -4,27 +4,80 @@ import LogoWall from "@/components/LogoWall";
 import Section from "@/components/Section";
 import Testimonial from "@/components/Testimonial";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function Home({ toggleDemoForm }) {
   return (
     <>
-      <Section
-        headline={["Cloud Contact Center Software.", "Centered on Experience."]}
-        columns="one"
-        textAlignment="center"
-        verticalPadding="py-16 md:py-32"
-        copy={[
-          "Built on cutting-edge Internet technologies and design thinking principles, samespace elates customer experience, increases agent productivity and saves a ton of money.",
-        ]}
-        callToActions={
-          <div className="">
-            <Button size="large" title="Get a demo" onClick={toggleDemoForm} />
+      <section className="px-6 md:px-12 py-24 overflow-hidden">
+        <div className="max-w-screen-xl mx-auto flex flex-col lg:flex-row items-center ">
+          <div className="grid grid-cols-1 gap-8 w-full lg:w-5/12">
+            <h1 className="hidden xl:block text-5xl font-black">
+              Cloud Contact Center Software—Centered on{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-tr from-accent via-indigo-600 to-blue-600">
+                Experience.
+              </span>
+            </h1>
+            <h1 className="block xl:hidden text-4xl font-black">
+              Cloud Contact Center Software. Centered on Experience.
+            </h1>
+            <p className="text-xl leading-normal">
+              Built on cutting-edge technologies and design thinking principles,
+              samespace bring together everything that's required to build an
+              exceptional Contact Center experience.
+            </p>
+            <div className="">
+              <Button
+                size="large"
+                title="Get a demo"
+                onClick={toggleDemoForm}
+              />
+            </div>
           </div>
-        }
-      />
+          <div className="w-full lg:w-7/12 relative mt-8 lg:mt-0">
+            <motion.div
+              style={{
+                width: 360,
+                height: 550,
+                position: "absolute",
+                zIndex: 1,
+              }}
+              className="left-12 -bottom-16 sm:-bottom-8 sm:left-40"
+            >
+              <Image
+                src="/features/dock-hero.png"
+                alt="Samespace Analytics"
+                layout="fill"
+                quality={100}
+                priority
+                className=""
+              />
+            </motion.div>
+            <div
+              style={{
+                width: 1020,
+                height: 617,
+                position: "relative",
+              }}
+              className="right-0 lg:-right-16"
+            >
+              <Image
+                src="/features/ss-analytics.png"
+                alt="Samespace Analytics"
+                width={1020}
+                height={617}
+                quality={100}
+                priority
+                className=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       <LogoWall />
       <Section
-        headline={["Complexity now a thing", " of the past."]}
+        headline={["Complexity now a ", " thing of the past."]}
         columns="two"
         copy={[
           "Samespace lets you create, route, and deploy voice, chat and messaging flows in minutes. Whether for customer support or sales, simply drag and drop, no coding needed.",
@@ -42,7 +95,7 @@ export default function Home({ toggleDemoForm }) {
       <Section
         headline={["Scale your sales without scaling teams."]}
         columns="two"
-        backgroundClass="bg-snowwhite"
+        backgroundClass="bg-gray-50"
         showMediaFirst
         copy={[
           "Our smart automation increases the number of connected calls by 100% and makes sales teams 50% more productive by automatically logging activity.",
@@ -77,7 +130,7 @@ export default function Home({ toggleDemoForm }) {
         headline={["AI that speaks", " your language."]}
         columns="two"
         showMediaFirst
-        backgroundClass="bg-snowwhite"
+        backgroundClass="bg-gray-50"
         copy={[
           "Built from the ground up, Samespace Conversational AI provides customizable and adaptable AI Bots with built-in sentiment analysis.",
         ]}
@@ -111,7 +164,7 @@ export default function Home({ toggleDemoForm }) {
         headline={["Set the bar higher", " with HiFi."]}
         columns="two"
         showMediaFirst
-        backgroundClass="bg-snowwhite"
+        backgroundClass="bg-gray-50"
         copy={[
           "Embed high fidelity calls into your web with built-in authentication and fastlane routing.",
         ]}

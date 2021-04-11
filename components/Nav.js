@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { LogoIcon, MenuIcon } from "@/components/Icons";
+import { CCIcon, LogoIcon, MenuIcon, StudioIcon } from "@/components/Icons";
 import Button from "@/components/Button";
 import SolutionsMegaMenu from "@/components/SolutionsMegaMenu";
 import { AnimatePresence, AnimateSharedLayout, motion } from "framer-motion";
 import FeaturesMegaMenu from "./FeaturesMegaMenu";
 import { selectSpaceId } from "@/lib/session";
 import SpaceIDPopover from "./SpaceIDPopover";
+import MobileMenu from "./MobileMenu";
 
 export default function Nav({ toggleDemoForm }) {
   const [activeMegaMenu, setActiveMegaMenu] = useState("");
@@ -23,6 +24,14 @@ export default function Nav({ toggleDemoForm }) {
       setActiveMegaMenu("");
     } else {
       setActiveMegaMenu(selectedItem);
+    }
+  };
+
+  const toggleMenu = () => {
+    if (activeMegaMenu === "mobile-menu") {
+      setActiveMegaMenu("");
+    } else {
+      setActiveMegaMenu("mobile-menu");
     }
   };
 
@@ -60,6 +69,13 @@ export default function Nav({ toggleDemoForm }) {
           ></motion.div>
         </AnimatePresence>
       )}
+
+      <AnimatePresence>
+        {activeMegaMenu === "mobile-menu" && (
+          <MobileMenu toggleDemoForm={toggleDemoForm} />
+        )}
+      </AnimatePresence>
+
       <nav className="px-6 sm:px-10 lg:px-12 fixed inset-x-0 top-0 z-40 bg-white h-16 shadow-sm">
         <div className="max-w-screen-xl mx-auto w-full h-full flex items-center justify-between">
           <Link href="/">
@@ -147,7 +163,10 @@ export default function Nav({ toggleDemoForm }) {
             </div>
           </div>
 
-          <div className="w-8 h-8 grid lg:hidden place-items-center cursor-pointer">
+          <div
+            className="w-8 h-8 grid lg:hidden place-items-center cursor-pointer"
+            onClick={() => toggleMenu()}
+          >
             <MenuIcon />
           </div>
         </div>

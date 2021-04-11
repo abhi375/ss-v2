@@ -51,7 +51,7 @@ export default function SalesCRM({ toggleDemoForm }) {
         copy={[
           "Samespace CTI provides reps with rich contextual data that helps them serve faster. Inbound and outbound calls trigger a screenpop that provides data about prospects including past calls, notes, conversation info and key insights",
         ]}
-        backgroundClass="bg-snowwhite"
+        backgroundClass="bg-gray-50"
         media={
           <Image
             width={840}
@@ -83,7 +83,7 @@ export default function SalesCRM({ toggleDemoForm }) {
         copy={[
           "Know for certain what your customers are thinking with a CSAT survey that collects feedback as soon an agent hangs up.",
         ]}
-        backgroundClass="bg-snowwhite"
+        backgroundClass="bg-gray-50"
         media={
           <Image
             width={640}
@@ -115,7 +115,7 @@ export default function SalesCRM({ toggleDemoForm }) {
         copy={[
           "Access crucial data on what your customers are saying during calls, including feedback on your product, as well as mentions of competitors, so you can implement changes to make improvements across the board.",
         ]}
-        backgroundClass="bg-snowwhite"
+        backgroundClass="bg-gray-50"
         media={
           <Image
             width={520}

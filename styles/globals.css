@@ -31,4 +31,7 @@
     transition: transform var(--hoverTransition, var(--arrowHoverTransition));
     transform: translateX(3px);
   }
+  .mobileMenuHeight {
+    height: calc(100vh - 64px);
+  }
 }
