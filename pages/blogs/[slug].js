@@ -43,7 +43,6 @@ export default function CustomerStory({ post }) {
         twitter={{
           handle: "@samespace",
           site: "https://www.samespace,com",
-          cardType: "summary_large_image",
         }}
       />
       <section className="px-6 sm:px-10 lg:px-12 pt-20 pb-10">
