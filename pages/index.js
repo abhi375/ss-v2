@@ -58,17 +58,17 @@ export default function Home({ toggleDemoForm }) {
             </motion.div>
             <div
               style={{
-                width: 1020,
-                height: 617,
+                width: 960,
+                height: 580,
                 position: "relative",
               }}
-              className="right-0 lg:-right-16"
+              className="right-0 lg:-right-24"
             >
               <Image
                 src="/features/ss-analytics.png"
                 alt="Samespace Analytics"
-                width={1020}
-                height={617}
+                width={960}
+                height={580}
                 quality={100}
                 priority
                 className=""
