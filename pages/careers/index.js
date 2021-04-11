@@ -14,7 +14,7 @@ export default function CareersPage({ jobs }) {
             <h1 className="text-3xl lg:text-5xl font-extrabold mb-6">
               We’re from Everywhere
             </h1>
-            <p className="text-xl md:text-2xl leading-normal mb-8">
+            <p className="text-xl leading-normal mb-8">
               We searched the entire world - literally - to assemble our team.
               With global headquarters and a global workforce, we’re positioned
               perfectly to adapt to the constantly shifting state of things in
@@ -39,7 +39,7 @@ export default function CareersPage({ jobs }) {
             <h1 className="text-3xl lg:text-5xl font-extrabold mb-6">
               Innovate, Always
             </h1>
-            <p className="text-xl md:text-2xl leading-normal mb-8">
+            <p className="text-xl leading-normal mb-8">
               To get ahead in the world as it is, you have to be up to date on
               the latest developments at all times. Samespace’s relentless
               passion for innovation means that everyone working here is way

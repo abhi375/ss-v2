@@ -5,6 +5,7 @@ import {
   DoubleTickIcon,
   ShieldIcon,
   LinkedInIcon,
+  HoverArrowIcon,
 } from "@/components/Icons";
 import { getAllPosts } from "@/lib/api";
 import Link from "next/link";
@@ -23,7 +24,7 @@ export default function About({ leaders }) {
             height="400px"
             alt="Samespace"
           />
-          <h1 className="text-3xl md:text-4xl font-extrabold my-8">
+          <h1 className="text-3xl md:text-4xl font-extrabold mt-8 mb-4">
             We Started in a Garage Too
           </h1>
           <p className="text-xl mb-8 leading-normal">
@@ -160,7 +161,7 @@ export default function About({ leaders }) {
         <div className="max-w-[800px] mx-auto">
           <h3 className="text-3xl md:text-4xl font-extrabold my-8">Offices</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="">
+            <div>
               <div className="relative ">
                 <Image
                   width={400}
@@ -181,7 +182,7 @@ export default function About({ leaders }) {
               </div>
             </div>
 
-            <div className="">
+            <div>
               <Image
                 width={400}
                 height={300}
@@ -197,7 +198,7 @@ export default function About({ leaders }) {
               </div>
             </div>
 
-            <div className="">
+            <div>
               <Image
                 width={400}
                 height={300}
@@ -213,6 +214,20 @@ export default function About({ leaders }) {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="px-6 md:px-10 lg:px-12 py-12 bg-gradient bg-gradient-to-r from-[#0A2FB4] to-[#120078] text-white">
+        <div className="max-w-[800px] mx-auto flex flex-col md:flex-row items-center justify-between">
+          <div className="text-3xl font-semibold mb-4 md:mb-0">
+            Join the Samespace Team
+          </div>
+          <Link href="/careers">
+            <a className="px-5 py-2 rounded-full flex items-center justify-center font-semibold bg-white text-accent group">
+              <span>See Open Roles</span>
+              <HoverArrowIcon />
+            </a>
+          </Link>
         </div>
       </section>
     </>
