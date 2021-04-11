@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 import { useRouter } from "next/router";
 import * as Yup from "yup";
 import { useFormik } from "formik";
@@ -7,7 +6,7 @@ import axios from "axios";
 import { AnimatePresence, motion } from "framer-motion";
 import Button from "@/components/Button";
 import Dropzone from "react-dropzone";
-import { AttachmentIcon, BackIcon, VisibilityIcon } from "@/components/Icons";
+import { BackIcon, VisibilityIcon } from "@/components/Icons";
 import Link from "next/link";
 import { NextSeo } from "next-seo";
 

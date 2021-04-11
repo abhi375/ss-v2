@@ -1,10 +1,10 @@
-import Button from "@/components/Button";
 import { getAllPosts, getPostBySlug } from "@/lib/api";
 import markdownToHtml from "@/lib/markdownToHtml";
 import Link from "next/link";
 import ReactMarkdown from "react-markdown/with-html";
 import { useRouter } from "next/router";
 import { BackIcon } from "@/components/Icons";
+import { NextSeo } from "next-seo";
 
 export default function JobDetailPage({ post }) {
   const router = useRouter();
