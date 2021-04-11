@@ -1,15 +1,14 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { CCIcon, LogoIcon, MenuIcon, StudioIcon } from "@/components/Icons";
+import { LogoIcon, MenuIcon } from "@/components/Icons";
 import Button from "@/components/Button";
 import SolutionsMegaMenu from "@/components/SolutionsMegaMenu";
 import { AnimatePresence, AnimateSharedLayout, motion } from "framer-motion";
 import FeaturesMegaMenu from "./FeaturesMegaMenu";
 import { selectSpaceId } from "@/lib/session";
 import SpaceIDPopover from "./SpaceIDPopover";
-import MobileMenu from "./MobileMenu";
 
-export default function Nav({ toggleDemoForm }) {
+export default function Nav({ toggleDemoForm, toggleMenu, closeMobileMenu }) {
   const [activeMegaMenu, setActiveMegaMenu] = useState("");
   const [accounts, setAccounts] = useState([]);
 
@@ -24,14 +23,6 @@ export default function Nav({ toggleDemoForm }) {
       setActiveMegaMenu("");
     } else {
       setActiveMegaMenu(selectedItem);
-    }
-  };
-
-  const toggleMenu = () => {
-    if (activeMegaMenu === "mobile-menu") {
-      setActiveMegaMenu("");
-    } else {
-      setActiveMegaMenu("mobile-menu");
     }
   };
 
@@ -70,16 +61,10 @@ export default function Nav({ toggleDemoForm }) {
         </AnimatePresence>
       )}
 
-      <AnimatePresence>
-        {activeMegaMenu === "mobile-menu" && (
-          <MobileMenu toggleDemoForm={toggleDemoForm} />
-        )}
-      </AnimatePresence>
-
       <nav className="px-6 sm:px-10 lg:px-12 fixed inset-x-0 top-0 z-40 bg-white h-16 shadow-sm">
         <div className="max-w-screen-xl mx-auto w-full h-full flex items-center justify-between">
           <Link href="/">
-            <a>
+            <a onClick={closeMobileMenu}>
               <LogoIcon />
             </a>
           </Link>
@@ -165,7 +150,7 @@ export default function Nav({ toggleDemoForm }) {
 
           <div
             className="w-8 h-8 grid lg:hidden place-items-center cursor-pointer"
-            onClick={() => toggleMenu()}
+            onClick={toggleMenu}
           >
             <MenuIcon />
           </div>

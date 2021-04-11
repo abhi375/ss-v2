@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
-import PricingPage from "pages/pricing";
-import Button from "./Button";
+import { useState } from "react";
+
 import {
   AnalyticsIcon,
   BlogIcon,
@@ -12,7 +12,6 @@ import {
   EnterpriseIcon,
   HoverArrowIcon,
   HubspotIcon,
-  IntegrationsIcon,
   JobsIcon,
   PricingIcon,
   SalesforceIcon,
@@ -21,12 +20,19 @@ import {
   VoiceCloudIcon,
 } from "./Icons";
 
-export default function MobileMenu({ toggleDemoForm }) {
+export default function MobileMenu({ toggleDemoForm, toggleMenu }) {
+  const [forceStopAnimation, setForceStopAnimation] = useState(false);
+
+  const handleClose = () => {
+    setForceStopAnimation(true);
+    toggleMenu();
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0, scaleY: 0 }}
       animate={{ opacity: 1, scaleY: 1 }}
-      exit={{ opacity: 0, scaleY: 0 }}
+      exit={!forceStopAnimation && { opacity: 0, scaleY: 0 }}
       className="fixed bg-white overflow-scroll w-full mobileMenuHeight  transform origin-top top-16 z-30 inset-x-0 px-6 md:px-12 py-6"
     >
       <div className="text-[12px] opacity-60 mb-6 font-bold uppercase tracking-wide">
@@ -34,7 +40,7 @@ export default function MobileMenu({ toggleDemoForm }) {
       </div>
       <div className="grid grid-cols-2 gap-4">
         <Link href="/platform/contact-center">
-          <a className="flex items-center">
+          <a className="flex items-center" onClick={handleClose}>
             <div>
               <CCIcon />
             </div>
@@ -43,7 +49,7 @@ export default function MobileMenu({ toggleDemoForm }) {
         </Link>
 
         <Link href="/platform/studio">
-          <a className="flex items-center">
+          <a className="flex items-center" onClick={handleClose}>
             <div>
               <StudioIcon />
             </div>
@@ -52,7 +58,7 @@ export default function MobileMenu({ toggleDemoForm }) {
         </Link>
 
         <Link href="/platform/analytics">
-          <a className="flex items-center">
+          <a className="flex items-center" onClick={handleClose}>
             <div>
               <AnalyticsIcon />
             </div>
@@ -61,7 +67,7 @@ export default function MobileMenu({ toggleDemoForm }) {
         </Link>
 
         <Link href="/platform/developers">
-          <a className="flex items-center">
+          <a className="flex items-center" onClick={handleClose}>
             <div>
               <DeveloperToolsIcon />
             </div>
@@ -70,7 +76,7 @@ export default function MobileMenu({ toggleDemoForm }) {
         </Link>
 
         <Link href="/platform/voicecloud">
-          <a className="flex items-center">
+          <a className="flex items-center" onClick={handleClose}>
             <div>
               <VoiceCloudIcon />
             </div>
@@ -84,7 +90,7 @@ export default function MobileMenu({ toggleDemoForm }) {
       </div>
       <div className="grid grid-cols-2 gap-4">
         <Link href="/solutions/salesforce">
-          <a className="flex items-center">
+          <a className="flex items-center" onClick={handleClose}>
             <div className="text-[#009EDB]">
               <SalesforceIcon />
             </div>
@@ -93,7 +99,7 @@ export default function MobileMenu({ toggleDemoForm }) {
         </Link>
 
         <Link href="/solutions/hubspot">
-          <a className="flex items-center">
+          <a className="flex items-center" onClick={handleClose}>
             <div className="text-[#FF6f1f]">
               <HubspotIcon />
             </div>
@@ -102,7 +108,7 @@ export default function MobileMenu({ toggleDemoForm }) {
         </Link>
 
         <Link href="/solutions/crm-integrations">
-          <a className="flex items-center">
+          <a className="flex items-center" onClick={handleClose}>
             <div className="text-accent">
               <CRMIntegrationsIcon />
             </div>
@@ -116,7 +122,7 @@ export default function MobileMenu({ toggleDemoForm }) {
       </div>
       <div className="grid grid-cols-2 gap-4">
         <Link href="/solutions/smb">
-          <a className="flex items-center">
+          <a className="flex items-center" onClick={handleClose}>
             <div className="text-green-600">
               <StartupIcon />
             </div>
@@ -124,7 +130,7 @@ export default function MobileMenu({ toggleDemoForm }) {
           </a>
         </Link>
         <Link href="/solutions/enterprise">
-          <a className="flex items-center">
+          <a className="flex items-center" onClick={handleClose}>
             <div className="text-indigo-600">
               <EnterpriseIcon />
             </div>
@@ -135,7 +141,7 @@ export default function MobileMenu({ toggleDemoForm }) {
 
       <div className="grid grid-cols-2 gap-4 mt-12">
         <Link href="/pricing">
-          <a className="flex items-center">
+          <a className="flex items-center" onClick={handleClose}>
             <div className="text-[#000033] opacity-40">
               <PricingIcon />
             </div>
@@ -143,7 +149,7 @@ export default function MobileMenu({ toggleDemoForm }) {
           </a>
         </Link>
         <Link href="/customers">
-          <a className="flex items-center">
+          <a className="flex items-center" onClick={handleClose}>
             <div className="text-[#000033] opacity-40">
               <CustomersIcon />
             </div>
@@ -151,7 +157,7 @@ export default function MobileMenu({ toggleDemoForm }) {
           </a>
         </Link>
         <Link href="/blogs">
-          <a className="flex items-center">
+          <a className="flex items-center" onClick={handleClose}>
             <div className="text-[#000033] opacity-40">
               <BlogIcon />
             </div>
@@ -160,7 +166,7 @@ export default function MobileMenu({ toggleDemoForm }) {
         </Link>
 
         <Link href="/careers">
-          <a className="flex items-center">
+          <a className="flex items-center" onClick={handleClose}>
             <div className="text-[#000033] opacity-40">
               <JobsIcon />
             </div>
@@ -171,7 +177,10 @@ export default function MobileMenu({ toggleDemoForm }) {
 
       <div className="grid grid-cols-1 gap-4 mt-6">
         <Link href="/signin">
-          <a className="px-4 py-1.5 w-full bg-white text-accent border-2 border-solid border-accent font-semibold flex items-center justify-center group rounded-full">
+          <a
+            onClick={handleClose}
+            className="px-4 py-1.5 w-full bg-white text-accent border-2 border-solid border-accent font-semibold flex items-center justify-center group rounded-full"
+          >
             <span>Sign In</span>
             <HoverArrowIcon />
           </a>
