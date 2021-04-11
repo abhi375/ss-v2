@@ -36,9 +36,7 @@ export default function CustomerStory({ post }) {
           images: [
             {
               url: "https://samespace.vercel.app" + post.cover,
-              width: 800,
-              height: 600,
-              alt: "Og Image Alt",
+              alt: post.title,
             },
           ],
         }}
