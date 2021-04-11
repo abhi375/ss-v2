@@ -1,9 +1,11 @@
+import { useEffect, useState } from "react";
 import { BackIcon } from "@/components/Icons";
 import { getAllPosts, getPostBySlug } from "@/lib/api";
 import markdownToHtml from "@/lib/markdownToHtml";
 import { NextSeo } from "next-seo";
 import Image from "next/image";
 import Link from "next/link";
+
 import ReactMarkdown from "react-markdown/with-html";
 
 export default function CustomerStory({ post }) {
