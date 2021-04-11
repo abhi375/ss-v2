@@ -1,12 +1,14 @@
 import Banner from "@/components/Banner";
 import LogoWall from "@/components/LogoWall";
 import { getAllPosts } from "@/lib/api";
+import { NextSeo } from "next-seo";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function CustomersPage({ stories, toggleDemoForm }) {
   return (
     <>
+      <NextSeo title="Customers - Samespace" />
       <section className="px-6 lg:px-12 pt-20">
         <div className="max-w-screen-xl mx-auto ">
           <h1 className="text-3xl md:text-5xl font-extrabold">Our Customers</h1>

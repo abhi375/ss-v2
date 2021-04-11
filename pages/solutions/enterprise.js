@@ -2,11 +2,13 @@ import Banner from "@/components/Banner";
 import Button from "@/components/Button";
 import Section from "@/components/Section";
 import Testimonial from "@/components/Testimonial";
+import { NextSeo } from "next-seo";
 import Image from "next/image";
 
 export default function EnterprisePage({ toggleDemoForm }) {
   return (
     <>
+      <NextSeo title="Enterprise - Samespace" />
       <Section
         hero
         backgroundClass="bg-gray-50"

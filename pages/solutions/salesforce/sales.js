@@ -6,10 +6,12 @@ import Testimonial from "@/components/Testimonial";
 import Image from "next/image";
 import ReactPlayer from "react-player";
 import { isMobile } from "react-device-detect";
+import { NextSeo } from "next-seo";
 
 export default function SalesCRM({ toggleDemoForm }) {
   return (
     <>
+      <NextSeo title="Samespace for Salesforce Sales" />
       <Section
         hero
         headline={["A Superior Sales Team"]}

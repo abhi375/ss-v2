@@ -4,12 +4,14 @@ import { HoverArrowIcon } from "@/components/Icons";
 import LogoWall from "@/components/LogoWall";
 import Section from "@/components/Section";
 import Testimonial from "@/components/Testimonial";
+import { NextSeo } from "next-seo";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function CRMIntegrationPage() {
   return (
     <>
+      <NextSeo title="CRM Integrations - Samespace" />
       <Section
         hero
         backgroundClass="bg-gray-50"

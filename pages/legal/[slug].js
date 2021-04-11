@@ -1,10 +1,12 @@
 import { getAllPosts, getPostBySlug } from "@/lib/api";
 import markdownToHtml from "@/lib/markdownToHtml";
+import { NextSeo } from "next-seo";
 import ReactMarkdown from "react-markdown";
 
 export default function PrivacyPolicyPage({ post }) {
   return (
     <>
+      <NextSeo title={`${post.title} - Samespace`} />
       <section className="px-12 py-16 bg-gray-50">
         <div className=" max-w-[640px] mx-auto">
           <h1 className="text-5xl font-extrabold">{post.title}</h1>

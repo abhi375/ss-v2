@@ -1,11 +1,13 @@
 import { ChevronRightIcon } from "@/components/Icons";
 import { getAllPosts } from "@/lib/api";
+import { NextSeo } from "next-seo";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function CareersPage({ jobs }) {
   return (
     <>
+      <NextSeo title="Careers - Samespace" />
       <section className="px-6 lg:px-12 py-20">
         <div className="max-w-screen-xl mx-auto">
           <div className="w-full md:w-4/6 mx-auto text-center">

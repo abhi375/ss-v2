@@ -9,6 +9,7 @@ import Button from "@/components/Button";
 import Dropzone from "react-dropzone";
 import { AttachmentIcon, BackIcon, VisibilityIcon } from "@/components/Icons";
 import Link from "next/link";
+import { NextSeo } from "next-seo";
 
 const phoneRegExp = /^(\+?\d{0,4})?\s?-?\s?(\(?\d{3}\)?)\s?-?\s?(\(?\d{3}\)?)\s?-?\s?(\(?\d{4}\)?)?$/;
 
@@ -136,6 +137,7 @@ export default function JobApplicationPage() {
 
   return (
     <>
+      <NextSeo title={`Apply for ${router.query.jobPost}`} />
       <section className="px-12 py-16 bg-white">
         {!isSuccessful && (
           <div className="max-w-[560px] mx-auto">
@@ -168,12 +170,12 @@ export default function JobApplicationPage() {
           {isSuccessful ? (
             <div className="p-12 text-center w-full mx-auto flex flex-col bg-white ">
               <h3 className="mb-4 text-2xl font-semibold">
-                Thank you so much for your interest.
+                Thank you for applying to Samespace
               </h3>
               <p className="text-lg opacity-70">
-                We want to confirm that you are on our radar. If there is a
-                match between your experience and our opportunity, we will be in
-                touch.
+                Your Application has been received and we will review it. If
+                your application seems like a good fit for the position we will
+                contact you soon.
               </p>
             </div>
           ) : (

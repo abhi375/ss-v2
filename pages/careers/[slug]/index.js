@@ -11,6 +11,7 @@ export default function JobDetailPage({ post }) {
 
   return (
     <>
+      <NextSeo title={`${post.title} - Samespace`} />
       <section className="px-12 py-20">
         <div className="max-w-screen-lg mx-auto">
           <div className="max-w-[640px] mx-auto">

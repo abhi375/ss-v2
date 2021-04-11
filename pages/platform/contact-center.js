@@ -3,11 +3,13 @@ import Button from "@/components/Button";
 import LogoWall from "@/components/LogoWall";
 import Section from "@/components/Section";
 import Testimonial from "@/components/Testimonial";
+import { NextSeo } from "next-seo";
 import Image from "next/image";
 
 export default function ContactCenterPage({ toggleDemoForm }) {
   return (
     <>
+      <NextSeo title="Contact Center - Samespace" />
       <Section
         hero
         foregroundClass="text-white"

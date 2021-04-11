@@ -1,6 +1,7 @@
 import { BackIcon } from "@/components/Icons";
 import { getAllPosts, getPostBySlug } from "@/lib/api";
 import markdownToHtml from "@/lib/markdownToHtml";
+import { NextSeo } from "next-seo";
 import Image from "next/image";
 import Link from "next/link";
 import ReactMarkdown from "react-markdown/with-html";
@@ -8,6 +9,7 @@ import ReactMarkdown from "react-markdown/with-html";
 export default function CustomerStory({ post }) {
   return (
     <>
+      <NextSeo title={post.title} />
       <section className="px-12 py-20">
         <div className="max-w-screen-lg mx-auto">
           <div className="max-w-[640px] mx-auto">

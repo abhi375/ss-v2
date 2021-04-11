@@ -3,12 +3,14 @@ import { HoverArrowIcon } from "@/components/Icons";
 import LogoWall from "@/components/LogoWall";
 import Section from "@/components/Section";
 import Testimonial from "@/components/Testimonial";
+import { NextSeo } from "next-seo";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function CRMIntegrationPage({ toggleDemoForm }) {
   return (
     <>
+      <NextSeo title="Hubspot Integrations - Samespace" />
       <Section
         hero
         backgroundClass="bg-[#2F404F]"

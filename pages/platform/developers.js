@@ -2,6 +2,7 @@ import Banner from "@/components/Banner";
 import Button from "@/components/Button";
 import LogoWall from "@/components/LogoWall";
 import Section from "@/components/Section";
+import { NextSeo } from "next-seo";
 import Image from "next/image";
 
 export default function DevelopersPage({ toggleDemoForm }) {
@@ -11,6 +12,7 @@ export default function DevelopersPage({ toggleDemoForm }) {
 
   return (
     <>
+      <NextSeo title="Developers - Samespace" />
       <Section
         hero
         verticalPadding={"py-20 lg:py-24"}

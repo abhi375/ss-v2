@@ -1,10 +1,12 @@
 import { getAllPosts } from "@/lib/api";
+import { NextSeo } from "next-seo";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function BlogListing({ blogs }) {
   return (
     <>
+      <NextSeo title="Blogs - Samespace" />
       <section className="px-6 lg:px-12 py-20 bg-gray-50">
         <div className="max-w-[960px] mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

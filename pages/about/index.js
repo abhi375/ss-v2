@@ -8,10 +8,12 @@ import {
 } from "@/components/Icons";
 import { getAllPosts } from "@/lib/api";
 import Link from "next/link";
+import { NextSeo } from "next-seo";
 
 export default function About({ leaders }) {
   return (
     <>
+      <NextSeo title="About - Samespace" />
       <section className="px-6 lg:px-12 py-20">
         <div className="max-w-[800px] mx-auto">
           <Image

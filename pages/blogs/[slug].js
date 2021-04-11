@@ -14,9 +14,8 @@ import {
   TwitterShareButton,
 } from "react-share";
 import ReactMarkdown from "react-markdown/with-html";
-
-import absoluteUrl from "next-absolute-url";
 import { useEffect, useState } from "react";
+import { NextSeo } from "next-seo";
 
 export default function CustomerStory({ post }) {
   const [shareURL, setShareURL] = useState("");
@@ -27,6 +26,7 @@ export default function CustomerStory({ post }) {
 
   return (
     <>
+      <NextSeo title={`${post.title}`} />
       <section className="px-12 py-20">
         <div className="max-w-screen-lg mx-auto">
           <div className="max-w-[640px] mx-auto">
