@@ -9,7 +9,24 @@ import ReactMarkdown from "react-markdown/with-html";
 export default function CustomerStory({ post }) {
   return (
     <>
-      <NextSeo title={post.title} />
+      <NextSeo
+        title={`${post.title}`}
+        openGraph={{
+          type: "website",
+          url: shareURL ? shareURL : "https://www.samespace.com/blogs",
+          title: post.title,
+          images: [
+            {
+              url: "https://samespace.vercel.app" + post.coverImage,
+              alt: post.title,
+            },
+          ],
+        }}
+        twitter={{
+          handle: "@samespace",
+          site: "https://www.samespace,com",
+        }}
+      />
       <section className="px-12 py-20">
         <div className="max-w-screen-lg mx-auto">
           <div className="max-w-[640px] mx-auto">
