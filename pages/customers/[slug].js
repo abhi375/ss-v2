@@ -25,7 +25,7 @@ export default function CustomerStory({ post }) {
           title: post.title,
           images: [
             {
-              url: "https://samespace.vercel.app" + post.coverImage,
+              url: "https://samespace.vercel.app" + post.metaImage,
               alt: post.title,
             },
           ],
@@ -118,6 +118,7 @@ export async function getStaticProps({ params }) {
       "activeUsers",
       "employees",
       "technology",
+      "metaImage",
     ],
     "content/customers"
   );
