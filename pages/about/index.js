@@ -24,7 +24,7 @@ export default function About({ leaders }) {
             height="400px"
             alt="Samespace"
           />
-          <h1 className="text-3xl md:text-4xl font-extrabold mt-8 mb-4">
+          <h1 className="text-3xl md:text-4xl font-bold mt-8 mb-4">
             We Started in a Garage Too
           </h1>
           <p className="text-xl mb-8 leading-normal">
@@ -53,7 +53,7 @@ export default function About({ leaders }) {
       </section>
       <section className="px-6 lg:px-12 py-20 bg-gray-50">
         <div className="max-w-[800px] mx-auto">
-          <h3 className="text-3xl md:text-4xl font-extrabold my-8">Beliefs</h3>
+          <h3 className="text-3xl md:text-4xl font-bold my-8">Beliefs</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="px-8 py-8 bg-white shadow-subtle rounded-lg">
               <div className="text-amber-600">
@@ -96,9 +96,7 @@ export default function About({ leaders }) {
 
       <section className="px-8 lg:px-12 py-20">
         <div className="max-w-[800px] mx-auto">
-          <h3 className="text-3xl md:text-4xl font-extrabold my-8">
-            Leadership
-          </h3>
+          <h3 className="text-3xl md:text-4xl font-bold my-8">Leadership</h3>
           <div className="grid grid-cols-1  md:grid-cols-2 gap-8">
             {leaders.map((leader) => {
               return (
@@ -159,7 +157,7 @@ export default function About({ leaders }) {
 
       <section className="px-6 lg:px-12 py-20 bg-gray-50">
         <div className="max-w-[800px] mx-auto">
-          <h3 className="text-3xl md:text-4xl font-extrabold my-8">Offices</h3>
+          <h3 className="text-3xl md:text-4xl font-bold my-8">Offices</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div>
               <div className="relative ">

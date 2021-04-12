@@ -33,10 +33,10 @@ export default function SpaceIDPopover({ accounts }) {
                   }}
                 />
                 <div className=" flex flex-col overflow-ellipsis overflow-hidden">
-                  <div className="font-medium group-hover:text-accent text-sm">
+                  <div className="font-semibold group-hover:text-accent text-sm">
                     {data.name}
                   </div>
-                  <small className="text-black opacity-60 font-medium">
+                  <small className="text-black opacity-60 font-semibold">
                     {space}
                   </small>
                 </div>
@@ -46,7 +46,7 @@ export default function SpaceIDPopover({ accounts }) {
 
         <div className="border-t text-[14px] border-gray-200 border-solid py-2 mt-2">
           <a
-            className="text-accent font-medium hover:underline"
+            className="text-accent font-semibold hover:underline"
             href="https://www.samespace.com/login/"
           >
             Sign in to another space

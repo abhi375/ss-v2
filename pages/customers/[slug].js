@@ -56,21 +56,21 @@ export default function CustomerStory({ post }) {
             <div className="my-8 pb-8 grid grid-cols-1 lg:grid-cols-3 gap-4 border-b border-solid border-black border-opacity-10">
               {post.industry && (
                 <div>
-                  <div className="font-medium opacity-60">Industry</div>
+                  <div className="font-semibold opacity-60">Industry</div>
                   <p className="text-lg font-semibold mt-1">{post.industry}</p>
                 </div>
               )}
 
               {post.useCase && (
                 <div>
-                  <div className="font-medium opacity-60">Use case</div>
+                  <div className="font-semibold opacity-60">Use case</div>
                   <p className="text-lg font-semibold mt-1">{post.useCase}</p>
                 </div>
               )}
 
               {post.technology && (
                 <div>
-                  <div className="font-medium opacity-60">Technology</div>
+                  <div className="font-semibold opacity-60">Technology</div>
                   <p className="text-lg font-semibold mt-1">
                     {post.technology}
                   </p>
@@ -79,14 +79,14 @@ export default function CustomerStory({ post }) {
 
               {post.employees && (
                 <div>
-                  <div className="font-medium opacity-60">Employees</div>
+                  <div className="font-semibold opacity-60">Employees</div>
                   <p className="text-lg font-semibold mt-1">{post.employees}</p>
                 </div>
               )}
 
               {post.activeUsers && (
                 <div>
-                  <div className="font-medium opacity-60">Active Users</div>
+                  <div className="font-semibold opacity-60">Active Users</div>
                   <p className="text-lg font-semibold mt-1">
                     {post.activeUsers}
                   </p>

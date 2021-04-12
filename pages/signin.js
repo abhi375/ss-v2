@@ -115,7 +115,7 @@ export default function SignIn() {
               initial={false}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              className="absolute -bottom-16 bg-red-700 w-full bg-opacity-10 rounded p-2 text-red-700 flex items-center justify-center font-medium"
+              className="absolute -bottom-16 bg-red-700 w-full bg-opacity-10 rounded p-2 text-red-700 flex items-center justify-center font-semibold"
             >
               Invalid Space ID
             </motion.div>

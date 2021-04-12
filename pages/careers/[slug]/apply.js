@@ -146,9 +146,7 @@ export default function JobApplicationPage() {
                 <div className="ml-2">Back</div>
               </a>
             </Link>
-            <h1 className="text-4xl font-extrabold mt-4">
-              {router.query.jobPost}
-            </h1>
+            <h1 className="text-4xl font-bold mt-4">{router.query.jobPost}</h1>
           </div>
         )}
 

@@ -22,7 +22,7 @@ export default function PricingPage({ toggleDemoForm }) {
       <div className="md:hidden">
         <section className="py-12 px-6 bg-gradient bg-gradient-to-r from-[#0A2FB4] to-[#120078] text-white text-center">
           <div className="container mx-auto">
-            <h1 className="text-2xl font-extrabold">
+            <h1 className="text-2xl font-bold">
               A plan for every kind{" "}
               <span className="block md:inline"> of business.</span>
             </h1>
@@ -54,7 +54,7 @@ export default function PricingPage({ toggleDemoForm }) {
           <div className="container mx-auto text-center flex items-center flex-col justify-center">
             {isActiveTab === "Growth" && (
               <>
-                <h3 className="mb-2 font-extrabold text-2xl">$50</h3>
+                <h3 className="mb-2 font-bold text-2xl">$50</h3>
                 <p className="text-base italic opacity-60 mb-4">
                   per user per month, billed annually. <br /> Starting at 10
                   users.
@@ -181,7 +181,7 @@ export default function PricingPage({ toggleDemoForm }) {
         <section className="px-12 py-8 bg-gray-50 sticky top-16 z-10">
           <div className="max-w-screen-xl mx-auto grid grid-cols-10 gap-6">
             <div className="col-span-4">
-              <h1 className="text-3xl font-extrabold">
+              <h1 className="text-3xl font-bold">
                 The Every-Size <span className="block">Solution</span>
               </h1>
             </div>

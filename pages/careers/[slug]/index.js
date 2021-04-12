@@ -21,7 +21,7 @@ export default function JobDetailPage({ post }) {
                 <div className="ml-2">Back</div>
               </a>
             </Link>
-            <h1 className="text-4xl font-extrabold mt-4">{post.title}</h1>
+            <h1 className="text-4xl font-bold mt-4">{post.title}</h1>
           </div>
           <ReactMarkdown
             className="prose max-w-[640px] prose-lg mt-12 mb-8 mx-auto"

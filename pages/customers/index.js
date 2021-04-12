@@ -11,7 +11,7 @@ export default function CustomersPage({ stories, toggleDemoForm }) {
       <NextSeo title="Customers - Samespace" />
       <section className="px-6 lg:px-12 pt-20">
         <div className="max-w-screen-xl mx-auto ">
-          <h1 className="text-3xl md:text-5xl font-extrabold">Our Customers</h1>
+          <h1 className="text-3xl md:text-5xl font-bold">Our Customers</h1>
           <p className="text-xl mt-4">
             Meet the companies that chose Samespace. They’re growing every day,
             and we love that.
@@ -42,7 +42,9 @@ export default function CustomersPage({ stories, toggleDemoForm }) {
                         </h3>
 
                         <div className="text-accent flex items-center">
-                          <div className=" text-lg font-medium">Read Story</div>
+                          <div className=" text-lg font-semibold">
+                            Read Story
+                          </div>
                         </div>
                       </div>
                     </article>

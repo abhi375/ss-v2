@@ -81,7 +81,7 @@ export default function NewsletterSubscriptionForm() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
-                className="w-full p-2.5 bg-green-700 bg-opacity-10 text-green-700 rounded text-center text-sm font-medium"
+                className="w-full p-2.5 bg-green-700 bg-opacity-10 text-green-700 rounded text-center text-sm font-semibold"
               >
                 Thanks for Subscribing
               </motion.div>
@@ -90,7 +90,7 @@ export default function NewsletterSubscriptionForm() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
-                className="w-full p-2.5 bg-red-700 bg-opacity-10 text-red-700 rounded text-center text-sm font-medium"
+                className="w-full p-2.5 bg-red-700 bg-opacity-10 text-red-700 rounded text-center text-sm font-semibold"
               >
                 Something went wrong.
               </motion.div>

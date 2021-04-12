@@ -11,7 +11,7 @@ export default function CareersPage({ jobs }) {
       <section className="px-6 lg:px-12 py-20">
         <div className="max-w-screen-xl mx-auto">
           <div className="w-full md:w-4/6 mx-auto text-center">
-            <h1 className="text-3xl lg:text-5xl font-extrabold mb-6">
+            <h1 className="text-3xl lg:text-5xl font-bold mb-6">
               We’re from Everywhere
             </h1>
             <p className="text-xl leading-normal mb-8">
@@ -36,7 +36,7 @@ export default function CareersPage({ jobs }) {
       <section className="px-6 lg:px-12 py-20 bg-gray-50">
         <div className="max-w-screen-xl mx-auto">
           <div className="w-full md:w-4/6 mx-auto text-center">
-            <h1 className="text-3xl lg:text-5xl font-extrabold mb-6">
+            <h1 className="text-3xl lg:text-5xl font-bold mb-6">
               Innovate, Always
             </h1>
             <p className="text-xl leading-normal mb-8">

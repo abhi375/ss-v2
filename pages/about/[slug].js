@@ -40,7 +40,7 @@ export default function LeaderPage({ post }) {
                 />
               </div>
               <div className="flex-1 ml-8">
-                <h1 className="text-4xl mb-2 font-extrabold">{post.name}</h1>
+                <h1 className="text-4xl mb-2 font-bold">{post.name}</h1>
                 <p className="text-lg opacity-60">{post.designation}</p>
               </div>
             </div>

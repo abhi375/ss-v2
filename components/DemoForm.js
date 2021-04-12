@@ -231,7 +231,7 @@ export default function DemoForm({ toggleDemoForm }) {
                   initial={false}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
-                  className="w-full bg-red-700 bg-opacity-10 text-red-700 p-2 rounded flex items-center justify-center text-sm font-medium"
+                  className="w-full bg-red-700 bg-opacity-10 text-red-700 p-2 rounded flex items-center justify-center text-sm font-semibold"
                 >
                   {error}
                 </motion.div>

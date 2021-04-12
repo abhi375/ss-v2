@@ -9,7 +9,7 @@ export default function PrivacyPolicyPage({ post }) {
       <NextSeo title={`${post.title} - Samespace`} />
       <section className="px-12 py-16 bg-gray-50">
         <div className=" max-w-[640px] mx-auto">
-          <h1 className="text-5xl font-extrabold">{post.title}</h1>
+          <h1 className="text-5xl font-bold">{post.title}</h1>
         </div>
       </section>
       <section className="px-12 py-12">
