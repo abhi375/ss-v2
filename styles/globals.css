@@ -34,4 +34,33 @@
   .mobileMenuHeight {
     height: calc(100vh - 64px);
   }
+
+  .hero-gradient {
+    background: linear-gradient(
+      -45deg,
+      #14b8a6,
+      #0ea5e9,
+      #007aff,
+      #4f46e5,
+      #7c3aed,
+      #c026d3,
+      #e6753b,
+      #db2777
+    );
+    background-size: 320% 320%;
+    animation: gradient 12s ease infinite;
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 }
