@@ -111,7 +111,7 @@ export default function Home({ toggleDemoForm }) {
         headline={[
           <>
             <span className="inline md:block">
-              <span className="text-accent">AI</span> that speaks
+              <span className="text-accent">AI that speaks</span>
             </span>
             <span> your language.</span>
           </>,

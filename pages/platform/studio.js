@@ -38,7 +38,7 @@ export default function StudioPage({ toggleDemoForm }) {
       />
 
       <Section
-        headline={["Cutting Edge Customer Experience with IVR"]}
+        headline={["Cutting Edge Customer Experience with Smart IVR"]}
         showMediaFirst
         copy={[
           "IVRs are a crucial part of the customer experience. Samespace Studio gives you a powerful platform to build dynamic IVRs that respond intelligently to customer inputs using AI and flexible APIs.",
@@ -55,7 +55,7 @@ export default function StudioPage({ toggleDemoForm }) {
       />
       <Section
         backgroundClass="bg-gray-50"
-        headline={["One Studio:", " So Many Channels."]}
+        headline={["One Space.", " So Many Channels."]}
         copy={[
           "Samespace Studio allows you to create more meaningful customer interactions on the platforms they use most frequently.",
         ]}

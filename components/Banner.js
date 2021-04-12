@@ -8,15 +8,15 @@ export default function Banner({
 }) {
   return (
     <section
-      className={`px-6 sm:px-10 lg:px-12 py-12 md:py-20 relative ${
+      className={`px-6 sm:px-10 lg:px-12 py-12 md:py-16 relative ${
         backgroundClass
           ? backgroundClass
-          : "bg-gradient bg-gradient-to-r from-[#0A2FB4] to-[#120078]"
+          : "bg-gradient bg-gradient-to-r bg-accent to-[#0A2FB4]"
       } ${foregroundClass ? foregroundClass : "text-white"}`}
     >
       <div className="max-w-screen-xl relative z-10 mx-auto grid place-items-center">
-        <h4 className="text-2xl md:text-4xl mb-6 text-center">
-          {title ? title : "Would you like to see samespace in action?"}
+        <h4 className="text-2xl md:text-3xl mb-6 text-center">
+          {title ? title : "Enhance your CRM, double your productivity."}
         </h4>
         <Button
           title="Get a demo"

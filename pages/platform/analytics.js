@@ -60,7 +60,7 @@ export default function AnalyticsPage({ toggleDemoForm }) {
         headline={[
           <>
             <span className="block sm:inline">AI-Powered</span>
-            <span>Sentiment Analysis</span>
+            <span> Sentiment Analysis</span>
           </>,
         ]}
         copy={[
