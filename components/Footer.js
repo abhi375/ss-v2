@@ -68,7 +68,7 @@ export default function Footer() {
               <Link href="/careers">
                 <a className="mt-2 hover:text-accent">
                   <span>Careers</span>
-                  <span className="inline-flex ml-2 px-2 py-0.5 bg-rose-600 bg-opacity-10 text-rose-600 text-[13px] rounded-full font-bold">
+                  <span className="inline-flex ml-2 px-2 py-0.5 bg-rose-600 bg-opacity-10 text-rose-800 text-[13px] rounded-full font-bold">
                     We're hiring
                   </span>
                 </a>
@@ -123,7 +123,7 @@ export default function Footer() {
               <Link href="/legal/terms">
                 <a>Terms</a>
               </Link>
-              <p className="opacity-50">Copyright © 2021 Samespace Inc.</p>
+              <p className="opacity-70">Copyright © 2021 Samespace Inc.</p>
             </div>
           </div>
         </div>
