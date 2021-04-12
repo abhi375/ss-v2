@@ -1,11 +1,7 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useCookies } from "react-cookie";
-import {
-  insertGoogleTracker,
-  insertHubspotTracker,
-  insertZoomInfoTracker,
-} from "@/lib/tracker";
+import { insertHubspotTracker, insertZoomInfoTracker } from "@/lib/tracker";
 import Link from "next/link";
 import { HoverArrowIcon } from "./Icons";
 
@@ -20,7 +16,6 @@ export default function ConsentBanner() {
     if (savedConsent === "true") {
       insertHubspotTracker();
       insertZoomInfoTracker();
-      insertGoogleTracker();
     }
   }, []);
 
@@ -34,7 +29,6 @@ export default function ConsentBanner() {
     if (accepted) {
       insertHubspotTracker();
       insertZoomInfoTracker();
-      insertGoogleTracker();
     }
   }
 
