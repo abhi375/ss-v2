@@ -58,7 +58,7 @@ export default function CRMIntegrationPage({ toggleDemoForm }) {
         showMediaFirst
         media={
           <Image
-            src="/features/dynamic-routing-flow.png"
+            src="/features/hubspot-studio-flow.png"
             width={500}
             height={500}
             alt="Samespace Studio"
