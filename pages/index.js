@@ -82,11 +82,9 @@ export default function Home({ toggleDemoForm }) {
       <Section
         headline={[
           <>
-            <span>Complexity now a </span>
+            <span className="inline md:block">Complexity now a </span>
 
-            <span className="inline md:block bg-clip-text text-transparent bg-gradient-to-r from-green-600 to-blue-600">
-              thing of the past.
-            </span>
+            <span className="text-green-600">thing of the past.</span>
           </>,
         ]}
         columns="two"
@@ -107,10 +105,7 @@ export default function Home({ toggleDemoForm }) {
         headline={[
           <>
             <span>
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-accent to-purple-600">
-                Scale your sales
-              </span>{" "}
-              without
+              <span className="text-indigo-600">Scale your sales</span> without
             </span>
             <span className="inline md:block"> scaling teams.</span>
           </>,
@@ -135,7 +130,7 @@ export default function Home({ toggleDemoForm }) {
         headline={[
           <>
             <span>Plug it and</span>
-            <span className="inline md:block bg-clip-text text-transparent bg-gradient-to-r from-rose-500 to-amber-600">
+            <span className="inline md:block text-rose-600">
               {" "}
               let your CRM play.
             </span>
@@ -159,10 +154,7 @@ export default function Home({ toggleDemoForm }) {
         headline={[
           <>
             <span className="inline md:block">
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-blue-600">
-                AI
-              </span>{" "}
-              that speaks
+              <span className="text-accent">AI</span> that speaks
             </span>
             <span> your language.</span>
           </>,
@@ -186,9 +178,7 @@ export default function Home({ toggleDemoForm }) {
       <Section
         headline={[
           <>
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-rose-600">
-              Your Data,
-            </span>
+            <span className="text-amber-600">Your Data,</span>
             <span> your way.</span>
           </>,
         ]}
@@ -210,10 +200,7 @@ export default function Home({ toggleDemoForm }) {
         headline={[
           <>
             <span>Set the bar higher</span>
-            <span className="block bg-clip-text text-transparent bg-gradient-to-r from-[#0A2FB4] to-accent">
-              {" "}
-              with HiFi.
-            </span>
+            <span className="block text-blue-600"> with HiFi.</span>
           </>,
         ]}
         columns="two"
