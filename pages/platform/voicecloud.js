@@ -95,25 +95,15 @@ export default function VoiceCloudPage({ toggleDemoForm }) {
       />
 
       <Testimonial
-        quote="The first thing that differentiated Samespace was they matched solutions to our complex needs. Delivery team ensured our needs were met, and now our sales & service teams have a solid CTI solution."
-        personName="Mukhtadir Syed"
-        personDesignation="AVP - Sales and Customer Success"
+        quote="About the entire experience with Samespace, one word comes to my mind: Excellent."
+        personName="Urooj"
+        personDesignation="IT Head at Avis"
         companyLogo={
           <Image
-            src="/logos/endurance.svg"
+            src="/logos/avis.svg"
             width="200px"
-            height="56px"
+            height="32px"
             alt="Endurance Logo"
-          />
-        }
-        personAvatar={
-          <Image
-            src="/people/mukhtadir.jpeg"
-            width="64px"
-            height="64px"
-            objectFit="cover"
-            className="rounded-full overflow-hidden"
-            alt="Mukhtadir Syed"
           />
         }
       />

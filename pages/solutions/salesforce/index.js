@@ -98,7 +98,7 @@ export default function CRMIntegrationPage({ toggleDemoForm }) {
       />
 
       <Testimonial
-        quote="The first thing that differentiated Samespace was they matched solutions to our complex needs. Delivery team ensured our needs were met, and now our sales & service teams have a solid CTI solution."
+        quote="A solid CTI solution integrated within Salesforce."
         personName="Mukhtadir Syed"
         personDesignation="AVP - Sales and Customer Success"
         companyLogo={

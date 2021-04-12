@@ -96,29 +96,19 @@ export default function AnalyticsPage({ toggleDemoForm }) {
       />
 
       <Testimonial
-        quote="The first thing that differentiated Samespace was they matched solutions to our complex needs. Delivery team ensured our needs were met, and now our sales & service teams have a solid CTI solution."
-        personName="Mukhtadir Syed"
-        personDesignation="AVP - Sales and Customer Success"
+        quote="Compared to other products in the market Samespace is about 50% more efficient, and this has led to the increase in productivity."
+        personName="CV Sai"
+        personDesignation="AVP, Urban Company"
         companyLogo={
           <Image
-            src="/logos/endurance.svg"
+            src="/logos/urban.svg"
             width="200px"
-            height="56px"
-            alt="Endurance Logo"
-          />
-        }
-        personAvatar={
-          <Image
-            src="/people/mukhtadir.jpeg"
-            width="64px"
-            height="64px"
-            objectFit="cover"
-            className="rounded-full overflow-hidden"
-            alt="Mukhtadir Syed"
+            height="40px"
+            alt="Urban Clap Logo"
           />
         }
       />
-      <LogoWall backgroundClass="bg-white" />
+      <LogoWall />
       <Banner
         title="Turn insights into action and action into results."
         bannerAction={toggleDemoForm}

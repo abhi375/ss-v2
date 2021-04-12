@@ -108,7 +108,7 @@ export default function StudioPage({ toggleDemoForm }) {
       />
 
       <Testimonial
-        quote="The first thing that differentiated Samespace was they matched solutions to our complex needs. Delivery team ensured our needs were met, and now our sales & service teams have a solid CTI solution."
+        quote="Studio is an amazing feature that allows us to build the IVR on the fly."
         personName="Mukhtadir Syed"
         personDesignation="AVP - Sales and Customer Success"
         companyLogo={

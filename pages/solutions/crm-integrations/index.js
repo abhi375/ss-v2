@@ -137,25 +137,15 @@ export default function CRMIntegrationPage() {
       />
 
       <Testimonial
-        quote="The first thing that differentiated Samespace was they matched solutions to our complex needs. Delivery team ensured our needs were met, and now our sales & service teams have a solid CTI solution."
-        personName="Mukhtadir Syed"
-        personDesignation="AVP - Sales and Customer Success"
+        quote="Samespace' ability to integrate with any CRM is what we liked the most about the product. For us, it took just a couple of hours to integrate to Instaview360 CRM."
+        personName="CV Sai"
+        personDesignation="AVP - Urban Company"
         companyLogo={
           <Image
-            src="/logos/endurance.svg"
+            src="/logos/urban.svg"
             width="200px"
-            height="56px"
-            alt="Endurance Logo"
-          />
-        }
-        personAvatar={
-          <Image
-            src="/people/mukhtadir.jpeg"
-            width="64px"
-            height="64px"
-            objectFit="cover"
-            className="rounded-full overflow-hidden"
-            alt="Mukhtadir Syed"
+            height="40px"
+            alt="Urban Logo"
           />
         }
       />

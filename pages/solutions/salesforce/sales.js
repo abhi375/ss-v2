@@ -126,9 +126,9 @@ export default function SalesCRM({ toggleDemoForm }) {
         }
       />
       <Testimonial
-        quote="The first thing that differentiated Samespace was they matched solutions to our complex needs. Delivery team ensured our needs were met, and now our sales & service teams have a solid CTI solution."
-        personName="Mukhtadir Syed"
-        personDesignation="AVP - Sales and Customer Success"
+        quote="Samespace has helped us implement a very unique CTI solution according to our business needs. Their ability to integrate with Salesforce and provide business specific customization is very unique. Our sales team enjoys using Samespace Dock integrated with Salesforce."
+        personName="Swadeep Singh Khurana"
+        personDesignation="Senior Product Manager at Simplilearn"
         companyLogo={
           <Image
             src="/logos/endurance.svg"
@@ -139,12 +139,12 @@ export default function SalesCRM({ toggleDemoForm }) {
         }
         personAvatar={
           <Image
-            src="/people/mukhtadir.jpeg"
+            src="/people/swadeep.jpeg"
             width="64px"
             height="64px"
             objectFit="cover"
             className="rounded-full overflow-hidden"
-            alt="Mukhtadir Syed"
+            alt="Swadeep Singh Khurana"
           />
         }
       />
