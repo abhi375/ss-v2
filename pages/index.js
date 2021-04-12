@@ -9,12 +9,14 @@ import { motion } from "framer-motion";
 export default function Home({ toggleDemoForm }) {
   return (
     <>
-      <section className="px-6 md:px-12 py-16 md:py-32 overflow-hidden text-white hero-gradient">
+      <section className="px-6 md:px-12 py-16 md:py-32 overflow-hidden">
         <div className="max-w-screen-xl mx-auto">
           <div className="flex flex-col items-center justify-center text-center">
             <h1 className="max-w-[800px] mx-auto  text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black">
               Cloud Contact Center Software. Centered on{" "}
-              <span className="">Experience.</span>
+              <span className="bg-clip-text text-transparent bg-gradient-to-tr from-accent to-indigo-600">
+                Experience.
+              </span>
             </h1>
             <p className="max-w-[720px] mx-auto text-2xl leading-normal my-8">
               Built on cutting-edge technologies and design thinking principles,
@@ -24,8 +26,8 @@ export default function Home({ toggleDemoForm }) {
 
             <Button
               size="large"
-              backgroundClass="bg-white"
-              foregroundClass="text-black"
+              backgroundClass="bg-accent"
+              foregroundClass="text-white"
               title="Get a demo"
               onClick={toggleDemoForm}
             />
