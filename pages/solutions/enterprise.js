@@ -24,19 +24,21 @@ export default function EnterprisePage({ toggleDemoForm }) {
           <Button size="large" onClick={toggleDemoForm} title="Get a demo" />
         }
         media={
-          <Image
-            src={"/features/crm-stack.png"}
-            alt="Samespace Integration"
-            width={1200}
-            height={280}
-            priority
-            quality={100}
-          />
+          <div className="hidden sm:block">
+            <Image
+              src={"/features/crm-stack.png"}
+              alt="Samespace Integration"
+              width={1200}
+              height={280}
+              priority
+              quality={100}
+            />
+          </div>
         }
       />
 
       <Section
-        headline={["Enterprise-grade security", "reliability, and compliance"]}
+        headline={["Enterprise-grade security", " reliability, and compliance"]}
         showMediaFirst
         copy={[
           "With Samespace, you’re getting application security at the highest level, and we know you’d accept no less. GDPR and SOC 2 compliance is a given. We provide an on-premises option for compliance and data sovereignty, and our resilient data centers allow for maximum uptime.",
@@ -69,7 +71,7 @@ export default function EnterprisePage({ toggleDemoForm }) {
         }
       />
       <Section
-        headline={["Easier to Integrate,", "Faster to Deploy"]}
+        headline={["Easier to Integrate,", " Faster to Deploy"]}
         copy={[
           "We have no out-dated legacy architecture, our tech stack was designed to provide rapid integration, and our Conversation Studio makes flows easier to build than anyone else on the market.",
         ]}

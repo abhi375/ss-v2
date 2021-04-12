@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 export default function Home({ toggleDemoForm }) {
   return (
     <>
-      <section className="px-6 md:px-12 py-24 overflow-hidden">
+      <section className="px-6 md:px-12 py-16 md:py-24 overflow-hidden">
         <div className="max-w-screen-xl mx-auto flex flex-col lg:flex-row items-center ">
           <div className="grid grid-cols-1 gap-8 w-full lg:w-5/12">
             <h1 className="hidden xl:block text-5xl font-black">
@@ -18,7 +18,7 @@ export default function Home({ toggleDemoForm }) {
                 Experience.
               </span>
             </h1>
-            <h1 className="block xl:hidden text-4xl font-black">
+            <h1 className="block xl:hidden text-3xl md:text-4xl font-black">
               Cloud Contact Center Software. Centered on{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-tr from-[#0A2FB4] to-accent">
                 Experience.
@@ -178,7 +178,7 @@ export default function Home({ toggleDemoForm }) {
       <Section
         headline={[
           <>
-            <span className="text-amber-600">Your Data,</span>
+            <span className="text-amber-600 block sm:inline">Your Data,</span>
             <span> your way.</span>
           </>,
         ]}

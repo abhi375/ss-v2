@@ -44,7 +44,7 @@ export default function VoiceCloudPage({ toggleDemoForm }) {
       />
 
       <Section
-        headline={["100% Uptime,", "100% of the Time"]}
+        headline={["100% Uptime,", " 100% of the Time"]}
         backgroundClass="bg-gray-50"
         copy={[
           "Our multi-region cloud has no single point of failure, so your calls always go through, even when a data center faces an outage.",

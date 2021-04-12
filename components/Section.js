@@ -16,7 +16,7 @@ export default function Section({
   const OneColumnLayout = () => {
     return (
       <div className="grid grid-cols-1 place-items-center">
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-black w-full md:w-5/6 mx-auto">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black w-full md:w-5/6 mx-auto">
           {headline.map((heading, index) => {
             return (
               <span className="inline md:block" key={index}>
@@ -29,7 +29,7 @@ export default function Section({
         {copy.map((para, index) => {
           return (
             <p
-              className={`text-xl leading-normal w-full md:w-3/5 mx-auto mt-6 ${
+              className={`text-lg sm:text-xl leading-normal w-full md:w-3/5 mx-auto mt-3 sm:mt-6 ${
                 callToActions ? "mb-8" : ""
               }`}
               key={index}
@@ -49,7 +49,7 @@ export default function Section({
       <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-20 items-center">
         <div className={`${showMediaFirst ? "lg:order-2" : "order-1"}`}>
           {hero ? (
-            <h1 className="text-3xl md:text-4xl lg:text-5xl mb-6 font-black">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl mb-3 sm:mb-6 font-black">
               {headline.map((heading, index) => {
                 return (
                   <span className="inline sm:block" key={index}>
@@ -59,7 +59,7 @@ export default function Section({
               })}
             </h1>
           ) : (
-            <h3 className="text-3xl lg:text-4xl mb-6 font-black">
+            <h3 className="text-2xl sm:text-3xl lg:text-4xl mb-3 sm:mb-6 font-black">
               {headline.map((heading, index) => {
                 return (
                   <span className="inline sm:block" key={index}>
@@ -73,12 +73,12 @@ export default function Section({
           {copy.map((para, index) => {
             return (
               <p
-                className={`text-xl leading-normal ${
+                className={`text-lg sm:text-xl leading-normal ${
                   callToActions ? "mb-8" : ""
                 }`}
                 key={index}
               >
-                <span className="block mt-6">{para}</span>
+                <span className="block mt-3 sm:mt-6">{para}</span>
               </p>
             );
           })}

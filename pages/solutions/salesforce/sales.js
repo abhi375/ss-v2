@@ -14,7 +14,12 @@ export default function SalesCRM({ toggleDemoForm }) {
       <NextSeo title="Samespace for Salesforce Sales" />
       <Section
         hero
-        headline={["A Superior Sales Team"]}
+        headline={[
+          <>
+            <span>A Superior</span>
+            <span className="block sm:inline"> Sales Team</span>
+          </>,
+        ]}
         verticalPadding="py-20 lg:py-28"
         copy={[
           "Samespace makes your sales team super productive. They’ll handle double the calls with our automation and streamlined workflows.",

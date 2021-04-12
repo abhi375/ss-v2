@@ -25,7 +25,7 @@ export default function CustomersPage({ stories, toggleDemoForm }) {
               return (
                 <Link key={story.slug} href={`/customers/${story.slug}`}>
                   <a>
-                    <article className="bg-white md:p-4 md:-m-4 hover:shadow-subtle rounded-md">
+                    <article className="bg-white md:p-4 md:-m-4 md:hover:shadow-subtle rounded-md">
                       <div>
                         <Image
                           alt={story.title}

@@ -55,7 +55,7 @@ export default function StudioPage({ toggleDemoForm }) {
       />
       <Section
         backgroundClass="bg-gray-50"
-        headline={["One Studio:", "So. Many. Channels"]}
+        headline={["One Studio:", " So Many Channels."]}
         copy={[
           "Samespace Studio allows you to create more meaningful customer interactions on the platforms they use most frequently.",
         ]}
@@ -87,7 +87,12 @@ export default function StudioPage({ toggleDemoForm }) {
       />
       <Section
         backgroundClass="bg-gray-50"
-        headline={["The Platform Developers", "  Love Too"]}
+        headline={[
+          <>
+            <span>The Platform Developers, </span>
+            <span> Love Too</span>
+          </>,
+        ]}
         copy={[
           "Extend Studio functionality with advanced business logic using custom functions and webhooks.",
         ]}

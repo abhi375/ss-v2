@@ -59,8 +59,8 @@ export default function ConsentBanner() {
         >
           <div className="max-w-screen-lg mx-auto flex flex-col sm:flex-row items-center justify-between">
             <div className="text-base mb-4 sm:mb-0">
-              This site uses cookies to give you a better user experience.{" "}
-              <br className="block sm:hidden" /> See our{" "}
+              This site uses cookies to give you a better user experience. See
+              our{" "}
               <Link href="/legal/cookies">
                 <a className="text-accent">cookie policy</a>
               </Link>

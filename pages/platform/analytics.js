@@ -57,7 +57,12 @@ export default function AnalyticsPage({ toggleDemoForm }) {
         }
       />
       <Section
-        headline={["AI-Powered", " Sentiment Analysis"]}
+        headline={[
+          <>
+            <span className="block sm:inline">AI-Powered</span>
+            <span>Sentiment Analysis</span>
+          </>,
+        ]}
         copy={[
           "We humans don’t just speak thoughts; we speak feelings. Samespace’s AI-powered sentiment analysis decodes the raw data of emotion to crucially supplement your NPS and CSAT tracking.",
           "We help you stay in tune with your customer base by recognizing words, phrases, and tones that shed light on the ever evolving trends of your products, brand, and competition, and the feelings that move them.",
