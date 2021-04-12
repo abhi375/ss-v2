@@ -9,71 +9,22 @@ import { motion } from "framer-motion";
 export default function Home({ toggleDemoForm }) {
   return (
     <>
-      <section className="px-6 md:px-12 py-16 md:py-24 overflow-hidden">
-        <div className="max-w-screen-xl mx-auto flex flex-col lg:flex-row items-center ">
-          <div className="grid grid-cols-1 gap-8 w-full lg:w-5/12">
-            <h1 className="hidden xl:block text-5xl font-black">
-              Cloud Contact Center Software—Centered on{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-tr from-[#0A2FB4] to-accent">
-                Experience.
-              </span>
-            </h1>
-            <h1 className="block xl:hidden text-3xl md:text-4xl font-black">
+      <section className="px-6 md:px-12 py-16 md:py-32 overflow-hidden">
+        <div className="max-w-screen-xl mx-auto">
+          <div className="flex flex-col items-center justify-center text-center">
+            <h1 className="max-w-[800px] mx-auto  text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black">
               Cloud Contact Center Software. Centered on{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-tr from-[#0A2FB4] to-accent">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0A2FB4] to-accent">
                 Experience.
               </span>
             </h1>
-            <p className="text-xl leading-normal">
+            <p className="max-w-[720px] mx-auto text-2xl leading-normal my-8">
               Built on cutting-edge technologies and design thinking principles,
               samespace bring together everything that's required to build an
               exceptional Contact Center experience.
             </p>
-            <div className="">
-              <Button
-                size="large"
-                title="Get a demo"
-                onClick={toggleDemoForm}
-              />
-            </div>
-          </div>
-          <div className="w-full lg:w-7/12 hidden sm:block relative mt-8 lg:mt-0">
-            <motion.div
-              style={{
-                width: 360,
-                height: 550,
-                position: "absolute",
-                zIndex: 1,
-              }}
-              className="left-12 -bottom-16 sm:-bottom-8 sm:left-40"
-            >
-              <Image
-                src="/features/dock-hero.png"
-                alt="Samespace Analytics"
-                layout="fill"
-                quality={100}
-                priority
-                className=""
-              />
-            </motion.div>
-            <div
-              style={{
-                width: 960,
-                height: 580,
-                position: "relative",
-              }}
-              className="right-0 lg:-right-24"
-            >
-              <Image
-                src="/features/ss-analytics.png"
-                alt="Samespace Analytics"
-                width={960}
-                height={580}
-                quality={100}
-                priority
-                className=""
-              />
-            </div>
+
+            <Button size="large" title="Get a demo" onClick={toggleDemoForm} />
           </div>
         </div>
       </section>
@@ -200,7 +151,10 @@ export default function Home({ toggleDemoForm }) {
         headline={[
           <>
             <span>Set the bar higher</span>
-            <span className="block text-blue-600"> with HiFi.</span>
+            <span className="block ">
+              with
+              <span className="text-blue-600"> HiFi.</span>
+            </span>
           </>,
         ]}
         columns="two"
