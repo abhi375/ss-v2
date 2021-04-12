@@ -112,7 +112,7 @@ export default function Home({ toggleDemoForm }) {
               </span>{" "}
               without
             </span>
-            <span className="inline md:block">scaling teams.</span>
+            <span className="inline md:block"> scaling teams.</span>
           </>,
         ]}
         columns="two"

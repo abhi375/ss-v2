@@ -55,12 +55,12 @@ export default function ConsentBanner() {
             opacity: 1,
           }}
           transition={{ easings: "easeInOut", duration: 0.4 }}
-          className="px-12 py-2 fixed z-50 inset-x-0 bottom-0 bg-white shadow-consentbanner"
+          className="px-6 sm:px-12 py-4 sm:py-2 fixed z-50 inset-x-0 bottom-0 bg-white shadow-consentbanner"
         >
-          <div className="max-w-screen-lg mx-auto flex items-center justify-between">
-            <div className="text-base">
-              This site uses cookies to give you a better user experience.
-              <wbr /> See our{" "}
+          <div className="max-w-screen-lg mx-auto flex flex-col sm:flex-row items-center justify-between">
+            <div className="text-base mb-4 sm:mb-0">
+              This site uses cookies to give you a better user experience.{" "}
+              <br className="block sm:hidden" /> See our{" "}
               <Link href="/legal/cookies">
                 <a className="text-accent">cookie policy</a>
               </Link>
