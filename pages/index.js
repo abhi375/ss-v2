@@ -1,5 +1,6 @@
 import Banner from "@/components/Banner";
 import Button from "@/components/Button";
+import FeatureTeaser from "@/components/FeatureTeaser";
 import LogoWall from "@/components/LogoWall";
 import Section from "@/components/Section";
 import Testimonial from "@/components/Testimonial";
@@ -40,7 +41,7 @@ export default function Home({ toggleDemoForm }) {
         headline={[
           <>
             <span className="inline md:block">Complexity now a </span>
-            <span className="text-amber-600">thing of the past.</span>
+            <span className="text-blue-600">thing of the past.</span>
           </>,
         ]}
         columns="two"
@@ -52,14 +53,9 @@ export default function Home({ toggleDemoForm }) {
           <div className="w-full relative md:pb-[56.25%] lg:pb-[100%]">
             <div className=" relative md:absolute w-full h-full flex items-center justify-center ">
               <div className="rounded-lg overflow-hidden shadow-subtle">
-                <ReactPlayer
-                  className=""
-                  width="100%"
-                  height="100%"
-                  url="/videos/drag-and-drop.mp4"
-                  loop
-                  muted
-                  playing
+                <FeatureTeaser
+                  teaser={"/videos/drag-and-drop.mp4"}
+                  hideReplayButton
                 />
               </div>
             </div>
