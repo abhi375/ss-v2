@@ -139,7 +139,7 @@ export default function CRMIntegrationPage({ toggleDemoForm }) {
       />
 
       <Banner
-        bannerAction={toggleDemoForm}
+        bannerAction={() => toggleDemoForm("Get Demo")}
         title="Take Hubspot to a higher level with Samespace."
       />
     </>

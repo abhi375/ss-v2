@@ -19,7 +19,7 @@ export default function CustomersPage({ stories, toggleDemoForm }) {
         </div>
       </section>
       <section className="px-6 lg:px-12 py-16">
-        <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+        <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
           {stories &&
             stories.map((story) => {
               return (
@@ -55,7 +55,7 @@ export default function CustomersPage({ stories, toggleDemoForm }) {
         </div>
       </section>
       <LogoWall />
-      <Banner bannerAction={toggleDemoForm} />
+      <Banner bannerAction={() => toggleDemoForm("Get Demo")} />
     </>
   );
 }

@@ -122,7 +122,7 @@ export default function CRMIntegrationPage({ toggleDemoForm }) {
       />
 
       <Banner
-        bannerAction={toggleDemoForm}
+        bannerAction={() => toggleDemoForm("Get Demo")}
         title="Get the most out of Salesforce."
       />
     </>

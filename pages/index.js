@@ -4,7 +4,7 @@ import LogoWall from "@/components/LogoWall";
 import Section from "@/components/Section";
 import Testimonial from "@/components/Testimonial";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import ReactPlayer from "react-player";
 
 export default function Home({ toggleDemoForm }) {
   return (
@@ -19,17 +19,17 @@ export default function Home({ toggleDemoForm }) {
               </span>
             </h1>
             <p className="max-w-[720px] mx-auto text-2xl leading-normal my-8">
-              Built on cutting-edge technologies and design thinking principles,
-              samespace bring together everything that's required to build an
-              exceptional Contact Center experience.
+              Built on cutting-edge Internet technologies and design thinking
+              principles, samespace elates customer experience, increases agent
+              productivity and saves a ton of money.
             </p>
 
             <Button
               size="large"
               backgroundClass="bg-accent"
               foregroundClass="text-white"
-              title="Get a demo"
-              onClick={toggleDemoForm}
+              title="Get Demo"
+              onClick={() => toggleDemoForm("Get Demo")}
             />
           </div>
         </div>
@@ -40,22 +40,30 @@ export default function Home({ toggleDemoForm }) {
         headline={[
           <>
             <span className="inline md:block">Complexity now a </span>
-
-            <span className="text-green-600">thing of the past.</span>
+            <span className="text-amber-600">thing of the past.</span>
           </>,
         ]}
         columns="two"
         copy={[
           "Samespace lets you create, route, and deploy voice, chat and messaging flows in minutes. Whether for customer support or sales, simply drag and drop, no coding needed.",
         ]}
+        verticalPadding="py-16 lg:py-12"
         media={
-          <Image
-            src="/features/studio-flow.png"
-            alt="Samespace Studio"
-            width={520}
-            height={520}
-            quality={100}
-          />
+          <div className="w-full relative md:pb-[56.25%] lg:pb-[100%]">
+            <div className=" relative md:absolute w-full h-full flex items-center justify-center ">
+              <div className="rounded-lg overflow-hidden shadow-subtle">
+                <ReactPlayer
+                  className=""
+                  width="100%"
+                  height="100%"
+                  url="/videos/drag-and-drop.mp4"
+                  loop
+                  muted
+                  playing
+                />
+              </div>
+            </div>
+          </div>
         }
       />
       <Section
@@ -71,14 +79,14 @@ export default function Home({ toggleDemoForm }) {
         backgroundClass="bg-gray-50"
         showMediaFirst
         copy={[
-          "Our smart automation increases the number of connected calls by 100% and makes sales teams 50% more productive by automatically logging activity.",
+          "By automatically logging call activity, increase the number of connected calls by 100% and your sales team's productivity by 50% with our smart automation capability.",
         ]}
         media={
           <Image
             src="/features/playbooks.png"
             alt="Samespace Playbooks"
-            width={520}
-            height={520}
+            width={540}
+            height={540}
             quality={100}
           />
         }
@@ -87,22 +95,23 @@ export default function Home({ toggleDemoForm }) {
         headline={[
           <>
             <span>Plug it and</span>
-            <span className="inline md:block text-rose-600">
+            <span className="inline md:block text-indigo-600">
               {" "}
               let your CRM play.
             </span>
           </>,
         ]}
+        verticalPadding="py-16 lg:py-12"
         columns="two"
         copy={[
           "Samespace offers ready to run native CTI integration with popular CRMs, and open APIs for custom integrations.",
         ]}
         media={
           <Image
-            src="/features/crm-galaxy.png"
+            src="/features/crm-connections.png"
             alt="Samespace Integrations"
-            width={520}
-            height={520}
+            width={540}
+            height={540}
             quality={100}
           />
         }
@@ -111,7 +120,7 @@ export default function Home({ toggleDemoForm }) {
         headline={[
           <>
             <span className="inline md:block">
-              <span className="text-accent">AI that speaks</span>
+              <span className="text-green-600">AI that speaks</span>
             </span>
             <span> your language.</span>
           </>,
@@ -126,8 +135,8 @@ export default function Home({ toggleDemoForm }) {
           <Image
             src="/features/sentiment-analysis.png"
             alt="Samespace Sentiment Analysis"
-            width={520}
-            height={520}
+            width={540}
+            height={540}
             quality={100}
           />
         }
@@ -135,20 +144,20 @@ export default function Home({ toggleDemoForm }) {
       <Section
         headline={[
           <>
-            <span className="text-amber-600 block sm:inline">Your Data,</span>
+            <span className="text-rose-600 block sm:inline">Your Data,</span>
             <span> your way.</span>
           </>,
         ]}
         columns="two"
         copy={[
-          "Customize dashboards with drag and drop widgets and create granular reports by applying advanced filters. Bring your own data to see the big picture in one place.",
+          "Customize dashboards with drag and drop widgets and create granular reports by applying advanced filters. Bring your own data to see the bigger picture in one place.",
         ]}
         media={
           <Image
             src="/features/cc-analytics.png"
             alt="Samespace Analytics"
-            width={520}
-            height={520}
+            width={540}
+            height={540}
             quality={100}
           />
         }
@@ -173,8 +182,8 @@ export default function Home({ toggleDemoForm }) {
           <Image
             src="/features/hifi.png"
             alt="Samespace HiFi"
-            width={578}
-            height={420}
+            width={540}
+            height={406}
             quality={100}
           />
         }
@@ -202,7 +211,7 @@ export default function Home({ toggleDemoForm }) {
           />
         }
       />
-      <Banner bannerAction={toggleDemoForm} />
+      <Banner bannerAction={() => toggleDemoForm("Get Demo")} />
     </>
   );
 }

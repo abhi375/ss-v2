@@ -21,7 +21,11 @@ export default function EnterprisePage({ toggleDemoForm }) {
         columns={"one"}
         textAlignment="center"
         callToActions={
-          <Button size="large" onClick={toggleDemoForm} title="Get a demo" />
+          <Button
+            size="large"
+            onClick={() => toggleDemoForm("Get Demo")}
+            title="Get Demo"
+          />
         }
         media={
           <div className="hidden sm:block">
@@ -109,7 +113,7 @@ export default function EnterprisePage({ toggleDemoForm }) {
           />
         }
       />
-      <Banner bannerAction={toggleDemoForm} />
+      <Banner bannerAction={() => toggleDemoForm("Get Demo")} />
     </>
   );
 }

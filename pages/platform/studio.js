@@ -23,7 +23,11 @@ export default function StudioPage({ toggleDemoForm }) {
         textAlignment="center"
         columns="one"
         callToActions={
-          <Button onClick={toggleDemoForm} title="Get a demo" size="large" />
+          <Button
+            onClick={() => toggleDemoForm("Get Demo")}
+            title="Get Demo"
+            size="large"
+          />
         }
         media={
           <Image
@@ -130,7 +134,7 @@ export default function StudioPage({ toggleDemoForm }) {
           />
         }
       />
-      <Banner bannerAction={toggleDemoForm} />
+      <Banner bannerAction={() => toggleDemoForm("Get Demo")} />
     </>
   );
 }

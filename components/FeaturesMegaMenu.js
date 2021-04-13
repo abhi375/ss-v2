@@ -8,6 +8,7 @@ import {
   EnterpriseIcon,
   HubspotIcon,
   SalesforceIcon,
+  StackIcon,
   StartupIcon,
   StudioIcon,
   VoiceCloudIcon,
@@ -55,6 +56,17 @@ export default function FeaturesMegaMenu() {
                   <AnalyticsIcon />
                 </div>
                 <div>Analytics</div>
+              </motion.div>
+            </a>
+          </Link>
+
+          <Link href="/solutions/crm-integrations">
+            <a>
+              <motion.div className="flex items-center group duration-300 transition bg-white hover:bg-accent hover:bg-opacity-10 px-4 py-3 -mx-4 rounded-md">
+                <div className="w-8 h-8 rounded-full grid place-items-center mr-2 ">
+                  <StackIcon />
+                </div>
+                <div>Integrations</div>
               </motion.div>
             </a>
           </Link>

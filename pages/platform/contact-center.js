@@ -21,11 +21,11 @@ export default function ContactCenterPage({ toggleDemoForm }) {
         verticalPadding="py-14"
         callToActions={
           <Button
-            title="Get a demo"
+            title="Get Demo"
             foregroundClass="text-accent"
             backgroundClass="bg-white"
             size="large"
-            onClick={toggleDemoForm}
+            onClick={() => toggleDemoForm("Get Demo")}
           />
         }
         media={
@@ -157,7 +157,7 @@ export default function ContactCenterPage({ toggleDemoForm }) {
       />
 
       <LogoWall />
-      <Banner bannerAction={toggleDemoForm} />
+      <Banner bannerAction={() => toggleDemoForm("Get Demo")} />
     </>
   );
 }

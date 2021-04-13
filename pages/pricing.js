@@ -61,16 +61,19 @@ export default function PricingPage({ toggleDemoForm }) {
                 </p>
 
                 <Button
-                  onClick={toggleDemoForm}
+                  onClick={() => toggleDemoForm("Get Demo")}
                   backgroundClass="bg-green-600"
-                  title="Get a demo"
+                  title="Get Demo"
                 />
               </>
             )}
 
             {isActiveTab === "Enterprise" && (
               <>
-                <Button onClick={toggleDemoForm} title="Get a quote" />
+                <Button
+                  onClick={() => toggleDemoForm("Get Demo")}
+                  title="Get Demo"
+                />
 
                 <p className="text-base italic opacity-60 mt-4">
                   Starting at 100 users
@@ -189,7 +192,8 @@ export default function PricingPage({ toggleDemoForm }) {
               <div className="text-xl font-semibold text-green-700">Growth</div>
               <div className="text-3xl font-bold mt-2">$50</div>
               <div className="opacity-50  mt-2">
-                per user per month, billed annually. Starting at 10 users.
+                per user per month, billed annually. <br /> Starting at 10
+                users.
               </div>
             </div>
             <div className="col-span-3">
@@ -197,11 +201,12 @@ export default function PricingPage({ toggleDemoForm }) {
                 Enterprise
               </div>
               <div className="mt-2">
-                <Button
-                  onClick={toggleDemoForm}
-                  title="Get a quote"
-                  size="large"
-                />
+                <div
+                  className="text-base font-bold px-5 cursor-pointer text-accent py-1.5 rounded-full border border-accent border-solid inline-flex items-center justify-center hover:bg-accent hover:text-white"
+                  onClick={() => toggleDemoForm("Get Quote")}
+                >
+                  Get Quote
+                </div>
               </div>
               <div className="opacity-50 mt-2">Starting at 100 users.</div>
             </div>
@@ -289,7 +294,7 @@ export default function PricingPage({ toggleDemoForm }) {
         }
       />
 
-      <Banner bannerAction={toggleDemoForm} />
+      <Banner bannerAction={() => toggleDemoForm("Get Demo")} />
     </>
   );
 }

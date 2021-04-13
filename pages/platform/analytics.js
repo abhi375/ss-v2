@@ -26,7 +26,11 @@ export default function AnalyticsPage({ toggleDemoForm }) {
           "Get the dashboards and comprehensive measurements you need to improve your conversations with prospects and customers.",
         ]}
         callToActions={
-          <Button onClick={toggleDemoForm} title="Get a demo" size="large" />
+          <Button
+            onClick={() => toggleDemoForm("Get Demo")}
+            title="Get Demo"
+            size="large"
+          />
         }
         media={
           <Image
@@ -111,7 +115,7 @@ export default function AnalyticsPage({ toggleDemoForm }) {
       <LogoWall />
       <Banner
         title="Turn insights into action and action into results."
-        bannerAction={toggleDemoForm}
+        bannerAction={() => toggleDemoForm("Get Demo")}
       />
     </>
   );

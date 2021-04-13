@@ -8,7 +8,7 @@ export default function Banner({
 }) {
   return (
     <section
-      className={`px-6 sm:px-10 lg:px-12 py-12 md:py-16 relative ${
+      className={`px-6 sm:px-10 lg:px-12 py-12 relative ${
         backgroundClass
           ? backgroundClass
           : "bg-gradient bg-gradient-to-r bg-accent to-[#0A2FB4]"
@@ -19,7 +19,7 @@ export default function Banner({
           {title ? title : "Enhance your CRM, double your productivity."}
         </h4>
         <Button
-          title="Get a demo"
+          title="Get Demo"
           backgroundClass="bg-white"
           foregroundClass="text-black"
           size="large"

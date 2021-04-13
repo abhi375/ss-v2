@@ -175,11 +175,11 @@ export default function MobileMenu({ toggleDemoForm, toggleMenu }) {
         </Link>
       </div>
 
-      <div className="grid grid-cols-1 gap-4 mt-6">
+      <div className="grid grid-cols-1 gap-6 mt-8">
         <Link href="/signin">
           <a
             onClick={handleClose}
-            className="px-4 py-1.5 w-full bg-white text-accent border-2 border-solid border-accent font-semibold flex items-center justify-center group rounded-full"
+            className="px-4 py-2 w-full bg-white text-accent border-2 border-solid border-accent font-semibold flex items-center justify-center group rounded-full"
           >
             <span>Sign In</span>
             <HoverArrowIcon />
@@ -187,8 +187,8 @@ export default function MobileMenu({ toggleDemoForm, toggleMenu }) {
         </Link>
 
         <button
-          onClick={toggleDemoForm}
-          className="px-4 py-1.5 w-full bg-accent text-white font-semibold flex items-center justify-center group rounded-full"
+          onClick={() => toggleDemoForm("Talk to an Expert")}
+          className="px-4 py-2 w-full bg-accent text-white font-semibold flex items-center justify-center group rounded-full"
         >
           <span>Book a demo</span>
           <HoverArrowIcon />

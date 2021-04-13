@@ -25,7 +25,11 @@ export default function SalesCRM({ toggleDemoForm }) {
           "Samespace makes your sales team super productive. They’ll handle double the calls with our automation and streamlined workflows.",
         ]}
         callToActions={
-          <Button onClick={toggleDemoForm} title="Get a demo" size="large" />
+          <Button
+            onClick={() => toggleDemoForm("Get Demo")}
+            title="Get Demo"
+            size="large"
+          />
         }
         media={
           <div className="w-full h-full overflow-hidden rounded-lg">

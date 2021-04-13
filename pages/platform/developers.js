@@ -132,7 +132,7 @@ export default function DevelopersPage({ toggleDemoForm }) {
 
       <Banner
         title="See why developers love us."
-        bannerAction={toggleDemoForm}
+        bannerAction={() => toggleDemoForm("Get Demo")}
       />
     </>
   );

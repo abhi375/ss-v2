@@ -17,7 +17,11 @@ export default function SalesCRM({ toggleDemoForm }) {
           "Give your team the CRM enhancement they need to get super productive. They’ll take and make double the calls per effortlessly thanks to automation and streamlined workflows. At the end of the day, that means more revenue for you.",
         ]}
         callToActions={
-          <Button onClick={toggleDemoForm} title="Get a demo" size="large" />
+          <Button
+            onClick={() => toggleDemoForm("Get Demo")}
+            title="Get Demo"
+            size="large"
+          />
         }
         media={
           <Image
@@ -115,7 +119,7 @@ export default function SalesCRM({ toggleDemoForm }) {
         }
       />
       <Banner
-        bannerAction={toggleDemoForm}
+        bannerAction={() => toggleDemoForm("Get Demo")}
         title="Take Hubspot to a higher level with Samespace."
       />
     </>

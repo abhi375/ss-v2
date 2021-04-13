@@ -20,10 +20,10 @@ export default function SMBPage({ toggleDemoForm }) {
         ]}
         callToActions={
           <Button
-            onClick={toggleDemoForm}
+            onClick={() => toggleDemoForm("Get Demo")}
             backgroundClass="bg-white"
             foregroundClass="text-accent"
-            title="Get a demo"
+            title="Get Demo"
             size="large"
           />
         }
@@ -124,7 +124,7 @@ export default function SMBPage({ toggleDemoForm }) {
           />
         }
       />
-      <Banner bannerAction={toggleDemoForm} />
+      <Banner bannerAction={() => toggleDemoForm("Get Demo")} />
     </>
   );
 }

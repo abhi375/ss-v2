@@ -17,7 +17,11 @@ export default function SalesCRM({ toggleDemoForm }) {
           "Streamline your support team’s productivity by automating data entry and their call workflow.",
         ]}
         callToActions={
-          <Button onClick={toggleDemoForm} title="Get a demo" size="large" />
+          <Button
+            onClick={() => toggleDemoForm("Get Demo")}
+            title="Get Demo"
+            size="large"
+          />
         }
         verticalPadding="py-12"
         media={
@@ -151,7 +155,7 @@ export default function SalesCRM({ toggleDemoForm }) {
           />
         }
       />
-      <Banner bannerAction={toggleDemoForm} />
+      <Banner bannerAction={() => toggleDemoForm("Get Demo")} />
     </>
   );
 }

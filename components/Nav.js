@@ -78,7 +78,7 @@ export default function Nav({ toggleDemoForm, toggleMenu, closeMobileMenu }) {
                   onMouseEnter={() => handleActiveMegaMenu("features")}
                   onMouseLeave={() => handleActiveMegaMenu("")}
                 >
-                  <div className="group-hover:text-accent text-[12px] uppercase font-semibold tracking-wide">
+                  <div className="group-hover:text-accent text-base font-semibold">
                     Platform
                   </div>
                   {activeMegaMenu === "features" && <FeaturesMegaMenu />}
@@ -89,7 +89,7 @@ export default function Nav({ toggleDemoForm, toggleMenu, closeMobileMenu }) {
                   onMouseEnter={() => handleActiveMegaMenu("solutions")}
                   onMouseLeave={() => handleActiveMegaMenu("")}
                 >
-                  <div className="group-hover:text-accent text-[12px] uppercase font-semibold tracking-wide">
+                  <div className="group-hover:text-accent text-base font-semibold">
                     Solutions
                   </div>
                   {activeMegaMenu === "solutions" && <SolutionsMegaMenu />}
@@ -97,16 +97,12 @@ export default function Nav({ toggleDemoForm, toggleMenu, closeMobileMenu }) {
               </AnimateSharedLayout>
               <div className="text-black grid place-items-center hover:text-accent relative h-full cursor-pointer px-4">
                 <Link href="/pricing">
-                  <a className="text-[12px] uppercase font-semibold tracking-wide">
-                    Pricing
-                  </a>
+                  <a className="text-base font-semibold">Pricing</a>
                 </Link>
               </div>
               <div className="text-black grid place-items-center hover:text-accent relative h-full cursor-pointer px-4">
                 <Link href="/customers">
-                  <a className="text-[12px] uppercase font-semibold tracking-wide">
-                    Customers
-                  </a>
+                  <a className="text-base font-semibold">Customers</a>
                 </Link>
               </div>
             </div>
@@ -118,7 +114,7 @@ export default function Nav({ toggleDemoForm, toggleMenu, closeMobileMenu }) {
                     className="flex items-center cursor-pointer relative ml-auto h-full"
                     onClick={() => handleActiveMegaMenu("dashboard")}
                   >
-                    <div className="text-black place-items-center hover:text-accent text-[12px] uppercase font-semibold tracking-wide cursor-pointer px-4">
+                    <div className="text-black place-items-center hover:text-accent text-base font-semibold cursor-pointer px-4">
                       Dashboard
                     </div>
 
@@ -128,7 +124,7 @@ export default function Nav({ toggleDemoForm, toggleMenu, closeMobileMenu }) {
                   </div>
                 ) : accounts && accounts.length === 1 ? (
                   <div
-                    className="text-black place-items-center hover:text-accent text-[12px] uppercase font-semibold tracking-wide cursor-pointer px-4"
+                    className="text-black place-items-center hover:text-accent text-base font-semibold cursor-pointer px-4"
                     onClick={() => selectSpaceId(accounts[0])}
                   >
                     Dashboard
@@ -136,9 +132,7 @@ export default function Nav({ toggleDemoForm, toggleMenu, closeMobileMenu }) {
                 ) : (
                   <div className="text-black grid place-items-center hover:text-accent relative h-full cursor-pointer px-4">
                     <Link href="/signin">
-                      <a className="text-[12px] uppercase font-semibold tracking-wide">
-                        Sign In
-                      </a>
+                      <a className="text-base font-semibold">Sign In</a>
                     </Link>
                   </div>
                 )}

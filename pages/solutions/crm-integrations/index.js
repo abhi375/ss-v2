@@ -41,7 +41,7 @@ export default function CRMIntegrationPage() {
             height={520}
             priority
             quality={100}
-            src={"/features/crm-galaxy.png"}
+            src="/features/crm-connections.png"
             alt="Samespace Platform Components"
           />
         }

@@ -17,7 +17,11 @@ export default function SalesCRM({ toggleDemoForm }) {
           "Our Salesforce-native integration streamlines your support team’s productivity by automating call flows like never before, saving them time and empowering them to work smarter.",
         ]}
         callToActions={
-          <Button onClick={toggleDemoForm} title="Get a demo" size="large" />
+          <Button
+            onClick={() => toggleDemoForm("Get Demo")}
+            title="Get Demo"
+            size="large"
+          />
         }
         media={
           <Image
@@ -167,7 +171,7 @@ export default function SalesCRM({ toggleDemoForm }) {
         }
       />
       <Banner
-        bannerAction={toggleDemoForm}
+        bannerAction={() => toggleDemoForm("Get Demo")}
         title="See our native Salesforce CTI in Action."
       />
     </>

@@ -31,11 +31,16 @@ const validationSchema = Yup.object({
     .matches(phoneRegExp, "Phone number is not valid"),
 });
 
-export default function DemoForm({ toggleDemoForm }) {
+export default function DemoForm({
+  toggleDemoForm,
+  demoFormTitle,
+  closeDemoForm,
+}) {
   const [isFormSubmitted, setFormSubmitted] = useState(false);
   const [isLoading, setLoading] = useState(false);
   const [error, setShowError] = useState("");
   const [cookies] = useCookies(["hubspotutk"]);
+
   const {
     handleSubmit,
     handleChange,
@@ -127,7 +132,7 @@ export default function DemoForm({ toggleDemoForm }) {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        onClick={toggleDemoForm}
+        onClick={closeDemoForm}
         className="fixed inset-0 bg-black bg-opacity-40 z-50 shadow-lg"
       ></motion.div>
       <motion.aside
@@ -138,9 +143,11 @@ export default function DemoForm({ toggleDemoForm }) {
         className="fixed top-0 right-0 bottom-0 max-w-[496px] w-full bg-white z-50 shadow-lg p-8 overflow-auto"
       >
         <div className="flex items-center justify-between bg-white">
-          <div className="text-2xl font-bold">Get a demo</div>
+          <div className="text-2xl font-bold">
+            {demoFormTitle ? demoFormTitle : "Get demo"}
+          </div>
           <button
-            onClick={toggleDemoForm}
+            onClick={closeDemoForm}
             className="cursor-pointer focus:outline-none w-8 h-8 grid place-items-center bg-white rounded-md hover:bg-gray-100"
           >
             <IconClose />

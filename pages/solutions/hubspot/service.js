@@ -17,7 +17,11 @@ export default function SalesCRM({ toggleDemoForm }) {
           "Our Hubspot app streamlines your customer service team’s productivity by automating data entry and their call workflow like never before, saving them time and empowering them to work smarter and harder.",
         ]}
         callToActions={
-          <Button onClick={toggleDemoForm} title="Get a demo" size="large" />
+          <Button
+            onClick={() => toggleDemoForm("Get Demo")}
+            title="Get Demo"
+            size="large"
+          />
         }
         media={
           <Image
@@ -146,7 +150,7 @@ export default function SalesCRM({ toggleDemoForm }) {
           />
         }
       />
-      <Banner bannerAction={toggleDemoForm} />
+      <Banner bannerAction={() => toggleDemoForm("Get Demo")} />
     </>
   );
 }

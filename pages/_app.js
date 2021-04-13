@@ -15,10 +15,12 @@ import * as gtag from "../lib/gtag";
 function MyApp({ Component, pageProps }) {
   const [showDemoForm, setShowDemoForm] = useState(false);
   const [showMobileMenu, setShowMobileMenu] = useState(false);
+  const [demoFormTitle, setDemoFormTitle] = useState("Get Demo");
   const router = useRouter();
 
-  const toggleDemoForm = () => {
-    return setShowDemoForm(!showDemoForm);
+  const toggleDemoForm = (formTitle) => {
+    setShowDemoForm(!showDemoForm);
+    setDemoFormTitle(formTitle);
   };
 
   const toggleMenu = () => {
@@ -49,7 +51,13 @@ function MyApp({ Component, pageProps }) {
           />
 
           <AnimatePresence>
-            {showDemoForm && <DemoForm toggleDemoForm={toggleDemoForm} />}
+            {showDemoForm && (
+              <DemoForm
+                demoFormTitle={demoFormTitle}
+                toggleDemoForm={toggleDemoForm}
+                closeDemoForm={() => setShowDemoForm(false)}
+              />
+            )}
           </AnimatePresence>
 
           <ConsentBanner />
@@ -58,7 +66,7 @@ function MyApp({ Component, pageProps }) {
             {showMobileMenu && (
               <MobileMenu
                 toggleMenu={() => setShowMobileMenu(false)}
-                toggleDemoForm={toggleDemoForm}
+                toggleDemoForm={() => toggleDemoForm("Get Demo")}
               />
             )}
           </AnimatePresence>
@@ -66,7 +74,8 @@ function MyApp({ Component, pageProps }) {
           <Nav
             toggleMenu={toggleMenu}
             closeMobileMenu={() => setShowMobileMenu(false)}
-            toggleDemoForm={toggleDemoForm}
+            toggleDemoForm={() => toggleDemoForm("Talk to an Expert")}
+            closeDemoForm={() => setShowDemoForm(false)}
           />
           <section className="mt-16">
             <Component {...pageProps} toggleDemoForm={toggleDemoForm} />
