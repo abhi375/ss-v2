@@ -3,7 +3,7 @@ import { LinkedInIcon, LogoIcon, TwitterIcon, YouTubeIcon } from "./Icons";
 
 export default function Footer() {
   return (
-    <footer className="px-6 lg:px-12 pt-12 bg-gray-50">
+    <footer className="px-6 lg:px-12 pt-12 bg-gray-100">
       <div className="max-w-screen-xl mx-auto">
         <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div>
