@@ -14,7 +14,7 @@ export default function CRMIntegrationPage() {
       <NextSeo title="CRM Integrations - Samespace" />
       <Section
         hero
-        backgroundClass="bg-gray-50"
+        verticalPadding="py-16 lg:py-12"
         headline={["The Final Piece of Your", "CRM Puzzle"]}
         copy={[
           "Your CRM isn’t complete without Samespace. We seamlessly integrate into any CRM to make your contact center agile and adaptable, expertly enhancing all of your calls.",
@@ -41,12 +41,12 @@ export default function CRMIntegrationPage() {
             height={520}
             priority
             quality={100}
-            src="/features/crm-connections.png"
+            src="/features/crm-source.png"
             alt="Samespace Platform Components"
           />
         }
       />
-      <LogoWall backgroundClass="bg-white" />
+      <LogoWall />
       <Section
         headline={[
           "Connect Prospects to the Right Reps the First Time. Every Time.",

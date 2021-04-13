@@ -38,26 +38,24 @@ export default function Home({ toggleDemoForm }) {
 
       <LogoWall />
       <Section
+        columns="one"
+        textAlignment="center"
         headline={[
           <>
-            <span className="inline md:block">Complexity now a </span>
+            <span className="block">Complexity now a </span>
             <span className="text-blue-600">thing of the past.</span>
           </>,
         ]}
-        columns="two"
         copy={[
           "Samespace lets you create, route, and deploy voice, chat and messaging flows in minutes. Whether for customer support or sales, simply drag and drop, no coding needed.",
         ]}
-        verticalPadding="py-16 lg:py-12"
         media={
-          <div className="w-full relative md:pb-[56.25%] lg:pb-[100%]">
-            <div className=" relative md:absolute w-full h-full flex items-center justify-center ">
-              <div className="rounded-lg overflow-hidden shadow-subtle">
-                <FeatureTeaser
-                  teaser={"/videos/drag-and-drop.mp4"}
-                  hideReplayButton
-                />
-              </div>
+          <div className="max-w-screen-lg mx-auto mt-12">
+            <div className="rounded-sm md:rounded-xl overflow-hidden shadow-subtle">
+              <FeatureTeaser
+                teaser={"/videos/drag-and-drop.mp4"}
+                hideReplayButton
+              />
             </div>
           </div>
         }

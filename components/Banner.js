@@ -16,12 +16,12 @@ export default function Banner({
     >
       <div className="max-w-screen-xl relative z-10 mx-auto grid place-items-center">
         <h4 className="text-2xl md:text-3xl mb-6 text-center">
-          {title ? title : "Enhance your CRM, double your productivity."}
+          {title ? title : "Enhance your CRM and increase productivity."}
         </h4>
         <Button
           title="Get Demo"
           backgroundClass="bg-white"
-          foregroundClass="text-black"
+          foregroundClass="text-accent"
           size="large"
           onClick={bannerAction && bannerAction}
         />
