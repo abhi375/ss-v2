@@ -13,10 +13,14 @@ export default function Home({ toggleDemoForm }) {
       <section className="px-6 md:px-12 py-16 md:py-32 overflow-hidden">
         <div className="max-w-screen-xl mx-auto">
           <div className="flex flex-col items-center justify-center text-center">
-            <h1 className="max-w-[800px] mx-auto  text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black">
-              Cloud Contact Center Software. Centered on{" "}
-              <span className="bg-clip-text text-transparent bg-gradient-to-tr from-accent to-indigo-600">
-                Experience.
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black w-full md:w-5/6 mx-auto">
+              <span className="block">Cloud Contact Center Software.</span>
+              <span>
+                {" "}
+                Centered on{" "}
+                <span className="bg-clip-text text-transparent bg-gradient-to-tr from-accent to-indigo-600">
+                  Experience.
+                </span>
               </span>
             </h1>
             <p className="max-w-[720px] mx-auto text-2xl leading-normal my-8">

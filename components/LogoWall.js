@@ -10,7 +10,7 @@ export default function LogoWall({ backgroundClass, singleColumn }) {
       <div
         className={`max-w-screen-xl mx-auto grid grid-cols-2 md:grid-cols-4 ${
           singleColumn ? "lg:grid-cols-8" : "lg:grid-cols-4"
-        } gap-8 items-center`}
+        } gap-12  md:gap-8 items-center`}
       >
         <Image
           alt="Samespace Customer"

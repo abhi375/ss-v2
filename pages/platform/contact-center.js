@@ -12,37 +12,48 @@ export default function ContactCenterPage({ toggleDemoForm }) {
       <NextSeo title="Contact Center - Samespace" />
       <Section
         hero
-        backgroundClass="bg-gray-50"
+        foregroundClass="text-white text-shadow"
+        backgroundClass="bg-accent"
         headline={[
           <>
-            <span>
-              Radically <span className="text-accent">simple</span> and{" "}
-              <span className="text-accent">affordable</span> Contact Center
-              Platform
-            </span>
+            <span>Radically simple and affordable Contact Center Platform</span>
           </>,
         ]}
         copy={[
           "Built from the ground up with cutting edge Internet technologies, Samespace unites your business communication in one place, from anywhere.",
         ]}
-        verticalPadding="py-14"
+        verticalPadding="py-16 lg:py-10"
         callToActions={
           <Button
             title="Get Demo"
             size="large"
+            foregroundClass="text-accent"
+            backgroundClass="bg-white"
             onClick={() => toggleDemoForm("Get Demo")}
           />
         }
         media={
           <Image
-            src="/features/callcenter-hero.png"
-            width={520}
-            height={520}
+            src="/features/dock-hero.png"
+            width={560}
+            height={560}
             priority
             alt="Samespace Contact Center Platform"
           />
         }
+        patternChild={
+          <div className="absolute inset-0 hidden md:block">
+            <Image
+              src="/features/cc-backdrop.png"
+              objectFit="cover"
+              layout="fill"
+              priority
+            />
+          </div>
+        }
       />
+
+      <LogoWall />
 
       <Section
         headline={["A Single tool for Sales", " and Support"]}
@@ -113,24 +124,8 @@ export default function ContactCenterPage({ toggleDemoForm }) {
       />
 
       <Section
-        headline={["AI agents for any contact center solution"]}
-        showMediaFirst
-        copy={[
-          "Whether you use our Contact Center Suite or your existing solution, Samespace AI agents can offload up to 60 % of tier 1 conversations. So your live agents are open for more valuable conversations.",
-        ]}
-        media={
-          <Image
-            src="/features/ai-with-other-callcenter.png"
-            width={520}
-            height={520}
-            quality={100}
-            alt="AI agents for any contact center solution"
-          />
-        }
-      />
-      <Section
         headline={["Integrate with all", " your apps."]}
-        backgroundClass="bg-gray-50"
+        showMediaFirst
         copy={[
           "Many of our customers have existing CRM solutions, like Salesforce or HubSpot. We turn all of them into world-class contact center tools with off-the-shelf CTI integration, rapid custom integration using Samespace Studio, and adaptable open APIs.",
         ]}
@@ -164,7 +159,6 @@ export default function ContactCenterPage({ toggleDemoForm }) {
         }
       />
 
-      <LogoWall />
       <Banner bannerAction={() => toggleDemoForm("Get Demo")} />
     </>
   );

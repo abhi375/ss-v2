@@ -48,7 +48,7 @@ module.exports = {
         },
       },
       colors: {
-        accent: "#006aff",
+        accent: "#0069ff",
         // accent: "#645BFF",
         gray: colors.trueGray,
         amber: colors.amber,
@@ -67,5 +67,8 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [
+    require("@tailwindcss/typography"),
+    require("tailwindcss-textshadow"),
+  ],
 };
