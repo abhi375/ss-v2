@@ -15,7 +15,7 @@ export default function DevelopersPage({ toggleDemoForm }) {
       <NextSeo title="Developers - Samespace" />
       <Section
         hero
-        verticalPadding={"py-20 lg:py-24"}
+        verticalPadding={"py-20 lg:py-20"}
         foregroundClass="text-white"
         backgroundClass="bg-gradient-to-r from-[#0A2FB4] to-[#120078]"
         headline={["Advanced", " Communication APIs"]}
