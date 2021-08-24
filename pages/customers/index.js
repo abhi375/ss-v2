@@ -2,7 +2,7 @@ import Banner from "@/components/Banner";
 import LogoWall from "@/components/LogoWall";
 import { getAllPosts } from "@/lib/api";
 import { NextSeo } from "next-seo";
-import Image from "next/image";
+import ImageView from "@/components/ImageView";
 import Link from "next/link";
 
 export default function CustomersPage({ stories, toggleDemoForm }) {
@@ -26,7 +26,7 @@ export default function CustomersPage({ stories, toggleDemoForm }) {
                   <a>
                     <article className="bg-white md:p-4 md:-m-4 md:hover:shadow-subtle rounded-md">
                       <div>
-                        <Image
+                        <ImageView
                           alt={story.title}
                           src={story.coverImage}
                           width="500px"

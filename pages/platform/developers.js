@@ -3,7 +3,7 @@ import Button from "@/components/Button";
 import LogoWall from "@/components/LogoWall";
 import Section from "@/components/Section";
 import { NextSeo } from "next-seo";
-import Image from "next/image";
+import ImageView from "@/components/ImageView";
 
 export default function DevelopersPage({ toggleDemoForm }) {
   const openDeveloperDocs = () => {
@@ -32,7 +32,7 @@ export default function DevelopersPage({ toggleDemoForm }) {
           />
         }
         media={
-          <Image
+          <ImageView
             src="/features/devtools-hero.png"
             width={450}
             height={400}
@@ -50,7 +50,7 @@ export default function DevelopersPage({ toggleDemoForm }) {
         ]}
         showMediaFirst
         media={
-          <Image
+          <ImageView
             src="/features/speech-recognition.png"
             width={500}
             height={500}
@@ -67,7 +67,7 @@ export default function DevelopersPage({ toggleDemoForm }) {
           " Speak text in multiple languages and accents to provide answers to your customers in a familiar way.",
         ]}
         media={
-          <Image
+          <ImageView
             src="/features/text-to-speech.png"
             width={500}
             height={500}
@@ -84,7 +84,7 @@ export default function DevelopersPage({ toggleDemoForm }) {
         ]}
         showMediaFirst
         media={
-          <Image
+          <ImageView
             src="/features/chat-sdk.png"
             width={500}
             height={500}
@@ -101,7 +101,7 @@ export default function DevelopersPage({ toggleDemoForm }) {
           "Create two-way communication, authenticate callers, and send text & email notifications.",
         ]}
         media={
-          <Image
+          <ImageView
             src="/features/nottifications.png"
             width={500}
             height={500}
@@ -118,7 +118,7 @@ export default function DevelopersPage({ toggleDemoForm }) {
         ]}
         showMediaFirst
         media={
-          <Image
+          <ImageView
             src="/features/serverless.png"
             width={500}
             height={500}

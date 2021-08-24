@@ -6,7 +6,7 @@ import {
 } from "@/components/Icons";
 import { getAllPosts, getPostBySlug } from "@/lib/api";
 import markdownToHtml from "@/lib/markdownToHtml";
-import Image from "next/image";
+import ImageView from "@/components/ImageView";
 import Link from "next/link";
 import {
   FacebookShareButton,
@@ -57,7 +57,7 @@ export default function CustomerStory({ post }) {
             <h1 className="text-3xl font-bold my-4">{post.title}</h1>
             {post.authorAvatar && (
               <div className=" flex items-center mb-8">
-                <Image
+                <ImageView
                   src={post.authorAvatar}
                   width="40px"
                   height="40px"
@@ -67,7 +67,7 @@ export default function CustomerStory({ post }) {
                 <p className="ml-2 text-lg">{post.author}</p>
               </div>
             )}
-            <Image
+            <ImageView
               src={post.cover}
               width="640px"
               height="320px"

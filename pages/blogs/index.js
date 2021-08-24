@@ -1,6 +1,6 @@
 import { getAllPosts } from "@/lib/api";
 import { NextSeo } from "next-seo";
-import Image from "next/image";
+import ImageView from "@/components/ImageView";
 import Link from "next/link";
 
 export default function BlogListing({ blogs }) {
@@ -15,7 +15,7 @@ export default function BlogListing({ blogs }) {
                 return (
                   <Link href={`/blogs/${blog.slug}`} key={blog.slug}>
                     <a className="group bg-white shadow-subtle overflow-hidden rounded-md transition-all duration-300 flex flex-col hover:shadow-card transform hover:-translate-y-2">
-                      <Image
+                      <ImageView
                         src={blog.cover}
                         width="1200px"
                         height="600px"
@@ -48,7 +48,7 @@ export default function BlogListing({ blogs }) {
                         {blog.authorAvatar && (
                           <div className=" flex items-center mt-8">
                             <div className="w-8 h-8">
-                              <Image
+                              <ImageView
                                 src={blog.authorAvatar}
                                 width="40px"
                                 height="40px"

@@ -4,7 +4,7 @@ import LogoWall from "@/components/LogoWall";
 import Section from "@/components/Section";
 import Testimonial from "@/components/Testimonial";
 import { NextSeo } from "next-seo";
-import Image from "next/image";
+import ImageView from "@/components/ImageView";
 import Link from "next/link";
 
 export default function CRMIntegrationPage({ toggleDemoForm }) {
@@ -37,7 +37,7 @@ export default function CRMIntegrationPage({ toggleDemoForm }) {
           </div>
         }
         media={
-          <Image
+          <ImageView
             src="/features/sf-automation-hero.png"
             alt="Samespace + Salesforce"
             width={1000}
@@ -55,7 +55,7 @@ export default function CRMIntegrationPage({ toggleDemoForm }) {
         ]}
         showMediaFirst
         media={
-          <Image
+          <ImageView
             src="/features/playbooks.png"
             alt="Samespace Playbooks"
             width={500}
@@ -71,7 +71,7 @@ export default function CRMIntegrationPage({ toggleDemoForm }) {
           "Access crucial data on what your customers are saying during calls including feedback on your product, as well as mentions of competitors, so you can implement changes to make improvements across the board.",
         ]}
         media={
-          <Image
+          <ImageView
             src="/features/sentiment-analysis.png"
             alt="Samespace Sentiment Analysis"
             width={500}
@@ -87,7 +87,7 @@ export default function CRMIntegrationPage({ toggleDemoForm }) {
           "The smart solution to your prospect call flow. Leverage intelligent routing to make sure the right agent gets the call every time.",
         ]}
         media={
-          <Image
+          <ImageView
             src="/features/studio-flow.png"
             alt="Samespace Studio"
             width={500}
@@ -102,7 +102,7 @@ export default function CRMIntegrationPage({ toggleDemoForm }) {
         personName="Mukhtadir Syed"
         personDesignation="AVP - Sales and Customer Success"
         companyLogo={
-          <Image
+          <ImageView
             src="/logos/endurance.svg"
             width="200px"
             height="56px"
@@ -110,7 +110,7 @@ export default function CRMIntegrationPage({ toggleDemoForm }) {
           />
         }
         personAvatar={
-          <Image
+          <ImageView
             src="/people/mukhtadir.jpeg"
             width="64px"
             height="64px"

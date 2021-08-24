@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Banner from "@/components/Banner";
 import Testimonial from "@/components/Testimonial";
-import Image from "next/image";
+import ImageView from "@/components/ImageView";
 import { AnimatePresence, motion } from "framer-motion";
 import pricingStructure from "@/lib/pricingStructure";
 import { CheckIcon } from "@/components/Icons";
@@ -280,10 +280,10 @@ export default function PricingPage({ toggleDemoForm }) {
         personName="Deepak Bisht"
         personDesignation="IT Head at Hear.com"
         companyLogo={
-          <Image src="/logos/hear.svg" width="200px" height="56px" alt="Hear" />
+          <ImageView src="/logos/hear.svg" width="200px" height="56px" alt="Hear" />
         }
         personAvatar={
-          <Image
+          <ImageView
             src="/people/deepak.jpg"
             width="64px"
             height="64px"

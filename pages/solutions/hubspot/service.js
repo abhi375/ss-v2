@@ -4,7 +4,7 @@ import LogoWall from "@/components/LogoWall";
 import Section from "@/components/Section";
 import Testimonial from "@/components/Testimonial";
 import { NextSeo } from "next-seo";
-import Image from "next/image";
+import ImageView from "@/components/ImageView";
 
 export default function SalesCRM({ toggleDemoForm }) {
   return (
@@ -24,7 +24,7 @@ export default function SalesCRM({ toggleDemoForm }) {
           />
         }
         media={
-          <Image
+          <ImageView
             src="/features/hubspot-missing-piece.png"
             width={500}
             height={500}
@@ -42,7 +42,7 @@ export default function SalesCRM({ toggleDemoForm }) {
           "Samespace CTI provides reps with rich contextual data that helps them serve faster. Inbound and outbound calls trigger a screenpop that provides data about prospects including past calls, notes, conversation info and key insights.",
         ]}
         media={
-          <Image
+          <ImageView
             src="/features/hubspot-screen-pop.png"
             width={840}
             height={560}
@@ -58,7 +58,7 @@ export default function SalesCRM({ toggleDemoForm }) {
         ]}
         backgroundClass="bg-gray-50"
         media={
-          <Image
+          <ImageView
             src="/features/hubspot-call-logs.png"
             width={800}
             height={600}
@@ -74,7 +74,7 @@ export default function SalesCRM({ toggleDemoForm }) {
         ]}
         showMediaFirst
         media={
-          <Image
+          <ImageView
             src="/features/ai-workload.png"
             width={500}
             height={500}
@@ -90,7 +90,7 @@ export default function SalesCRM({ toggleDemoForm }) {
           "Know for certain what your customers are thinking with a CSAT survey that collects feedback as soon an agent hangs up.",
         ]}
         media={
-          <Image
+          <ImageView
             src="/features/csat.png"
             width={640}
             height={400}
@@ -106,7 +106,7 @@ export default function SalesCRM({ toggleDemoForm }) {
         ]}
         showMediaFirst
         media={
-          <Image
+          <ImageView
             src="/features/omnichannel-flow.png"
             width={500}
             height={500}
@@ -123,7 +123,7 @@ export default function SalesCRM({ toggleDemoForm }) {
           "Access crucial data on what your customers are saying during calls, including feedback on your product, as well as mentions of competitors, so you can implement changes to make improvements across the board.",
         ]}
         media={
-          <Image
+          <ImageView
             src="/features/ai-enhanced-hubspot-cti.png"
             width={500}
             height={500}
@@ -137,10 +137,10 @@ export default function SalesCRM({ toggleDemoForm }) {
         personName="Deepak Bisht"
         personDesignation="IT Head at Hear.com"
         companyLogo={
-          <Image src="/logos/hear.svg" width="200px" height="56px" alt="Hear" />
+          <ImageView src="/logos/hear.svg" width="200px" height="56px" alt="Hear" />
         }
         personAvatar={
-          <Image
+          <ImageView
             src="/people/deepak.jpg"
             width="64px"
             height="64px"

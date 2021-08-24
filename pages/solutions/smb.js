@@ -4,7 +4,7 @@ import LogoWall from "@/components/LogoWall";
 import Section from "@/components/Section";
 import Testimonial from "@/components/Testimonial";
 import { NextSeo } from "next-seo";
-import Image from "next/image";
+import ImageView from "@/components/ImageView";
 
 export default function SMBPage({ toggleDemoForm }) {
   return (
@@ -29,7 +29,7 @@ export default function SMBPage({ toggleDemoForm }) {
         }
         verticalPadding="py-12"
         media={
-          <Image
+          <ImageView
             width={520}
             height={520}
             priority
@@ -48,7 +48,7 @@ export default function SMBPage({ toggleDemoForm }) {
           "With intuitive drag & drop conversation flows via our Conversation Studio. We’re simply easier to deploy and use, with expertly crafted tech.",
         ]}
         media={
-          <Image
+          <ImageView
             width={480}
             height={480}
             src={"/features/studio-flow.png"}
@@ -63,7 +63,7 @@ export default function SMBPage({ toggleDemoForm }) {
         ]}
         backgroundClass="bg-gray-50"
         media={
-          <Image
+          <ImageView
             width={480}
             height={480}
             src={"/features/cc-analytics.png"}
@@ -78,7 +78,7 @@ export default function SMBPage({ toggleDemoForm }) {
           "Our global support team means we’re on the same schedule as your Contact Centers, no matter where, or when, they are.",
         ]}
         media={
-          <Image
+          <ImageView
             width={480}
             height={480}
             src={"/features/ss-support.png"}
@@ -93,7 +93,7 @@ export default function SMBPage({ toggleDemoForm }) {
         ]}
         backgroundClass="bg-gray-50"
         media={
-          <Image
+          <ImageView
             width={480}
             height={480}
             src={"/features/platform-architecture.png"}
@@ -106,7 +106,7 @@ export default function SMBPage({ toggleDemoForm }) {
         personName="Mukhtadir Syed"
         personDesignation="AVP - Sales and Customer Success"
         companyLogo={
-          <Image
+          <ImageView
             src="/logos/endurance.svg"
             width="200px"
             height="56px"
@@ -114,7 +114,7 @@ export default function SMBPage({ toggleDemoForm }) {
           />
         }
         personAvatar={
-          <Image
+          <ImageView
             src="/people/mukhtadir.jpeg"
             width="64px"
             height="64px"

@@ -4,7 +4,7 @@ import LogoWall from "@/components/LogoWall";
 import Section from "@/components/Section";
 import Testimonial from "@/components/Testimonial";
 import { NextSeo } from "next-seo";
-import Image from "next/image";
+import ImageView from "@/components/ImageView";
 
 export default function VoiceCloudPage({ toggleDemoForm }) {
   return (
@@ -37,7 +37,7 @@ export default function VoiceCloudPage({ toggleDemoForm }) {
         ]}
         showMediaFirst
         media={
-          <Image
+          <ImageView
             src="/features/connected-world-via-samespace.png"
             width={520}
             height={520}
@@ -54,7 +54,7 @@ export default function VoiceCloudPage({ toggleDemoForm }) {
           "Our multi-region cloud has no single point of failure, so your calls always go through, even when a data center faces an outage.",
         ]}
         media={
-          <Image
+          <ImageView
             src="/features/sla.png"
             width={480}
             height={480}
@@ -71,7 +71,7 @@ export default function VoiceCloudPage({ toggleDemoForm }) {
           "There is no practical limit on concurrent calls. Our VoIP network is designed to support dialer traffic that most SIP trunking providers can’t handle.",
         ]}
         media={
-          <Image
+          <ImageView
             src="/features/voicecloud-capacity.png"
             width={480}
             height={480}
@@ -88,7 +88,7 @@ export default function VoiceCloudPage({ toggleDemoForm }) {
           "Our routing algorithm dynamically selects the ideal path to cope with latency and packet drops for a singularly crisp and jitter-free call experience.",
         ]}
         media={
-          <Image
+          <ImageView
             src="/features/optimized-voip.png"
             width={480}
             height={480}
@@ -103,7 +103,7 @@ export default function VoiceCloudPage({ toggleDemoForm }) {
         personName="Urooj"
         personDesignation="IT Head at Avis"
         companyLogo={
-          <Image
+          <ImageView
             src="/logos/avis.svg"
             width="200px"
             height="32px"

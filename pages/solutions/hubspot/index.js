@@ -4,7 +4,7 @@ import LogoWall from "@/components/LogoWall";
 import Section from "@/components/Section";
 import Testimonial from "@/components/Testimonial";
 import { NextSeo } from "next-seo";
-import Image from "next/image";
+import ImageView from "@/components/ImageView";
 import Link from "next/link";
 
 export default function CRMIntegrationPage({ toggleDemoForm }) {
@@ -37,7 +37,7 @@ export default function CRMIntegrationPage({ toggleDemoForm }) {
           </div>
         }
         media={
-          <Image
+          <ImageView
             src="/features/hubspot-dock-hero.png"
             width={800}
             height={600}
@@ -57,7 +57,7 @@ export default function CRMIntegrationPage({ toggleDemoForm }) {
         ]}
         showMediaFirst
         media={
-          <Image
+          <ImageView
             src="/features/hubspot-studio-flow.png"
             width={500}
             height={500}
@@ -73,7 +73,7 @@ export default function CRMIntegrationPage({ toggleDemoForm }) {
         ]}
         backgroundClass="bg-gray-50"
         media={
-          <Image
+          <ImageView
             src="/features/hubspot-call-logs.png"
             width={800}
             height={600}
@@ -93,7 +93,7 @@ export default function CRMIntegrationPage({ toggleDemoForm }) {
           "Be there for your reps when it counts in real time using our visibility features. And with call recordings saved and stored automatically in your CRM, you can use crucial learning tools to keep your team’s skill set sharp.",
         ]}
         media={
-          <Image
+          <ImageView
             src="/features/live-monitoring-and-coaching.png"
             width={500}
             height={500}
@@ -109,7 +109,7 @@ export default function CRMIntegrationPage({ toggleDemoForm }) {
         ]}
         backgroundClass="bg-gray-50"
         media={
-          <Image
+          <ImageView
             src="/features/sentiment-analysis.png"
             width={500}
             height={500}
@@ -124,10 +124,10 @@ export default function CRMIntegrationPage({ toggleDemoForm }) {
         personName="Deepak Bisht"
         personDesignation="IT Head at Hear.com"
         companyLogo={
-          <Image src="/logos/hear.svg" width="200px" height="56px" alt="Hear" />
+          <ImageView src="/logos/hear.svg" width="200px" height="56px" alt="Hear" />
         }
         personAvatar={
-          <Image
+          <ImageView
             src="/people/deepak.jpg"
             width="64px"
             height="64px"

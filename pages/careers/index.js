@@ -1,7 +1,7 @@
 import { ChevronRightIcon } from "@/components/Icons";
 import { getAllPosts } from "@/lib/api";
 import { NextSeo } from "next-seo";
-import Image from "next/image";
+import ImageView from "@/components/ImageView";
 import Link from "next/link";
 
 export default function CareersPage({ jobs }) {
@@ -21,7 +21,7 @@ export default function CareersPage({ jobs }) {
               particular places. By working here, your career is built for the
               long haul, just like Samespace.
             </p>
-            <Image
+            <ImageView
               src={"/company/team.jpg"}
               width={1000}
               height={600}

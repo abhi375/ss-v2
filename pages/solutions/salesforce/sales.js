@@ -3,7 +3,7 @@ import Button from "@/components/Button";
 import LogoWall from "@/components/LogoWall";
 import Section from "@/components/Section";
 import Testimonial from "@/components/Testimonial";
-import Image from "next/image";
+import ImageView from "@/components/ImageView";
 import ReactPlayer from "react-player";
 import { isMobile } from "react-device-detect";
 import { NextSeo } from "next-seo";
@@ -54,7 +54,7 @@ export default function SalesCRM({ toggleDemoForm }) {
         ]}
         showMediaFirst
         media={
-          <Image
+          <ImageView
             src="/features/native-sf-app.png"
             alt="Native Salesforce App"
             width={800}
@@ -72,7 +72,7 @@ export default function SalesCRM({ toggleDemoForm }) {
           "Our dynamic routing directs leads based on anything you know about the caller, including lead source, campaign, past interaction history, and more.",
         ]}
         media={
-          <Image
+          <ImageView
             src="/features/dynamic-routing-flow.png"
             alt="Dynmaic Routing"
             width={500}
@@ -88,7 +88,7 @@ export default function SalesCRM({ toggleDemoForm }) {
         ]}
         showMediaFirst
         media={
-          <Image
+          <ImageView
             src="/features/sf-call-logging.png"
             alt="Native Salesforce App"
             width={880}
@@ -104,7 +104,7 @@ export default function SalesCRM({ toggleDemoForm }) {
           "Using our live monitoring and coaching, you’ll see what each rep is up to so you can monitor their activity and assist your team when needed, even during live calls.",
         ]}
         media={
-          <Image
+          <ImageView
             src="/features/pulse.png"
             alt="Samespace Pulse"
             width={800}
@@ -120,7 +120,7 @@ export default function SalesCRM({ toggleDemoForm }) {
           "Use AI-powered Sentiment Analysis to better understand your customer and make impactful, informed decisions.",
         ]}
         media={
-          <Image
+          <ImageView
             src="/features/sentiment-analysis.png"
             alt="Samespace + Salesforce"
             width={500}
@@ -134,7 +134,7 @@ export default function SalesCRM({ toggleDemoForm }) {
         personName="Swadeep Singh Khurana"
         personDesignation="Senior Product Manager at Simplilearn"
         companyLogo={
-          <Image
+          <ImageView
             src="/logos/endurance.svg"
             width="200px"
             height="56px"
@@ -142,7 +142,7 @@ export default function SalesCRM({ toggleDemoForm }) {
           />
         }
         personAvatar={
-          <Image
+          <ImageView
             src="/people/swadeep.jpeg"
             width="64px"
             height="64px"

@@ -4,7 +4,7 @@ import LogoWall from "@/components/LogoWall";
 import Section from "@/components/Section";
 import Testimonial from "@/components/Testimonial";
 import { NextSeo } from "next-seo";
-import Image from "next/image";
+import ImageView from "@/components/ImageView";
 
 export default function SalesCRM({ toggleDemoForm }) {
   return (
@@ -24,7 +24,7 @@ export default function SalesCRM({ toggleDemoForm }) {
           />
         }
         media={
-          <Image
+          <ImageView
             src="/features/sf-dialer-hero.png"
             alt="Native Salesforce App"
             width={500}
@@ -42,7 +42,7 @@ export default function SalesCRM({ toggleDemoForm }) {
           "Provide personalized customer service by automatically fetching data from any Salesforce object, and use it to dynamically route the conversation to the best available agent.",
         ]}
         media={
-          <Image
+          <ImageView
             src="/features/dynamic-routing-flow.png"
             alt="Native Salesforce App"
             width={500}
@@ -58,7 +58,7 @@ export default function SalesCRM({ toggleDemoForm }) {
         ]}
         backgroundClass="bg-gray-50"
         media={
-          <Image
+          <ImageView
             src="/features/ai-enhanced-sf-dialer.png"
             alt="Native Salesforce App"
             width={500}
@@ -74,7 +74,7 @@ export default function SalesCRM({ toggleDemoForm }) {
         ]}
         showMediaFirst
         media={
-          <Image
+          <ImageView
             src="/features/omnichannel.png"
             alt="Native Salesforce App"
             width={500}
@@ -90,7 +90,7 @@ export default function SalesCRM({ toggleDemoForm }) {
         ]}
         backgroundClass="bg-gray-50"
         media={
-          <Image
+          <ImageView
             src="/features/ai-workload.png"
             alt="Native Salesforce App"
             width={500}
@@ -106,7 +106,7 @@ export default function SalesCRM({ toggleDemoForm }) {
         ]}
         showMediaFirst
         media={
-          <Image
+          <ImageView
             src="/features/sf-call-logging.png"
             alt="Native Salesforce App"
             width={880}
@@ -122,7 +122,7 @@ export default function SalesCRM({ toggleDemoForm }) {
         ]}
         backgroundClass="bg-gray-50"
         media={
-          <Image
+          <ImageView
             src="/features/csat.png"
             alt="Native Salesforce App"
             width={640}
@@ -138,7 +138,7 @@ export default function SalesCRM({ toggleDemoForm }) {
           "Access crucial data on what your customers are saying during calls, including feedback on your product, as well as mentions of competitors, so you can implement changes to make improvements across the board.",
         ]}
         media={
-          <Image
+          <ImageView
             src="/features/ai-enhanced-sf-dialer.png"
             alt="Native Salesforce App"
             width={500}
@@ -152,7 +152,7 @@ export default function SalesCRM({ toggleDemoForm }) {
         personName="Mukhtadir Syed"
         personDesignation="AVP - Sales and Customer Success"
         companyLogo={
-          <Image
+          <ImageView
             src="/logos/endurance.svg"
             width="200px"
             height="56px"
@@ -160,7 +160,7 @@ export default function SalesCRM({ toggleDemoForm }) {
           />
         }
         personAvatar={
-          <Image
+          <ImageView
             src="/people/mukhtadir.jpeg"
             width="64px"
             height="64px"

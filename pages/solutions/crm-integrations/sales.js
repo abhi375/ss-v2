@@ -4,7 +4,7 @@ import LogoWall from "@/components/LogoWall";
 import Section from "@/components/Section";
 import Testimonial from "@/components/Testimonial";
 import { NextSeo } from "next-seo";
-import Image from "next/image";
+import ImageView from "@/components/ImageView";
 
 export default function SalesCRM({ toggleDemoForm }) {
   return (
@@ -25,7 +25,7 @@ export default function SalesCRM({ toggleDemoForm }) {
           />
         }
         media={
-          <Image
+          <ImageView
             width={520}
             height={520}
             quality={100}
@@ -44,7 +44,7 @@ export default function SalesCRM({ toggleDemoForm }) {
         showMediaFirst
         backgroundClass="bg-gray-50"
         media={
-          <Image
+          <ImageView
             width={800}
             height={600}
             quality={100}
@@ -60,7 +60,7 @@ export default function SalesCRM({ toggleDemoForm }) {
           "With call recordings saved and stored automatically in your CRM, you can use crucial learning tools to keep your team’s skill set sharp.",
         ]}
         media={
-          <Image
+          <ImageView
             width={520}
             height={520}
             quality={100}
@@ -77,7 +77,7 @@ export default function SalesCRM({ toggleDemoForm }) {
         showMediaFirst
         backgroundClass="bg-gray-50"
         media={
-          <Image
+          <ImageView
             width={520}
             height={520}
             quality={100}
@@ -92,7 +92,7 @@ export default function SalesCRM({ toggleDemoForm }) {
           "Samespace’s AI powered insights use Speech Recognition to transcribe calls automatically log them into Salesforce. Our suped up API enables you to collate multiple data sources into one single set, so you can turn data into plans and plans into action concerning team productivity, customer trends, and more.",
         ]}
         media={
-          <Image
+          <ImageView
             width={520}
             height={520}
             quality={100}
@@ -106,7 +106,7 @@ export default function SalesCRM({ toggleDemoForm }) {
         personName="Mukhtadir Syed"
         personDesignation="AVP - Sales and Customer Success"
         companyLogo={
-          <Image
+          <ImageView
             src="/logos/endurance.svg"
             width="200px"
             height="56px"
@@ -114,7 +114,7 @@ export default function SalesCRM({ toggleDemoForm }) {
           />
         }
         personAvatar={
-          <Image
+          <ImageView
             src="/people/mukhtadir.jpeg"
             width="64px"
             height="64px"

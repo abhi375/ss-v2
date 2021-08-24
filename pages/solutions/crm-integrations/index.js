@@ -5,7 +5,7 @@ import LogoWall from "@/components/LogoWall";
 import Section from "@/components/Section";
 import Testimonial from "@/components/Testimonial";
 import { NextSeo } from "next-seo";
-import Image from "next/image";
+import ImageView from "@/components/ImageView";
 import Link from "next/link";
 
 export default function CRMIntegrationPage() {
@@ -36,7 +36,7 @@ export default function CRMIntegrationPage() {
           </div>
         }
         media={
-          <Image
+          <ImageView
             width={520}
             height={520}
             priority
@@ -56,7 +56,7 @@ export default function CRMIntegrationPage() {
         ]}
         showMediaFirst
         media={
-          <Image
+          <ImageView
             width={520}
             height={520}
             quality={100}
@@ -72,7 +72,7 @@ export default function CRMIntegrationPage() {
         ]}
         backgroundClass="bg-gray-50"
         media={
-          <Image
+          <ImageView
             width={520}
             height={520}
             quality={100}
@@ -92,7 +92,7 @@ export default function CRMIntegrationPage() {
           "Be there for your reps when it counts in real time using our visibility features. And with call recordings saved and stored automatically in your CRM, you can use crucial learning tools to keep your team’s skill set sharp.",
         ]}
         media={
-          <Image
+          <ImageView
             width={520}
             height={520}
             quality={100}
@@ -109,7 +109,7 @@ export default function CRMIntegrationPage() {
         ]}
         backgroundClass="bg-gray-50"
         media={
-          <Image
+          <ImageView
             width={520}
             height={520}
             quality={100}
@@ -126,7 +126,7 @@ export default function CRMIntegrationPage() {
           "What used to take weeks with developers now takes minutes thanks to our easy and intuitive Conversation Studio.",
         ]}
         media={
-          <Image
+          <ImageView
             width={520}
             height={520}
             quality={100}
@@ -141,7 +141,7 @@ export default function CRMIntegrationPage() {
         personName="CV Sai"
         personDesignation="AVP - Urban Company"
         companyLogo={
-          <Image
+          <ImageView
             src="/logos/urban.svg"
             width="200px"
             height="40px"

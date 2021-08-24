@@ -4,7 +4,7 @@ import LogoWall from "@/components/LogoWall";
 import Section from "@/components/Section";
 import Testimonial from "@/components/Testimonial";
 import { NextSeo } from "next-seo";
-import Image from "next/image";
+import ImageView from "@/components/ImageView";
 
 export default function ContactCenterPage({ toggleDemoForm }) {
   return (
@@ -33,7 +33,7 @@ export default function ContactCenterPage({ toggleDemoForm }) {
           />
         }
         media={
-          <Image
+          <ImageView
             src="/features/dock-hero.png"
             width={560}
             height={560}
@@ -43,7 +43,7 @@ export default function ContactCenterPage({ toggleDemoForm }) {
         }
         patternChild={
           <div className="absolute inset-0 hidden md:block">
-            <Image
+            <ImageView
               src="/features/cc-backdrop.png"
               objectFit="cover"
               layout="fill"
@@ -63,7 +63,7 @@ export default function ContactCenterPage({ toggleDemoForm }) {
           "And for uncommon conversation flows, our APIs allow customization for unlimited adaptability.",
         ]}
         media={
-          <Image
+          <ImageView
             src="/features/unified-tool.png"
             width={520}
             height={520}
@@ -80,7 +80,7 @@ export default function ContactCenterPage({ toggleDemoForm }) {
           "Imagine every call handled by a top performer. We will help you get there with innovative analytics, monitoring & coaching features that allow managers and experienced agents to easily coach colleagues in real time.",
         ]}
         media={
-          <Image
+          <ImageView
             src="/features/live-monitoring-and-coaching.png"
             width={520}
             height={520}
@@ -96,7 +96,7 @@ export default function ContactCenterPage({ toggleDemoForm }) {
           "Make your contact center truly Internet ready. Embed real time communication into your web.",
         ]}
         media={
-          <Image
+          <ImageView
             src="/features/web-widget.png"
             width={520}
             height={520}
@@ -113,7 +113,7 @@ export default function ContactCenterPage({ toggleDemoForm }) {
           "Easily view, filter, save and export in seconds, so you can turn your insights into actions sooner.",
         ]}
         media={
-          <Image
+          <ImageView
             src="/features/cc-analytics.png"
             width={520}
             height={520}
@@ -130,7 +130,7 @@ export default function ContactCenterPage({ toggleDemoForm }) {
           "Many of our customers have existing CRM solutions, like Salesforce or HubSpot. We turn all of them into world-class contact center tools with off-the-shelf CTI integration, rapid custom integration using Samespace Studio, and adaptable open APIs.",
         ]}
         media={
-          <Image
+          <ImageView
             src="/features/crm-integrations.png"
             width={520}
             height={520}
@@ -145,10 +145,10 @@ export default function ContactCenterPage({ toggleDemoForm }) {
         personName="Deepak Bisht"
         personDesignation="IT Head at Hear.com"
         companyLogo={
-          <Image src="/logos/hear.svg" width="200px" height="56px" alt="Hear" />
+          <ImageView src="/logos/hear.svg" width="200px" height="56px" alt="Hear" />
         }
         personAvatar={
-          <Image
+          <ImageView
             src="/people/deepak.jpg"
             width="64px"
             height="64px"

@@ -4,7 +4,7 @@ import LogoWall from "@/components/LogoWall";
 import Section from "@/components/Section";
 import Testimonial from "@/components/Testimonial";
 import { NextSeo } from "next-seo";
-import Image from "next/image";
+import ImageView from "@/components/ImageView";
 
 export default function SalesCRM({ toggleDemoForm }) {
   return (
@@ -25,7 +25,7 @@ export default function SalesCRM({ toggleDemoForm }) {
         }
         verticalPadding="py-12"
         media={
-          <Image
+          <ImageView
             width={560}
             height={560}
             priority
@@ -43,7 +43,7 @@ export default function SalesCRM({ toggleDemoForm }) {
         ]}
         showMediaFirst
         media={
-          <Image
+          <ImageView
             width={560}
             height={560}
             quality={100}
@@ -59,7 +59,7 @@ export default function SalesCRM({ toggleDemoForm }) {
         ]}
         backgroundClass="bg-gray-50"
         media={
-          <Image
+          <ImageView
             width={840}
             height={560}
             quality={100}
@@ -75,7 +75,7 @@ export default function SalesCRM({ toggleDemoForm }) {
         ]}
         showMediaFirst
         media={
-          <Image
+          <ImageView
             width={560}
             height={560}
             quality={100}
@@ -91,7 +91,7 @@ export default function SalesCRM({ toggleDemoForm }) {
         ]}
         backgroundClass="bg-gray-50"
         media={
-          <Image
+          <ImageView
             width={640}
             height={400}
             quality={100}
@@ -107,7 +107,7 @@ export default function SalesCRM({ toggleDemoForm }) {
         ]}
         showMediaFirst
         media={
-          <Image
+          <ImageView
             width={520}
             height={520}
             quality={100}
@@ -123,7 +123,7 @@ export default function SalesCRM({ toggleDemoForm }) {
         ]}
         backgroundClass="bg-gray-50"
         media={
-          <Image
+          <ImageView
             width={520}
             height={520}
             quality={100}
@@ -137,7 +137,7 @@ export default function SalesCRM({ toggleDemoForm }) {
         personName="Mukhtadir Syed"
         personDesignation="AVP - Sales and Customer Success"
         companyLogo={
-          <Image
+          <ImageView
             src="/logos/endurance.svg"
             width="200px"
             height="56px"
@@ -145,7 +145,7 @@ export default function SalesCRM({ toggleDemoForm }) {
           />
         }
         personAvatar={
-          <Image
+          <ImageView
             src="/people/mukhtadir.jpeg"
             width="64px"
             height="64px"

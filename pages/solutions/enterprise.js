@@ -3,7 +3,7 @@ import Button from "@/components/Button";
 import Section from "@/components/Section";
 import Testimonial from "@/components/Testimonial";
 import { NextSeo } from "next-seo";
-import Image from "next/image";
+import ImageView from "@/components/ImageView";
 
 export default function EnterprisePage({ toggleDemoForm }) {
   return (
@@ -29,7 +29,7 @@ export default function EnterprisePage({ toggleDemoForm }) {
         }
         media={
           <div className="hidden sm:block">
-            <Image
+            <ImageView
               src={"/features/crm-stack.png"}
               alt="Samespace Integration"
               width={1200}
@@ -48,7 +48,7 @@ export default function EnterprisePage({ toggleDemoForm }) {
           "With Samespace, you’re getting application security at the highest level, and we know you’d accept no less. GDPR and SOC 2 compliance is a given. We provide an on-premises option for compliance and data sovereignty, and our resilient data centers allow for maximum uptime.",
         ]}
         media={
-          <Image
+          <ImageView
             src={"/features/complience.png"}
             alt="Samespace Integration"
             width={480}
@@ -65,7 +65,7 @@ export default function EnterprisePage({ toggleDemoForm }) {
         ]}
         backgroundClass="bg-gray-50"
         media={
-          <Image
+          <ImageView
             src={"/features/ss-support.png"}
             alt="Samespace Integration"
             width={480}
@@ -80,7 +80,7 @@ export default function EnterprisePage({ toggleDemoForm }) {
           "We have no out-dated legacy architecture, our tech stack was designed to provide rapid integration, and our Conversation Studio makes flows easier to build than anyone else on the market.",
         ]}
         media={
-          <Image
+          <ImageView
             src={"/features/crm-integrations.png"}
             alt="Samespace Integration"
             width={480}
@@ -95,7 +95,7 @@ export default function EnterprisePage({ toggleDemoForm }) {
         personName="Mukhtadir Syed"
         personDesignation="AVP - Sales and Customer Success"
         companyLogo={
-          <Image
+          <ImageView
             src="/logos/endurance.svg"
             width="200px"
             height="56px"
@@ -103,7 +103,7 @@ export default function EnterprisePage({ toggleDemoForm }) {
           />
         }
         personAvatar={
-          <Image
+          <ImageView
             src="/people/mukhtadir.jpeg"
             width="64px"
             height="64px"

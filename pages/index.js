@@ -4,7 +4,7 @@ import FeatureTeaser from "@/components/FeatureTeaser";
 import LogoWall from "@/components/LogoWall";
 import Section from "@/components/Section";
 import Testimonial from "@/components/Testimonial";
-import Image from "next/image";
+import ImageView from "@/components/ImageView";
 import ReactPlayer from "react-player";
 
 export default function Home({ toggleDemoForm }) {
@@ -80,7 +80,7 @@ export default function Home({ toggleDemoForm }) {
           "By automatically logging call activity, increase the number of connected calls by 100% and your sales team's productivity by 50% with our smart automation capability.",
         ]}
         media={
-          <Image
+          <ImageView
             src="/features/playbooks.png"
             alt="Samespace Playbooks"
             width={540}
@@ -105,7 +105,7 @@ export default function Home({ toggleDemoForm }) {
           "Samespace offers ready to run native CTI integration with popular CRMs, and open APIs for custom integrations.",
         ]}
         media={
-          <Image
+          <ImageView
             src="/features/crm-connections.png"
             alt="Samespace Integrations"
             width={540}
@@ -130,7 +130,7 @@ export default function Home({ toggleDemoForm }) {
           "Built from the ground up, Samespace Conversational AI provides customizable and adaptable AI Bots with built-in sentiment analysis.",
         ]}
         media={
-          <Image
+          <ImageView
             src="/features/sentiment-analysis.png"
             alt="Samespace Sentiment Analysis"
             width={540}
@@ -151,7 +151,7 @@ export default function Home({ toggleDemoForm }) {
           "Customize dashboards with drag and drop widgets and create granular reports by applying advanced filters. Bring your own data to see the bigger picture in one place.",
         ]}
         media={
-          <Image
+          <ImageView
             src="/features/cc-analytics.png"
             alt="Samespace Analytics"
             width={540}
@@ -177,7 +177,7 @@ export default function Home({ toggleDemoForm }) {
           "Embed high fidelity calls into your web with built-in authentication and fastlane routing.",
         ]}
         media={
-          <Image
+          <ImageView
             src="/features/hifi.png"
             alt="Samespace HiFi"
             width={540}
@@ -191,7 +191,7 @@ export default function Home({ toggleDemoForm }) {
         personName="Mukhtadir Syed"
         personDesignation="AVP - Sales and Customer Success"
         companyLogo={
-          <Image
+          <ImageView
             src="/logos/endurance.svg"
             width="200px"
             height="56px"
@@ -199,7 +199,7 @@ export default function Home({ toggleDemoForm }) {
           />
         }
         personAvatar={
-          <Image
+          <ImageView
             src="/people/mukhtadir.jpeg"
             alt="Mukhtadir Syed"
             width="64px"

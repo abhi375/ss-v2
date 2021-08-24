@@ -4,7 +4,7 @@ import LogoWall from "@/components/LogoWall";
 import Section from "@/components/Section";
 import Testimonial from "@/components/Testimonial";
 import { NextSeo } from "next-seo";
-import Image from "next/image";
+import ImageView from "@/components/ImageView";
 
 export default function AnalyticsPage({ toggleDemoForm }) {
   return (
@@ -33,7 +33,7 @@ export default function AnalyticsPage({ toggleDemoForm }) {
           />
         }
         media={
-          <Image
+          <ImageView
             src="/features/analytics-hero.png"
             width={520}
             height={520}
@@ -51,7 +51,7 @@ export default function AnalyticsPage({ toggleDemoForm }) {
           "Easily view, filter, save and export in seconds, so you can turn your insights into actions sooner.",
         ]}
         media={
-          <Image
+          <ImageView
             src="/features/ss-dashboard.png"
             width={720}
             height={578}
@@ -72,7 +72,7 @@ export default function AnalyticsPage({ toggleDemoForm }) {
           "We help you stay in tune with your customer base by recognizing words, phrases, and tones that shed light on the ever evolving trends of your products, brand, and competition, and the feelings that move them.",
         ]}
         media={
-          <Image
+          <ImageView
             src="/features/sentiment-analysis.png"
             width={520}
             height={520}
@@ -89,7 +89,7 @@ export default function AnalyticsPage({ toggleDemoForm }) {
           "If you have your own BI or visualization software, you can easily send Samespace data to the tool of your choice.",
         ]}
         media={
-          <Image
+          <ImageView
             src="/features/bring-your-own-data.png"
             width={520}
             height={520}
@@ -104,7 +104,7 @@ export default function AnalyticsPage({ toggleDemoForm }) {
         personName="CV Sai"
         personDesignation="AVP, Urban Company"
         companyLogo={
-          <Image
+          <ImageView
             src="/logos/urban.svg"
             width="200px"
             height="40px"

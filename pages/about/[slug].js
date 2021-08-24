@@ -2,7 +2,7 @@ import { BackIcon } from "@/components/Icons";
 import { getAllPosts, getPostBySlug } from "@/lib/api";
 import markdownToHtml from "@/lib/markdownToHtml";
 import { NextSeo } from "next-seo";
-import Image from "next/image";
+import ImageView from "@/components/ImageView";
 import Link from "next/link";
 import ReactMarkdown from "react-markdown/with-html";
 
@@ -32,7 +32,7 @@ export default function LeaderPage({ post }) {
                     : "bg-[#007aff]"
                 }`}
               >
-                <Image
+                <ImageView
                   width="120px"
                   height="120px"
                   src={post.avatar}

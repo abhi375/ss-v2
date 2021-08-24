@@ -3,7 +3,7 @@ import { BackIcon } from "@/components/Icons";
 import { getAllPosts, getPostBySlug } from "@/lib/api";
 import markdownToHtml from "@/lib/markdownToHtml";
 import { NextSeo } from "next-seo";
-import Image from "next/image";
+import ImageView from "@/components/ImageView";
 import Link from "next/link";
 
 import ReactMarkdown from "react-markdown/with-html";
@@ -45,7 +45,7 @@ export default function CustomerStory({ post }) {
               </a>
             </Link>
             <h1 className="text-3xl font-bold mb-8 mt-4">{post.title}</h1>
-            <Image
+            <ImageView
               src={post.coverImage}
               alt={post.title}
               width="640px"

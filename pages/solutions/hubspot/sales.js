@@ -4,7 +4,7 @@ import LogoWall from "@/components/LogoWall";
 import Section from "@/components/Section";
 import Testimonial from "@/components/Testimonial";
 import { NextSeo } from "next-seo";
-import Image from "next/image";
+import ImageView from "@/components/ImageView";
 
 export default function SalesCRM({ toggleDemoForm }) {
   return (
@@ -24,7 +24,7 @@ export default function SalesCRM({ toggleDemoForm }) {
           />
         }
         media={
-          <Image
+          <ImageView
             src="/features/playbooks.png"
             alt="Samespace Playbooks"
             width="500"
@@ -41,7 +41,7 @@ export default function SalesCRM({ toggleDemoForm }) {
         ]}
         showMediaFirst
         media={
-          <Image
+          <ImageView
             src="/features/hubspot-call-logs.png"
             width={800}
             height={600}
@@ -58,7 +58,7 @@ export default function SalesCRM({ toggleDemoForm }) {
         ]}
         backgroundClass="bg-gray-50"
         media={
-          <Image
+          <ImageView
             src="/features/live-monitoring-and-coaching.png"
             width={500}
             height={500}
@@ -74,7 +74,7 @@ export default function SalesCRM({ toggleDemoForm }) {
         ]}
         showMediaFirst
         media={
-          <Image
+          <ImageView
             src="/features/cc-analytics.png"
             width={500}
             height={500}
@@ -90,7 +90,7 @@ export default function SalesCRM({ toggleDemoForm }) {
         ]}
         backgroundClass="bg-gray-50"
         media={
-          <Image
+          <ImageView
             src="/features/sentiment-analysis.png"
             width={500}
             height={500}
@@ -105,10 +105,10 @@ export default function SalesCRM({ toggleDemoForm }) {
         personName="Deepak Bisht"
         personDesignation="IT Head at Hear.com"
         companyLogo={
-          <Image src="/logos/hear.svg" width="200px" height="56px" alt="Hear" />
+          <ImageView src="/logos/hear.svg" width="200px" height="56px" alt="Hear" />
         }
         personAvatar={
-          <Image
+          <ImageView
             src="/people/deepak.jpg"
             width="64px"
             height="64px"

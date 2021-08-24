@@ -1,4 +1,4 @@
-import Image from "next/image";
+import ImageView from "@/components/ImageView";
 import {
   BoltIcon,
   FaceIcon,
@@ -17,7 +17,7 @@ export default function About({ leaders }) {
       <NextSeo title="About - Samespace" />
       <section className="px-6 lg:px-12 py-20">
         <div className="max-w-[800px] mx-auto">
-          <Image
+          <ImageView
             src="/company/fun.jpg"
             priority
             width="800px"
@@ -117,7 +117,7 @@ export default function About({ leaders }) {
                             : "bg-[#007aff]"
                         }`}
                       >
-                        <Image
+                        <ImageView
                           width="120px"
                           height="120px"
                           src={leader.avatar}
@@ -161,7 +161,7 @@ export default function About({ leaders }) {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div>
               <div className="relative ">
-                <Image
+                <ImageView
                   width={400}
                   height={300}
                   src={"/company/place2.jpg"}
@@ -181,7 +181,7 @@ export default function About({ leaders }) {
             </div>
 
             <div>
-              <Image
+              <ImageView
                 width={400}
                 height={300}
                 src={"/company/place1.jpg"}
@@ -197,7 +197,7 @@ export default function About({ leaders }) {
             </div>
 
             <div>
-              <Image
+              <ImageView
                 width={400}
                 height={300}
                 src={"/company/place3.jpg"}
